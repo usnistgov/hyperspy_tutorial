@@ -109,10 +109,8 @@ dependencies:
 - pytest-mpl=0.9=py_0
 - python=3.6.4=0
 - python-dateutil=2.6.1=py36_0
-- pytz=2017.3=py_2
 - pywavelets=0.5.2=py36_1
 - pyyaml=3.12=py36_1
-- pyzmq=16.0.2=py36_2
 - qt=4.8.7=vc14_7
 - qtconsole=4.3.1=py36_0
 - requests=2.18.4=py36_1
@@ -142,7 +140,6 @@ dependencies:
 - vs2015_runtime=14.0.25420=0
 - wcwidth=0.1.7=py36_0
 - webencodings=0.5=py36_0
-- wheel=0.30.0=py_1
 - widgetsnbextension=3.1.4=py36_0
 - win_inet_pton=1.0.1=py36_1
 - wincertstore=0.2=py36_0
