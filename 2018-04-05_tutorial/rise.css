@@ -20,14 +20,18 @@
 
 .reveal h1 {
   font-size: 2.11em; 
-  font-weight: bold;
+  font-weight: bolder;
 }
 
   .reveal h2 {
-  font-size: 1.55em; }
+  font-size: 1.55em; 
+  font-weight: bold;
+}
 
 .reveal h3 {
-  font-size: 1em; }
+  font-size: 1em; 
+  font-weight: bold;
+}
 
 .reveal h4 {
   font-size: 0.8em; }
