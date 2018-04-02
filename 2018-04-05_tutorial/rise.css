@@ -1,3 +1,16 @@
+/* make mark tag more obvious */
+mark {
+    background-color: rgb(224, 67, 67);
+    color: white;
+    padding: .1em;
+}
+
+/* remove horizontal scrollbar */
+.rise-enabled ::-webkit-scrollbar {
+  width: 6px;
+  height: 0px;
+}
+
 
 /*********************************************
  * HEADERS
@@ -83,3 +96,4 @@
     background-size: 200px 200px;
     background-origin: content-box;
 }​ 
+
