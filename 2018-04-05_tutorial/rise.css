@@ -95,7 +95,7 @@ mark {
 
 /* Image on first slide: */
 #slide-0-0 {
-    background-image: url(hyperspy.svg);
+    background-image: url(img/hyperspy.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 200px 200px;
