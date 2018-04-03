@@ -1,3 +1,8 @@
+/* Make padding on cells larger */
+.CodeMirror-lines[role="presentation"] {
+    padding: 0px 0px 1em 0;
+}
+
 /* make mark tag more obvious */
 mark {
     background-color: rgb(224, 67, 67);
