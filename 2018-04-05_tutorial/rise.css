@@ -101,3 +101,17 @@ mark {
 	left: 0.5em !important;
 }
 
+#help_b {
+	font-size: 2em;
+	top: 0.9em !important;
+	left: 1.6em !important;
+}
+
+/* Image on first slide: */
+#slide-0-0 {
+    background-image: url(img/hyperspy.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 200px 200px;
+    background-origin: content-box;
+}​ 
