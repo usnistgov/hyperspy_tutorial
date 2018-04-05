@@ -1,3 +1,13 @@
+/* Make tables bigger */
+table.table {
+    font-size: .8em;
+}
+
+.text_cell.rendered .rendered_html tr, .text_cell.rendered .rendered_html th, .text_cell.rendered .rendered_html td {
+    text-align: center;
+}
+
+
 /* Make padding on cells larger */
 .CodeMirror-lines[role="presentation"] {
     padding: 0px 0px 1em 0;
@@ -90,19 +100,4 @@ mark {
 	top: 0.9em !important;
 	left: 0.5em !important;
 }
-
-#help_b {
-	font-size: 2em;
-	top: 0.9em !important;
-	left: 1.6em !important;
-}
-
-/* Image on first slide: */
-#slide-0-0 {
-    background-image: url(img/hyperspy.svg);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 200px 200px;
-    background-origin: content-box;
-}​ 
 
