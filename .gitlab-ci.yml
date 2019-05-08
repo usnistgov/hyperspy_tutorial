@@ -1,5 +1,12 @@
 pages:
   script:
-  - pip3 install --user sphinx sphinx_bootstrap_theme
+  - /opt/conda/bin/conda --version
+  - /opt/conda/bin/conda config --set always_yes yes
+  - /opt/conda/bin/conda config --set auto_update_conda False
+  - env_name="$(pwd)/pages_builder"
+  - /opt/conda/bin/conda remove -p ${env_name} --all || true
+  # retry building the requirements up to five times
+  - for i in $(seq 1 5); do [ $i -gt 1 ] && echo "Sleeping for 15 seconds..."; sleep 15; /opt/conda/bin/conda create -p ${env_name} --file requirements.txt && s=0 && break || s=$?; done; (exit $s)
+  - source /opt/conda/bin/activate ${env_name}
   - cd instructions
   - BUILDDIR=../public make html
