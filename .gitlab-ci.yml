@@ -17,7 +17,7 @@ pages:
   - make html
   - cd ..
   - pwd
-  - mv instructions/_build/html/ public/
+  - mv instructions/_build/html/* public/
   - ls -lah public
   artifacts:
     paths:
