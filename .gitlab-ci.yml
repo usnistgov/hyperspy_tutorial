@@ -1,3 +1,5 @@
+# Using example from here: https://gitlab.com/pages/sphinx
+# and from https://gitlab.nist.gov/gitlab/nexuslims/NexusMicroscopyLIMS/blob/6c8a53c8321423405901f8436c6acd86a8a36010/.gitlab-ci.yml for working with conda
 pages:
   script:
   - /opt/conda/bin/conda --version
@@ -9,9 +11,14 @@ pages:
   - for i in $(seq 1 5); do [ $i -gt 1 ] && echo "Sleeping for 15 seconds..."; sleep 15; /opt/conda/bin/conda create -p ${env_name} python=3.7 && s=0 && break || s=$?; done; (exit $s)
   - source /opt/conda/bin/activate ${env_name}
   - pip install -r requirements.txt
+  - pwd
   - cd instructions
+  - pwd
   - make html
-  - mv _build/html/ ../public/
+  - cd ..
+  - pwd
+  - mv instructions/_build/html/ public/
+  - ls -lah public
   artifacts:
     paths:
       - public
