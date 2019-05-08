@@ -11,14 +11,10 @@ pages:
   - for i in $(seq 1 5); do [ $i -gt 1 ] && echo "Sleeping for 15 seconds..."; sleep 15; /opt/conda/bin/conda create -p ${env_name} python=3.7 && s=0 && break || s=$?; done; (exit $s)
   - source /opt/conda/bin/activate ${env_name}
   - pip install -r requirements.txt
-  - pwd
   - cd instructions
-  - pwd
   - make html
   - cd ..
-  - pwd
   - mv instructions/_build/html/* public/
-  - ls -lah public
   artifacts:
     paths:
       - public

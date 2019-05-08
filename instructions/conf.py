@@ -57,8 +57,11 @@ html_logo = "NIST_logo.png"
 
 html_show_copyright = False
 html_show_sphinx = False
-html_add_permalinks = ''
+# html_add_permalinks = ''
 html_show_sourcelink = False
+
+html_sidebars = { '**': ['localtoc.html'] }
+
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
@@ -77,6 +80,8 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
+        ("Tutorial Repository",
+         "https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial", True),
         ("HyperSpy Homepage", "http://hyperspy.org", True),
         ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/user_guide/index.html", True),
     ],
@@ -132,3 +137,7 @@ html_theme_options = {
     # Values: "3" (default) or "2" (in quotes)
     'bootstrap_version': "3",
 }
+
+
+def setup(app):
+    app.add_stylesheet("custom-styles.css")
