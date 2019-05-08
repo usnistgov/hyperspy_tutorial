@@ -54,6 +54,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_static_path = ['_static']
 
 html_logo = "NIST_logo.png"
+html_favicon = "tutorial_favicon.ico"
 
 html_show_copyright = False
 html_show_sphinx = False

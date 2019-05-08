@@ -1,5 +1,22 @@
+/* Better colors for notes and admonitions */
 .alert-info {
     background-color: #f2f9fa;
     border-color: #008cba;
     color: #222222;
+}
+
+.alert-warning {
+    background-color: #faf8ed;
+    border-color: #d08002;
+    color: #222222;
+}
+
+/* Align last column of table to the left */
+table.left-align-last-col td:last-child {
+    text-align: left !important;
+}
+
+/* Use this to hide the search box (couldn't figure out how to turn it off otherwise) */
+.form-group {
+    visibility: hidden;
 }
