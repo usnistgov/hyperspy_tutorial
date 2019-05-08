@@ -6,7 +6,8 @@ pages:
   - env_name="$(pwd)/pages_builder"
   - /opt/conda/bin/conda remove -p ${env_name} --all || true
   # retry building the requirements up to five times
-  - for i in $(seq 1 5); do [ $i -gt 1 ] && echo "Sleeping for 15 seconds..."; sleep 15; /opt/conda/bin/conda create -p ${env_name} --file requirements.txt && s=0 && break || s=$?; done; (exit $s)
+  - for i in $(seq 1 5); do [ $i -gt 1 ] && echo "Sleeping for 15 seconds..."; sleep 15; /opt/conda/bin/conda create -p ${env_name} python=3.7 && s=0 && break || s=$?; done; (exit $s)
   - source /opt/conda/bin/activate ${env_name}
+  - pip install -r requirements.txt
   - cd instructions
   - BUILDDIR=../public make html
