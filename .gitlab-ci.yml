@@ -10,4 +10,10 @@ pages:
   - source /opt/conda/bin/activate ${env_name}
   - pip install -r requirements.txt
   - cd instructions
-  - BUILDDIR=../public make html
+  - make html
+  - mv _build/html/ ../public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - 2019-05_NIST_tutorial
