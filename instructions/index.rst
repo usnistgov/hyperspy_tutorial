@@ -8,8 +8,9 @@ Thank you for registering for the NIST ODI-MMSD tutorial session on HyperSpy!
 This informal tutorial session will introduce you to the capabilities of
 HyperSpy in a casual and interactive environment, with plenty of time allocated
 for questions and individual help. The goal for the session is that by the end
-each attendee feels comfortable using HyperSpy for basic hyperspectral data
-analysis, and knows where to look for further help, if necessary.
+each attendee feels comfortable using HyperSpy for basic imaging and
+hyperspectral data analysis, and knows where to look for further help,
+if necessary.
 
 Event details
 -------------
@@ -62,7 +63,7 @@ About the instructors
 --------------
 
 ..  rst-class:: left-align-last-col
-.. cssclass:: table-hover
+..  cssclass:: table-hover
 ..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the audience*
     :widths: 20 80
 
@@ -136,7 +137,15 @@ packages and managing the system regardless of operating system.
 Anaconda
 ~~~~~~~~
 
-Another section's text
+This section describes installing Anaconda, maybe with some screenshots, if
+we have time
 
 HyperSpy
 ~~~~~~~~
+
+This section describes installing HyperSpy with ``conda``
+
+Obtaining the tutorial data
+---------------------------
+
+The data is available at the repository
