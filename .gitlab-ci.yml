@@ -1,0 +1,5 @@
+pages:
+  script:
+  - pip install --user sphinx sphinx_bootstrap_theme
+  - cd instructions
+  - BUILDDIR=../public make html
