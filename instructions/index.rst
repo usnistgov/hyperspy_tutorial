@@ -77,7 +77,7 @@ About the instructors
 
 ..  rst-class:: left-align-last-col
 ..  cssclass:: table-hover
-..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the audience*
+..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the audience* - Notebook links will be made active by Thursday afternoon.
     :widths: 20 20 80
 
     ==================  ====================   ============
