@@ -326,18 +326,20 @@ the ``python`` command) and entering:
 
     >>> import hyperspy.api as hs
 
-If this returns to the Python prompt (which looks like ``>>>``) without error,
-then the installation was successful and you should be all set to use HyperSpy.
-Press ``Ctrl-D`` to exit the Python interpreter and return back to the
-Anaconda Prompt.
+If this returns to the Python prompt (which looks like ``>>>``) without error
+(it may take a few moments the first time you run this command if your machine
+is not too powerful), then the installation was successful and you should be
+all set to use HyperSpy. Press ``Ctrl-D`` to exit the Python interpreter and
+return back to the Anaconda Prompt.
 
 HyperSpyUI
 ^^^^^^^^^^
 
-While most users use Jupyter Notebooks and the programmatic interface to
-HyperSpy for their analyses, there is a user interface available that can
-accomplish a number of tasks and allow you to quickly browse through multiple
-data files. To install it, run the following from the Anaconda Prompt:
+While most HyperSpy users find Jupyter Notebooks and the programmatic interface
+to be the best for reproducible analyses, there is a graphical user interface
+available that can accomplish a number of tasks and allow you to quickly browse
+through multiple data files. To install it, run the following from the Anaconda
+Prompt:
 
 ..  code-block:: bash
 
