@@ -83,19 +83,23 @@ About the instructors
     ==================  ====================   ============
     Time                Notebook Link          Topic
     ==================  ====================   ============
-    8:00 - 8:30 AM                              (*Optional*) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.
-    8:30 - 8:45 AM                              Welcome and introductions
-    8:45 - 9:15 AM                              *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
-    9:15 - 10:00 AM                             *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
-    10:00 - 10:15 AM                            *Using HyperSpyUI* - For simpler point-and-click analyses
-    *10:15 - 10:30 AM*                          *Short break / time for questions*
-    10:30 - 11:00 AM                            *Unsupervised learning & EDS Analysis* - Example analysis of TEM data from core-shell nanoparticles
-    11:00 - 11:30 AM                            *EELS Analysis in HyperSpy* - or... "What the commercial EELS vendors don't want you to see"
-    11:30 - 12:00 PM                            *Extending HyperSpy* - How HyperSpy can be extended for almost any use-case (``tomotools`` example)
-    12:00 - 12:30 PM                            Buffer time, Q&A, and Wrap-up
-    12:30 - 1:00 PM                             (*Optional*) Post-tutorial time; instructors will be on hand to answer any follow-up questions
+    8:00 - 8:30 AM                             (*Optional*) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.
+    8:30 - 8:45 AM                             Welcome and introductions
+    8:45 - 9:15 AM      |nb01|                 *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
+    9:15 - 10:00 AM     |nb02|                 *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
+    10:00 - 10:15 AM                           *Using HyperSpyUI* - For simpler point-and-click analyses
+    *10:15 - 10:30 AM*                         *Short break / time for questions*
+    10:30 - 11:00 AM    |nb03|                 *Unsupervised learning & EDS Analysis* - Example analysis of TEM data from core-shell nanoparticles
+    11:00 - 11:30 AM    |nb04|                 *EELS Analysis in HyperSpy* - or... "What the commercial EELS vendors don't want you to see"
+    11:30 - 12:00 PM                           *Extending HyperSpy* - How HyperSpy can be extended for almost any use-case (non-interactive ``tomotools`` example)
+    12:00 - 12:30 PM                           Buffer time, Q&A, and Wrap-up
+    12:30 - 1:00 PM                            (*Optional*) Post-tutorial time; instructors will be on hand to answer any follow-up questions
     ==================  ====================   ============
 
+.. |nb01| replace:: `Notebook 1 <#>`__
+.. |nb02| replace:: `Notebook 2 <#>`__
+.. |nb03| replace:: `Notebook 3 <#>`__
+.. |nb04| replace:: `Notebook 4 <#>`__
 
 Pre-tutorial instructions
 +++++++++++++++++++++++++
@@ -276,10 +280,11 @@ The process will also be summarized here with a bit more instruction.
 ..  admonition:: Info about code blocks
 
     In the following section, lines in code blocks will be prefaced with ``$``
-    to indicate that the line is a terminal input. Any lines without the ``$``
-    character indicate the expected output of the given command. To run the
-    commands provided, copy everything after the ``$`` character into your
-    terminal. Where necessary, commands will be given for both the Windows
+    or ``>>>``. The former is used to indicate terminal input, while the latter
+    represents inputs to the Python interpreter. Any lines without these symbols
+    indicate the expected output of the given command. To run the
+    commands provided, copy everything after the ``$`` or ``>>>`` character into
+    your terminal. Where necessary, commands will be given for both the Windows
     Anaconda prompt and the macOS/Linux terminal, so only use the commands
     specific to your operating system.
 
@@ -311,6 +316,21 @@ From the prompt, run the following to install HyperSpy:
 
     $ conda install -c conda-forge hyperspy
 
+After Anaconda calculates the dependencies it will need to install, it will ask
+for confirmation to continue. Press ``Enter`` to accept the changes, and wait
+for the requested libraries to be installed. Once the install is completed,
+you can check that it was successful by starting the Python interpreter (run
+the ``python`` command) and entering:
+
+..  code-block:: python
+
+    >>> import hyperspy.api as hs
+
+If this returns to the Python prompt (which looks like ``>>>``) without error,
+then the installation was successful and you should be all set to use HyperSpy.
+Press ``Ctrl-D`` to exit the Python interpreter and return back to the
+Anaconda Prompt.
+
 HyperSpyUI
 ^^^^^^^^^^
 
@@ -326,31 +346,32 @@ data files. To install it, run the following from the Anaconda Prompt:
 To start the user interface, run the command ``hyperspyui`` from the Anaconda
 Prompt after the installation is complete.
 
-Installation of ``tomotools``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..
+    Installation of ``tomotools``
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Towards the end of the tutorial, Andy will be giving a demonstration of an
-extension package for HyperSpy that he wrote to do three-dimensional tomographic
-reconstructions from TEM images. This package has some additional dependencies
-in addition to those required for HyperSpy, but the use of Anaconda makes it
-easy to get them installed. If you wish to follow along interactively during
-this part of the tutorial, run the following commands from the Anaconda Prompt:
+    Towards the end of the tutorial, Andy will be giving a demonstration of an
+    extension package for HyperSpy that he wrote to do three-dimensional tomographic
+    reconstructions from TEM images. This package has some additional dependencies
+    in addition to those required for HyperSpy, but the use of Anaconda makes it
+    easy to get them installed. If you wish to follow along interactively during
+    this part of the tutorial, run the following commands from the Anaconda Prompt:
 
-..  code-block:: bash
+    ..  code-block:: bash
 
-    $ conda install -c conda-forge opencv tomopy
-    $ conda install -c astra-toolbox astra-toolbox
-    $ pip install git+https://gitlab.com/aaherzing/tomotools.git
+        $ conda install -c conda-forge opencv tomopy
+        $ conda install -c astra-toolbox astra-toolbox
+        $ pip install git+https://gitlab.com/aaherzing/tomotools.git
 
-The last command will use the regular Python package manager (``pip``) instead
-of the ``conda`` one to install the ``tomotools`` package directly from Andy's
-Gitlab repository, so it will be accessible from your Jupyter Notebooks just
-like the other HyperSpy libraries.
+    The last command will use the regular Python package manager (``pip``) instead
+    of ``conda`` to install the ``tomotools`` package directly from Andy's
+    Gitlab repository, so it will be accessible from your Jupyter Notebooks just
+    like the other HyperSpy libraries.
 
 Obtaining the tutorial data
 ---------------------------
 
-This section will be updated by the the morning of the tutorial.
+Stay tuned! This section will be updated by Thursday afternoon.
 
 
 Running the Jupyter Notebooks
