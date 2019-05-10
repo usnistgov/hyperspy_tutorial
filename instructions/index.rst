@@ -373,7 +373,10 @@ Prompt after the installation is complete.
 Obtaining the tutorial data
 ---------------------------
 
-Stay tuned! This section will be updated by Thursday afternoon.
+Please click `this <_static/hyperspy_tutorial.zip>`_ link to download the
+tutorial notebooks and data as a ``.zip`` file. Once downloaded (it is
+approximately 50 MB), extract the files into their own folder that is easily
+accessible. We recommend a folder on the Desktop named ``hyperspy_tutorial``.
 
 
 Running the Jupyter Notebooks
@@ -394,7 +397,7 @@ one of the following commands:
 ..  code-block:: bash
 
     # For Windows:
-    $ cd %USERPROFILE%\Desktop\hyperspy_tutorial
+    $ cd %USERPROFILE%\\Desktop\\hyperspy_tutorial
 
     # For macOS or Linux:
     $ cd ~/Desktop/hyperspy_tutorial
