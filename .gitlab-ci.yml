@@ -15,6 +15,10 @@ pages:
   - make html
   - cd ..
   - mv instructions/_build/html/* public/
+  - cd notebooks
+  - zip -r ../hyperspy_tutorial.zip ./*
+  - cd ..
+  - mv hyperspy_tutorial.zip public/_static/
   artifacts:
     paths:
       - public
