@@ -85,8 +85,8 @@ About the instructors
     ==================  ====================   ============
     8:00 - 8:30 AM                             (*Optional*) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.
     8:30 - 8:45 AM                             Welcome and introductions
-    8:45 - 9:15 AM      |nb01|                 *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
-    9:15 - 10:00 AM     |nb02|                 *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
+    8:45 - 9:30 AM      |nb01|                 *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
+    9:30 - 10:00 AM     |nb02|                 *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
     10:00 - 10:15 AM                           *Using HyperSpyUI* - For simpler point-and-click analyses
     *10:15 - 10:30 AM*                         *Short break / time for questions*
     10:30 - 11:00 AM    |nb03|                 *Unsupervised learning & EDS Analysis* - Example analysis of TEM data from core-shell nanoparticles
@@ -96,7 +96,7 @@ About the instructors
     12:30 - 1:00 PM                            (*Optional*) Post-tutorial time; instructors will be on hand to answer any follow-up questions
     ==================  ====================   ============
 
-.. |nb01| replace:: `Notebook 1 <#>`__
+.. |nb01| replace:: `Notebook 1 <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial/blob/2019-05_NIST_tutorial/notebooks/01%20-%20Getting%20Started.ipynb>`__
 .. |nb02| replace:: `Notebook 2 <#>`__
 .. |nb03| replace:: `Notebook 3 <#>`__
 .. |nb04| replace:: `Notebook 4 <#>`__
