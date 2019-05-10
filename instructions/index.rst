@@ -99,7 +99,7 @@ About the instructors
 .. |nb01| replace:: `Notebook 1 <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial/blob/2019-05_NIST_tutorial/notebooks/01%20-%20Getting%20Started.ipynb>`__
 .. |nb02| replace:: `Notebook 2 <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial/blob/2019-05_NIST_tutorial/notebooks/02%20-%20Curve%20fitting.ipynb>`__
 .. |nb03| replace:: `Notebook 3 <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial/blob/2019-05_NIST_tutorial/notebooks/03%20-%20TEM_EDS_nanoparticles.ipynb>`__
-.. |nb04| replace:: `Notebook 4 <#>`__
+.. |nb04| replace:: `Notebook 4 <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial/blob/2019-05_NIST_tutorial/notebooks/04%20-%20EELS_analysis.ipynb>`__
 
 Pre-tutorial instructions
 +++++++++++++++++++++++++
