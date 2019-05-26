@@ -1,7 +1,0 @@
-FROM continuumio/anaconda3:latest
-
-RUN conda update conda
-RUN conda install -c conda-forge hyperspy
-
-EXPOSE 8888
-CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --port=8888 --NotebookApp.token='password'
