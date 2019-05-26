@@ -18,9 +18,9 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = '2019 HyperSpy Tutorial'
-# copyright = '2019, Joshua Taillon, Andrew Herzing'
-author = 'Joshua Taillon & Andrew Herzing'
+project = '2019 CCEM HyperSpy Tutorial'
+# copyright = '2019, Joshua Taillon'
+author = 'Joshua Taillon'
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,8 +28,7 @@ author = 'Joshua Taillon & Andrew Herzing'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-]
+extensions = ['sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -82,7 +81,7 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Tutorial Repository",
-         "https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial", True),
+         "https://github.com/usnistgov/hyperspy_tutorial", True),
         ("HyperSpy Homepage", "http://hyperspy.org", True),
         ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/user_guide/index.html", True),
     ],

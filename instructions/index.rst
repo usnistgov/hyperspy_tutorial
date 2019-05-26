@@ -1,12 +1,13 @@
 :tocdepth: 4
 
-2019 NIST HyperSpy Tutorial
-===========================
+2019 CCEM Summer School HyperSpy Tutorial
+=========================================
 
 About the session
 +++++++++++++++++
 
-Thank you for registering for the NIST ODI-MMSD tutorial session on HyperSpy!
+Thank you for registering for the CCEM Summer School tutorial session on
+HyperSpy, presented by the NIST Office of Data and Informatics!
 This informal tutorial session will introduce you to the capabilities of
 HyperSpy in a casual and interactive environment, with plenty of time allocated
 for questions and individual help. The goal for the session is that by the end
@@ -15,7 +16,7 @@ hyperspectral data analysis, and knows where to look for further help,
 if necessary.
 
 There are a few useful links in the top header of this page. The first
-(`Tutorial Repository <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial>`_)
+(`Tutorial Repository <https://github.com/usnistgov/hyperspy_tutorial>`_)
 will take you to the git repository containing the notebooks and data we will
 use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
@@ -25,22 +26,23 @@ a whole, while the User Guide is an extensive piece of documentation that tries
 to explain how to use HyperSpy for all sorts of analyses. Feel free to refer
 to these links before and during the tutorial session for additional help.
 
-Event details
--------------
+Session Logistics
+-----------------
 
 .. cssclass:: table-bordered
 
     +--------------------+-------------------------------------------------+
-    | **Date:**          | Friday May 10, 2019                             |
+    | **Date:**          | | Wednesday June 5, 2019                        |
+    |                    | | Thursday June 6, 2019                         |
     +--------------------+-------------------------------------------------+
-    | **Time:**          | 8:30 AM - 12:30 PM ET                           |
+    | **Time:**          | 1:30 PM - 3:00 PM ET (Wednesday and Thursday)   |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | | *Gaithersburg*: Building 101 - Lecture Room C |
-    |                    | | *Boulder*: Building 2 - Room 0113 (VTC)       |
+    | **Location:**      | | CCEM - Hamilton, ON (Room TBD)                |
+    |                    |                                                 |
     +--------------------+-------------------------------------------------+
 
-About the instructors
----------------------
+About the instructor
+--------------------
 
 .. table::
 
@@ -53,19 +55,12 @@ About the instructors
     |         |   greater understanding of material systems. He is a (fairly)   |
     |         |   regular |contributor| to the upstream HyperSpy project and has|
     |         |   been a user of the software for over 5 years.                 |
-    +---------+-----------------------------------------------------------------+
-    | |andy|  | | |andy_link| is a staff scientist in the Materials             |
-    |         |   Structure and Data Group of the Materials Measurement Science |
-    |         |   Division (MML) and is an expert in the quantitative structural|
-    |         |   and chemical characterization of small volumes of material    |
-    |         |   using electron microscopy techniques. He has used (and        |
-    |         |   extended) HyperSpy to enable reproducible and well-documented |
-    |         |   data  analysis for objectively processing chemical tomography |
-    |         |   data based on hyperspectral images in the TEM.                |
+    |         |   (Contact: joshua.taillon@nist.gov)                            |
     +---------+-----------------------------------------------------------------+
 
+
 .. |contributor| replace:: `contributor <https://github.com/hyperspy/hyperspy/commits?author=jat255>`__
-.. |josh_link| replace:: `Josh Taillon <https://www.nist.gov/people/joshua-taillon>`__
+.. |josh_link| replace:: `Josh Taillon <https://nist.gov/people/joshua-taillon>`__
 .. |andy_link| replace:: `Andy Herzing <https://www.nist.gov/people/andrew-herzing>`__
 .. |josh| image:: _static/josh_taillon.jpg
    :width: 100%
@@ -77,7 +72,7 @@ About the instructors
 
 ..  rst-class:: left-align-last-col
 ..  cssclass:: table-hover
-..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the audience* - Notebook links will be made active by Thursday afternoon.
+..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the audience*
     :widths: 20 20 80
 
     ==================  ====================   ============
@@ -108,20 +103,21 @@ Please review this section in advance of Friday's tutorial session, as it
 includes instructions for installing HyperSpy and the Jupyter interactive
 computing environment.
 
-..  admonition:: Installation alternatives
+..
+    ..  admonition:: Installation alternatives
 
-    While we encourage everyone to follow the instruction below to install
-    HyperSpy locally on their personal system, we will also provide a web-based
-    `JupyterHub`_ instance that can be used through a normal web browser,
-    without installing anything to your system. If you choose to use this
-    option, all you will need is a computer with a modern web browser (even a
-    tablet with external keyboard should work). If you wish to use this option
-    you will need a Google Account of some kind (either a NIST-administered one,
-    which can be obtained
-    `here <https://docs.google.com/forms/d/18vhcaRwq7MloEtz7-K75ZKKsGpgquhuVAteNkl5HTvg/viewform?edit_requested=true>`_
-    or a personal account) for authentication purposes.
+        While we encourage everyone to follow the instruction below to install
+        HyperSpy locally on their personal system, we will also provide a web-based
+        `JupyterHub`_ instance that can be used through a normal web browser,
+        without installing anything to your system. If you choose to use this
+        option, all you will need is a computer with a modern web browser (even a
+        tablet with external keyboard should work). If you wish to use this option
+        you will need a Google Account of some kind (either a NIST-administered one,
+        which can be obtained
+        `here <https://docs.google.com/forms/d/18vhcaRwq7MloEtz7-K75ZKKsGpgquhuVAteNkl5HTvg/viewform?edit_requested=true>`_
+        or a personal account) for authentication purposes.
 
-..  _JupyterHub: https://jupyterhub.readthedocs.io/en/stable/
+    ..  _JupyterHub: https://jupyterhub.readthedocs.io/en/stable/
 
 Prerequisites
 -------------
@@ -203,7 +199,8 @@ the Anaconda website. Specific instructions for Windows are reproduced below.
 
 Run the downloaded file to proceed with the installation. This process is fairly
 straightforward. For the installation location, we recommend an easily accessed
-path, such as the folder ``anaconda3`` within your user directory:
+path that does not require administrative rights, such as the folder
+``anaconda3`` within your user directory:
 
 .. figure:: _static/anaconda_installation_path.png
    :width: 100 %
@@ -310,11 +307,11 @@ before any of the ``conda`` commands will work. Again, `this is only for
 Mac/Linux`, the commands should be available with no problem on Windows when
 you launch the `Anaconda Prompt`.
 
-From the prompt, run the following to install HyperSpy:
+From the prompt, run the following to install HyperSpy (and its UI package):
 
 ..  code-block:: bash
 
-    $ conda install -c conda-forge hyperspy
+    $ conda install -c conda-forge hyperspy hyperspyui
 
 After Anaconda calculates the dependencies it will need to install, it will ask
 for confirmation to continue. Press ``Enter`` to accept the changes, and wait
@@ -338,15 +335,10 @@ HyperSpyUI
 While most HyperSpy users find Jupyter Notebooks and the programmatic interface
 to be the best for reproducible analyses, there is a graphical user interface
 available that can accomplish a number of tasks and allow you to quickly browse
-through multiple data files. To install it, run the following from the Anaconda
-Prompt:
-
-..  code-block:: bash
-
-    $ conda install -c conda-forge hyperspyui
+through multiple data files.
 
 To start the user interface, run the command ``hyperspyui`` from the Anaconda
-Prompt after the installation is complete.
+Prompt after the installation from the previous step is complete.
 
 ..
     Installation of ``tomotools``
