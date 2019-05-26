@@ -59,7 +59,8 @@ About the instructor
 
     +---------+-----------------------------------------------------------------+
     | |josh|  | | |josh_link| is a research engineer within the Office          |
-    |         |   of Data and Informatics (MML), and has an extensive           |
+    |         |   of Data and Informatics in the Material Measurement           |
+    |         |   Laboratory at NIST, and has an extensive                      |
     |         |   background in materials science, microscopy, and data analysis|
     |         |   utilizing machine learning, artificial intelligence, and      |
     |         |   state-of-the art signal processing techniques to facilitate   |
