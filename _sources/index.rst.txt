@@ -83,23 +83,21 @@ About the instructor
 
 ..  rst-class:: left-align-last-col
 ..  cssclass:: table-hover
-..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the audience*
+..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the participants. Depending on overlap between attendees, either
+             the introduction sessions will be repeated, or more advanced topics will be covered (machine learning, EELS, and extensions).*
     :widths: 20 20 80
 
     ==================  ====================   ============
-    Time                Notebook Link          Topic
+    Session #           Notebook Link          Topic
     ==================  ====================   ============
-    8:00 - 8:30 AM                             (*Optional*) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.
-    8:30 - 8:45 AM                             Welcome and introductions
-    8:45 - 9:30 AM      |nb01|                 *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
-    9:30 - 10:00 AM     |nb02|                 *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
-    10:00 - 10:15 AM                           *Using HyperSpyUI* - For simpler point-and-click analyses
-    *10:15 - 10:30 AM*                         *Short break / time for questions*
-    10:30 - 11:00 AM    |nb03|                 *Unsupervised learning & EDS Analysis* - Example analysis of TEM data from core-shell nanoparticles
-    11:00 - 11:30 AM    |nb04|                 *EELS Analysis in HyperSpy* - or... "What the commercial EELS vendors don't want you to see"
-    11:30 - 12:00 PM                           *Extending HyperSpy* - How HyperSpy can be extended for almost any use-case (non-interactive ``tomotools`` example)
-    12:00 - 12:30 PM                           Buffer time, Q&A, and Wrap-up
-    12:30 - 1:00 PM                            (*Optional*) Post-tutorial time; instructors will be on hand to answer any follow-up questions
+    0.0                                        (*Optional*) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.
+    0.1                                        Welcome and introductions
+    1.0                 |nb01|                 *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
+    1.1                                        *Using HyperSpyUI* - For simpler point-and-click analyses
+    2.0                 |nb02|                 *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
+    3.0                 |nb03|                 *Unsupervised learning & EDS Analysis* - Example analysis of TEM data from core-shell nanoparticles
+    4.0                 |nb04|                 *EELS Analysis in HyperSpy* - or... "What the commercial EELS vendors don't want you to see"
+    5.0                                        *Extending HyperSpy* - How HyperSpy can be extended for almost any use-case (non-interactive ``tomotools`` example)
     ==================  ====================   ============
 
 .. |nb01| replace:: `Notebook 1 <https://gitlab.nist.gov/gitlab/jat/hyperspy_tutorial/blob/2019-05_NIST_tutorial/notebooks/01%20-%20Getting%20Started.ipynb>`__
