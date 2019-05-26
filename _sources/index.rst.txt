@@ -101,10 +101,10 @@ About the instructor
     5.0                                        *Extending HyperSpy* - How HyperSpy can be extended for almost any use-case (non-interactive ``tomotools`` example)
     ==================  ====================   ============
 
-.. |nb01| replace:: `Notebook 1 <https://github.com/usnistgov/hyperspy_tutorial/raw/2019-06_CCEM_tutorial/notebooks/01%20-%20Getting%20Started.ipynb>`__
-.. |nb02| replace:: `Notebook 2 <https://github.com/usnistgov/hyperspy_tutorial/raw/2019-06_CCEM_tutorial/notebooks/02%20-%20Curve%20fitting.ipynb>`__
-.. |nb03| replace:: `Notebook 3 <https://github.com/usnistgov/hyperspy_tutorial/raw/2019-06_CCEM_tutorial/notebooks/03%20-%20TEM_EDS_nanoparticles.ipynb>`__
-.. |nb04| replace:: `Notebook 4 <https://github.com/usnistgov/hyperspy_tutorial/raw/2019-06_CCEM_tutorial/notebooks/04%20-%20EELS_analysis.ipynb>`__
+.. |nb01| replace:: `Notebook 1 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/01%20-%20Getting%20Started.ipynb>`__
+.. |nb02| replace:: `Notebook 2 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/02%20-%20Curve%20fitting.ipynb>`__
+.. |nb03| replace:: `Notebook 3 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/03%20-%20TEM_EDS_nanoparticles.ipynb>`__
+.. |nb04| replace:: `Notebook 4 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/04%20-%20EELS_analysis.ipynb>`__
 
 Pre-tutorial instructions
 +++++++++++++++++++++++++
