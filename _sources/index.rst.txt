@@ -14,9 +14,6 @@
 2019 CCEM Summer School HyperSpy Tutorial
 =========================================
 
-Shortcut to data
-++++++++++++++++
-
 .. raw:: html
 
     <div class="text-center"><a class="downloadbutton" href="hyperspy_tutorial.zip">Click here to download<br/>the tutorial data</a></div>
@@ -55,7 +52,7 @@ Session Logistics
     |                    | | Friday June 7, 2019                           |
     +--------------------+-------------------------------------------------+
     | **Time:**          | | 1:30 PM - 5:00 PM ET (Wednesday and Thursday) |
-    |                    | | 10:45 AM - 5:30 PM ET (Friday)                |
+    |                    | | 3:30 PM - 5:30 PM ET (Friday)                 |
     +--------------------+-------------------------------------------------+
     | **Location:**      | | CCEM - Hamilton, ON (Room ABB 162)            |
     |                    |                                                 |
@@ -326,17 +323,22 @@ before any of the ``conda`` commands will work. Again, `this is only for
 Mac/Linux`, the commands should be available with no problem on Windows when
 you launch the `Anaconda Prompt`.
 
-From the prompt, run the following to install HyperSpy (and its UI package):
+From the prompt, run the following three lines to install HyperSpy, its UI package, and the tools needed for
+tomography analysis:
 
 ..  code-block:: bash
 
-    $ conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0
+    $ conda install -c astra-toolbox astra-toolbox
+    $ conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0 opencv tomopy
+    $ pip install git+https://github.com/AndrewHerzing/tomotools.git
 
 ..  note::
 
     Usually, the ``matplotlib=3.0`` part is not needed, but there is a |bug_link|
     with the latest version of the external ``matplotlib`` package, so we use the
-    command above to pin the version to the previous one.
+    command above to pin the version to the previous one. Also, if you do not want/need
+    tomography capabilities, running just ``conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0``
+    is sufficient.
 
 .. |bug_link| replace:: `bug <https://github.com/hyperspy/hyperspy/issues/2195>`__
 

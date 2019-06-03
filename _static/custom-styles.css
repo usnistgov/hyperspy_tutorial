@@ -37,6 +37,7 @@ div#navbar + div.container {
 
 
 .downloadbutton {
+	margin-top:25px;
 	background-color:#44c767;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
