@@ -396,7 +396,7 @@ Obtaining the tutorial data
 
 Please click `this <hyperspy_tutorial.zip>`_ link to download the
 tutorial notebooks and data as a ``.zip`` file. Once downloaded (it is
-approximately 50 MB), extract the files into their own folder that is easily
+approximately 65 MB), extract the files into their own folder that is easily
 accessible. We recommend a folder on the Desktop named ``hyperspy_tutorial``.
 
 
