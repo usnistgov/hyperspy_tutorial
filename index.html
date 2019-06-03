@@ -114,6 +114,7 @@ $(document).ready(function(){
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
 <li><a class="reference internal" href="#">2019 CCEM Summer School HyperSpy Tutorial</a><ul>
+<li><a class="reference internal" href="#shortcut-to-data">Shortcut to data</a></li>
 <li><a class="reference internal" href="#about-the-session">About the session</a><ul>
 <li><a class="reference internal" href="#session-logistics">Session Logistics</a></li>
 <li><a class="reference internal" href="#about-the-instructor">About the instructor</a></li>
@@ -142,6 +143,9 @@ $(document).ready(function(){
       
   <div class="section" id="ccem-summer-school-hyperspy-tutorial">
 <h1>2019 CCEM Summer School HyperSpy Tutorial<a class="headerlink" href="#ccem-summer-school-hyperspy-tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="shortcut-to-data">
+<h2>Shortcut to data<a class="headerlink" href="#shortcut-to-data" title="Permalink to this headline">¶</a></h2>
+<div class="text-center"><a class="downloadbutton" href="hyperspy_tutorial.zip">Click here to download<br/>the tutorial data</a></div></div>
 <div class="section" id="about-the-session">
 <h2>About the session<a class="headerlink" href="#about-the-session" title="Permalink to this headline">¶</a></h2>
 <p>Thank you for registering for the CCEM Summer School tutorial session on
@@ -174,15 +178,20 @@ to these links before and during the tutorial session for additional help.</p>
 <td><div class="line-block">
 <div class="line">Wednesday June 5, 2019</div>
 <div class="line">Thursday June 6, 2019</div>
+<div class="line">Friday June 7, 2019</div>
 </div>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Time:</strong></p></td>
-<td><p>1:30 PM - 3:00 PM ET (Wednesday and Thursday)</p></td>
+<td><div class="line-block">
+<div class="line">1:30 PM - 5:00 PM ET (Wednesday and Thursday)</div>
+<div class="line">10:45 AM - 5:30 PM ET (Friday)</div>
+</div>
+</td>
 </tr>
 <tr class="row-odd"><td><p><strong>Location:</strong></p></td>
 <td><div class="line-block">
-<div class="line">CCEM - Hamilton, ON (Room TBD)</div>
+<div class="line">CCEM - Hamilton, ON (Room ABB 162)</div>
 </div>
 </td>
 </tr>
@@ -425,8 +434,14 @@ the bracketed term with the actual path in which you installed Anaconda:</p>
 Mac/Linux</cite>, the commands should be available with no problem on Windows when
 you launch the <cite>Anaconda Prompt</cite>.</p>
 <p>From the prompt, run the following to install HyperSpy (and its UI package):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install -c conda-forge hyperspy hyperspyui
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install -c conda-forge hyperspy hyperspyui <span class="nv">matplotlib</span><span class="o">=</span><span class="m">3</span>.0
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Usually, the <code class="docutils literal notranslate"><span class="pre">matplotlib=3.0</span></code> part is not needed, but there is a <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues/2195">bug</a>
+with the latest version of the external <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> package, so we use the
+command above to pin the version to the previous one.</p>
 </div>
 <p>After Anaconda calculates the dependencies it will need to install, it will ask
 for confirmation to continue. Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to accept the changes, and wait
@@ -454,7 +469,7 @@ Prompt after the installation from the previous step is complete.</p>
 </div>
 <div class="section" id="obtaining-the-tutorial-data">
 <h3>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h3>
-<p>Please click <a class="reference external" href="_static/hyperspy_tutorial.zip">this</a> link to download the
+<p>Please click <a class="reference external" href="hyperspy_tutorial.zip">this</a> link to download the
 tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file. Once downloaded (it is
 approximately 50 MB), extract the files into their own folder that is easily
 accessible. We recommend a folder on the Desktop named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>.</p>

@@ -14,6 +14,13 @@
 2019 CCEM Summer School HyperSpy Tutorial
 =========================================
 
+Shortcut to data
+++++++++++++++++
+
+.. raw:: html
+
+    <div class="text-center"><a class="downloadbutton" href="hyperspy_tutorial.zip">Click here to download<br/>the tutorial data</a></div>
+
 About the session
 +++++++++++++++++
 
@@ -45,10 +52,12 @@ Session Logistics
     +--------------------+-------------------------------------------------+
     | **Date:**          | | Wednesday June 5, 2019                        |
     |                    | | Thursday June 6, 2019                         |
+    |                    | | Friday June 7, 2019                           |
     +--------------------+-------------------------------------------------+
-    | **Time:**          | 1:30 PM - 3:00 PM ET (Wednesday and Thursday)   |
+    | **Time:**          | | 1:30 PM - 5:00 PM ET (Wednesday and Thursday) |
+    |                    | | 10:45 AM - 5:30 PM ET (Friday)                |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | | CCEM - Hamilton, ON (Room TBD)                |
+    | **Location:**      | | CCEM - Hamilton, ON (Room ABB 162)            |
     |                    |                                                 |
     +--------------------+-------------------------------------------------+
 
@@ -321,7 +330,15 @@ From the prompt, run the following to install HyperSpy (and its UI package):
 
 ..  code-block:: bash
 
-    $ conda install -c conda-forge hyperspy hyperspyui
+    $ conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0
+
+..  note::
+
+    Usually, the ``matplotlib=3.0`` part is not needed, but there is a |bug_link|
+    with the latest version of the external ``matplotlib`` package, so we use the
+    command above to pin the version to the previous one.
+
+.. |bug_link| replace:: `bug <https://github.com/hyperspy/hyperspy/issues/2195>`__
 
 After Anaconda calculates the dependencies it will need to install, it will ask
 for confirmation to continue. Press ``Enter`` to accept the changes, and wait
@@ -375,7 +392,7 @@ Prompt after the installation from the previous step is complete.
 Obtaining the tutorial data
 ---------------------------
 
-Please click `this <_static/hyperspy_tutorial.zip>`_ link to download the
+Please click `this <hyperspy_tutorial.zip>`_ link to download the
 tutorial notebooks and data as a ``.zip`` file. Once downloaded (it is
 approximately 50 MB), extract the files into their own folder that is easily
 accessible. We recommend a folder on the Desktop named ``hyperspy_tutorial``.
