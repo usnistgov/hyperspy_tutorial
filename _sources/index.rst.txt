@@ -330,6 +330,7 @@ tomography analysis:
 
     $ conda install -c astra-toolbox astra-toolbox
     $ conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0 opencv tomopy
+    $ conda install git
     $ pip install git+https://github.com/AndrewHerzing/tomotools.git
 
 ..  note::
@@ -384,10 +385,11 @@ Prompt after the installation from the previous step is complete.
 
         $ conda install -c conda-forge opencv tomopy
         $ conda install -c astra-toolbox astra-toolbox
+        $ conda install git
         $ pip install git+https://gitlab.com/aaherzing/tomotools.git
 
-    The last command will use the regular Python package manager (``pip``) instead
-    of ``conda`` to install the ``tomotools`` package directly from Andy's
+    The last two commands will use the regular Python package manager (``pip``) instead
+    of ``conda`` to install the ``tomotools`` package directly from Andy Herzing's
     Gitlab repository, so it will be accessible from your Jupyter Notebooks just
     like the other HyperSpy libraries.
 
