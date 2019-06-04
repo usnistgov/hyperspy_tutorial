@@ -140,8 +140,8 @@ Prerequisites
 
 For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
-the instructions below to install both Anaconda Python and HyperSpy (or use the
-web-based JupyterHub installation as described above).
+the instructions below to install both Anaconda Python and HyperSpy (or use machines in
+the computer lab that will have the software pre-installed).
 
 Installation
 ------------
@@ -180,8 +180,8 @@ Anaconda
 
 While it is mostly unattended, the download and installation of Anaconda can
 take a fair amount of time (approximately 10 to 15 minutes, depending on the
-speed of your system), so it is highly recommended to do this before you
-arrive at the tutorial session.
+speed of your system and network), so it is highly recommended to do this before
+you arrive at the tutorial session.
 
 Download
 ^^^^^^^^
@@ -335,15 +335,15 @@ tomography analysis:
 ..  note::
 
     Usually, the ``matplotlib=3.0`` part is not needed, but there is a |bug_link|
-    with the latest version of the external ``matplotlib`` package, so we use the
+    with the latest version (3.1) of the external ``matplotlib`` package, so we use the
     command above to pin the version to the previous one. Also, if you do not want/need
     tomography capabilities, running just ``conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0``
     is sufficient.
 
 .. |bug_link| replace:: `bug <https://github.com/hyperspy/hyperspy/issues/2195>`__
 
-After Anaconda calculates the dependencies it will need to install, it will ask
-for confirmation to continue. Press ``Enter`` to accept the changes, and wait
+After each line is run, Anaconda calculates the dependencies it will need to install,
+it will ask for confirmation to continue. Press ``Enter`` to accept the changes, and wait
 for the requested libraries to be installed. Once the install is completed,
 you can check that it was successful by starting the Python interpreter (run
 the ``python`` command) and entering:

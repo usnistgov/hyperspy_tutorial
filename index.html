@@ -282,8 +282,8 @@ computing environment.</p>
 <h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
 <p>For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
-the instructions below to install both Anaconda Python and HyperSpy (or use the
-web-based JupyterHub installation as described above).</p>
+the instructions below to install both Anaconda Python and HyperSpy (or use machines in
+the computer lab that will have the software pre-installed).</p>
 </div>
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
@@ -317,8 +317,8 @@ recommend installing via <a class="reference internal" href="#anaconda">Anaconda
 <h4>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h4>
 <p>While it is mostly unattended, the download and installation of Anaconda can
 take a fair amount of time (approximately 10 to 15 minutes, depending on the
-speed of your system), so it is highly recommended to do this before you
-arrive at the tutorial session.</p>
+speed of your system and network), so it is highly recommended to do this before
+you arrive at the tutorial session.</p>
 <div class="section" id="download">
 <h5>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h5>
 <p>In order for everyone to be on the same page, we will use the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a>
@@ -439,13 +439,13 @@ $ pip install git+https://github.com/AndrewHerzing/tomotools.git
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Usually, the <code class="docutils literal notranslate"><span class="pre">matplotlib=3.0</span></code> part is not needed, but there is a <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues/2195">bug</a>
-with the latest version of the external <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> package, so we use the
+with the latest version (3.1) of the external <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> package, so we use the
 command above to pin the version to the previous one. Also, if you do not want/need
 tomography capabilities, running just <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">hyperspy</span> <span class="pre">hyperspyui</span> <span class="pre">matplotlib=3.0</span></code>
 is sufficient.</p>
 </div>
-<p>After Anaconda calculates the dependencies it will need to install, it will ask
-for confirmation to continue. Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to accept the changes, and wait
+<p>After each line is run, Anaconda calculates the dependencies it will need to install,
+it will ask for confirmation to continue. Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to accept the changes, and wait
 for the requested libraries to be installed. Once the install is completed,
 you can check that it was successful by starting the Python interpreter (run
 the <code class="docutils literal notranslate"><span class="pre">python</span></code> command) and entering:</p>

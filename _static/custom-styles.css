@@ -32,9 +32,13 @@ div#navbar + div.container {
     margin-top: 50px;
 }
 
+/* Add some margin buffer for the footer so the NIST footer does not overlap the TOC */
+.footer {
+	margin-bottom:100px;
+}
+
+
 /* Styling for the download button */
-
-
 
 .downloadbutton {
 	margin-top:25px;
