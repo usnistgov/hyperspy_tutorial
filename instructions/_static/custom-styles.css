@@ -27,15 +27,15 @@ table.left-align-last-col td:last-child {
     font-style: italic;
 }
 
-/* Move the main container down a bit to prevent overlap with the navbar */
-div#navbar + div.container {
-    margin-top: 50px;
-}
+/*!* Move the main container down a bit to prevent overlap with the navbar *!*/
+/*div#navbar + div.container {*/
+/*    margin-top: 50px;*/
+/*}*/
 
-/* Add some margin buffer for the footer so the NIST footer does not overlap the TOC */
-.footer {
-	margin-bottom:100px;
-}
+/*!* Add some margin buffer for the footer so the NIST footer does not overlap the TOC *!*/
+/*.footer:before {*/
+/*	margin-bottom:100px;*/
+/*}*/
 
 
 /* Styling for the download button */
