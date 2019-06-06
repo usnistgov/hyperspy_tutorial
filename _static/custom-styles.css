@@ -38,10 +38,11 @@ table.left-align-last-col td:last-child {
 /*}*/
 
 
-/* Styling for the download button */
+/* Styling for the download buttons */
 
 .downloadbutton {
-	margin-top:25px;
+    min-width: 250px;
+	margin-top: 25px;
 	background-color:#44c767;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
@@ -68,3 +69,14 @@ a.downloadbutton:hover, a.downloadbutton:focus {
 	color: white;
 	text-decoration: none;
 }
+
+.zineb {
+    background-color: #bdb430;
+	border:1px solid #d5d016;
+	text-shadow:0px 1px 0px #9c891a;
+}
+
+.zineb:hover {
+	background-color: #958e26;
+}
+

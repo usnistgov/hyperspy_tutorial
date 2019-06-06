@@ -16,7 +16,17 @@
 
 .. raw:: html
 
-    <div class="text-center"><a class="downloadbutton" href="hyperspy_tutorial.zip">Click here to download<br/>the tutorial data</a></div>
+    <div class="text-center">
+        <a  class="downloadbutton"
+            href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-CCEM.zip">
+                Click here to download<br/>the tutorial data
+        </a>
+        <a  class="downloadbutton zineb"
+            target="_blank"
+            href="https://drive.google.com/file/d/1NSy4D99O5L7VWV8T_lo05ufexCXvlMAf/view?usp=sharing">
+                ImageJ tomography<br/>plugin files
+        </a>
+    </div>
 
 About the session
 +++++++++++++++++
