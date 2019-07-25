@@ -17,12 +17,24 @@ table.left-align-last-col td:last-child {
 }
 
 /* Use this to hide the search box (couldn't figure out how to turn it off otherwise) */
-.form-group {
-    visibility: hidden;
-}
+/*.form-group {*/
+/*    visibility: hidden;*/
+/*}*/
 
 .caption-text {
     /*font-variant: small-caps;*/
     font-size: smaller;
     font-style: italic;
+}
+
+/* Style sub-heading with italics */
+h2 {
+    font-style: italic;
+}
+
+/* Customize sidebar styling */
+div.bs-sidenav  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1em;
 }

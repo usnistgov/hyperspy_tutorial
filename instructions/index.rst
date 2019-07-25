@@ -11,8 +11,14 @@
 
 :tocdepth: 4
 
-2019 CCEM Summer School HyperSpy Tutorial
-=========================================
+
+==================================
+2019 M&M Sunday Short Course X-15:
+==================================
+
+----------------------------------
+Data Analysis in Materials Science
+----------------------------------
 
 About the session
 +++++++++++++++++

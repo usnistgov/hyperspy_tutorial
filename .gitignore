@@ -3,3 +3,4 @@
 .idea
 .vscode
 **/_build
+notebooks/

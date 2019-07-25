@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>2019 CCEM Summer School HyperSpy Tutorial &#8212; 2019 CCEM HyperSpy Tutorial  documentation</title>
+    <title>2019 M&amp;M Sunday Short Course X-15: &#8212; 2019 M&amp;M Short Course X-15  documentation</title>
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/custom-styles.css" />
@@ -12,10 +12,6 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -53,6 +49,7 @@ $(document).ready(function(){
 
   </head><body>
 
+
   <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -62,8 +59,8 @@ $(document).ready(function(){
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><span><img src="_static/NIST_logo.png"></span>
-          HyperSpy Tutorial</a>
+        <a class="navbar-brand" href="#"><span><img src="_static/hyperspy_logo.png"></span>
+          X15: Data Analysis in Materials Science</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
 
@@ -75,16 +72,7 @@ $(document).ready(function(){
                 <li><a href="http://hyperspy.org/hyperspy-doc/current/user_guide/index.html">HyperSpy User Guide</a></li>
             
             
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"></ul>
-</li>
+              <!-- this blank file removes the "Site" global ToC dropdown from the page -->
               
             
             
@@ -96,14 +84,7 @@ $(document).ready(function(){
           </ul>
 
           
-            
-<form class="navbar-form navbar-right" action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
+            <!-- this blank file removes the search box from the page -->
           
         </div>
     </div>
@@ -113,7 +94,8 @@ $(document).ready(function(){
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">2019 CCEM Summer School HyperSpy Tutorial</a><ul>
+<li><a class="reference internal" href="#">2019 M&amp;M Sunday Short Course X-15:</a><ul>
+<li><a class="reference internal" href="#data-analysis-in-materials-science">Data Analysis in Materials Science</a><ul>
 <li><a class="reference internal" href="#about-the-session">About the session</a><ul>
 <li><a class="reference internal" href="#session-logistics">Session Logistics</a></li>
 <li><a class="reference internal" href="#about-the-instructor">About the instructor</a></li>
@@ -122,11 +104,7 @@ $(document).ready(function(){
 </li>
 <li><a class="reference internal" href="#pre-tutorial-instructions">Pre-tutorial instructions</a><ul>
 <li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
-<li><a class="reference internal" href="#installation">Installation</a><ul>
-<li><a class="reference internal" href="#anaconda">Anaconda</a></li>
-<li><a class="reference internal" href="#hyperspy">HyperSpy</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#obtaining-the-tutorial-data">Obtaining the tutorial data</a></li>
 <li><a class="reference internal" href="#running-the-jupyter-notebooks">Running the Jupyter Notebooks</a></li>
 </ul>
@@ -135,15 +113,19 @@ $(document).ready(function(){
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 
         </div>
       </div>
-    <div class="col-md-9 content">
+    <div class="body col-md-9 content" role="main">
       
-  <div class="section" id="ccem-summer-school-hyperspy-tutorial">
-<h1>2019 CCEM Summer School HyperSpy Tutorial<a class="headerlink" href="#ccem-summer-school-hyperspy-tutorial" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="m-m-sunday-short-course-x-15">
+<h1>2019 M&amp;M Sunday Short Course X-15:<a class="headerlink" href="#m-m-sunday-short-course-x-15" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-analysis-in-materials-science">
+<h2>Data Analysis in Materials Science<a class="headerlink" href="#data-analysis-in-materials-science" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="about-the-session">
-<h2>About the session<a class="headerlink" href="#about-the-session" title="Permalink to this headline">¶</a></h2>
+<h3>About the session<a class="headerlink" href="#about-the-session" title="Permalink to this headline">¶</a></h3>
 <p>Thank you for registering for the CCEM Summer School tutorial session on
 HyperSpy, presented by the NIST Office of Data and Informatics!
 This informal tutorial session will introduce you to the capabilities of
@@ -163,8 +145,8 @@ a whole, while the User Guide is an extensive piece of documentation that tries
 to explain how to use HyperSpy for all sorts of analyses. Feel free to refer
 to these links before and during the tutorial session for additional help.</p>
 <div class="section" id="session-logistics">
-<h3>Session Logistics<a class="headerlink" href="#session-logistics" title="Permalink to this headline">¶</a></h3>
-<table class="table-bordered docutils align-center">
+<h4>Session Logistics<a class="headerlink" href="#session-logistics" title="Permalink to this headline">¶</a></h4>
+<table class="table-bordered docutils align-default">
 <colgroup>
 <col style="width: 29%" />
 <col style="width: 71%" />
@@ -190,8 +172,8 @@ to these links before and during the tutorial session for additional help.</p>
 </table>
 </div>
 <div class="section" id="about-the-instructor">
-<h3>About the instructor<a class="headerlink" href="#about-the-instructor" title="Permalink to this headline">¶</a></h3>
-<table class="docutils align-center">
+<h4>About the instructor<a class="headerlink" href="#about-the-instructor" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-default">
 <colgroup>
 <col style="width: 12%" />
 <col style="width: 88%" />
@@ -216,8 +198,8 @@ been a user of the software for over 5 years.
 </table>
 </div>
 <div class="section" id="rough-agenda">
-<h3>(Rough) Agenda<a class="headerlink" href="#rough-agenda" title="Permalink to this headline">¶</a></h3>
-<table class="colwidths-given left-align-last-col table-hover docutils align-center" id="id3">
+<h4>(Rough) Agenda<a class="headerlink" href="#rough-agenda" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-given left-align-last-col table-hover docutils align-default" id="id3">
 <caption><span class="caption-text"><em>Times are tentative and subject to adjustment during the day to meet the needs of the participants. Depending on overlap between attendees, either
          the introduction sessions will be repeated, or more advanced topics will be covered (machine learning, EELS, and extensions).</em></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -269,19 +251,19 @@ been a user of the software for over 5 years.
 </div>
 </div>
 <div class="section" id="pre-tutorial-instructions">
-<h2>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h2>
+<h3>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h3>
 <p>Please review this section in advance of Friday’s tutorial session, as it
 includes instructions for installing HyperSpy and the Jupyter interactive
 computing environment.</p>
 <div class="section" id="prerequisites">
-<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<h4>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h4>
 <p>For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
 the instructions below to install both Anaconda Python and HyperSpy (or use the
 web-based JupyterHub installation as described above).</p>
 </div>
 <div class="section" id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<h4>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h4>
 <p>At its core, HyperSpy is a third-party library that exists as part of the
 scientific Python ecosystem (as opposed to a stand-alone application). Because
 of this, installation is slightly more tricky than a normal program, but is not
@@ -309,13 +291,13 @@ any other sort of data analysis, plotting, or software development, we
 recommend installing via <a class="reference internal" href="#anaconda">Anaconda</a> instead.</p>
 </div>
 <div class="section" id="anaconda">
-<h4>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h4>
+<h5>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h5>
 <p>While it is mostly unattended, the download and installation of Anaconda can
 take a fair amount of time (approximately 10 to 15 minutes, depending on the
 speed of your system), so it is highly recommended to do this before you
 arrive at the tutorial session.</p>
 <div class="section" id="download">
-<h5>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h5>
+<h6>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h6>
 <p>In order for everyone to be on the same page, we will use the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a>
 distribution to install Python and manage the project dependencies. The
 installation process varies a bit depending on your operating system.
@@ -324,7 +306,7 @@ while if you run Linux, you will need to use the command line installer (an
 exercise left to the reader). From the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a> link, click the
 selector for your operating system, and then click the big green download button
 for the “Python 3.7 version”:</p>
-<div class="figure align-center" id="id4" style="width: 70%">
+<div class="figure align-default" id="id4" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_download_link.png"><img alt="Link to Windows download for Anaconda" src="_images/anaconda_download_link.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Make sure to select the 64-bit 3.7 graphical installer (the green button
 should get you the right version) - It’s a rather large download, so a decent
@@ -332,7 +314,7 @@ connection is recommended</span><a class="headerlink" href="#id4" title="Permali
 </div>
 </div>
 <div class="section" id="id1">
-<h5>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<h6>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h6>
 <p>Detailed instructions for
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a>,
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/mac-os/">macOS</a>, and
@@ -342,7 +324,7 @@ the Anaconda website. Specific instructions for Windows are reproduced below.</p
 straightforward. For the installation location, we recommend an easily accessed
 path that does not require administrative rights, such as the folder
 <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> within your user directory:</p>
-<div class="figure align-center" id="id5" style="width: 50%">
+<div class="figure align-default" id="id5" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_installation_path.png"><img alt="Anaconda installation path" src="_images/anaconda_installation_path.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">This path can be whatever you want (where you have write access), but
 a subfolder in the user directory is usually a convenient location - the
@@ -354,14 +336,14 @@ be registered as the “default” Python installation on your system (via a
 key saved to the registry on Windows). We recommend the default options (as
 shown below), but if you have other Python installations on your system, you may
 want to uncheck the “Register as default” option:</p>
-<div class="figure align-center" id="id6" style="width: 50%">
+<div class="figure align-default" id="id6" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_PATH_options.png"><img alt="Installation options" src="_images/anaconda_PATH_options.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <p>Click the “Install” button at this point, and go to get a coffee or tea (or go
 for a walk), as the installation process takes some time depending on your disk
 speed.</p>
-<div class="figure align-center" id="id7" style="width: 50%">
+<div class="figure align-default" id="id7" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_install_complete.png"><img alt="Installation complete" src="_images/anaconda_install_complete.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
@@ -369,7 +351,7 @@ speed.</p>
 “Finish” to exit the installer.</p>
 </div>
 <div class="section" id="usage">
-<h5>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h5>
+<h6>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h6>
 <p>After Anaconda is installed, we suggest taking a look at the
 “<a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a>” guide to familiarize yourself with how Anaconda is used.
 There are a few ways to interact with Anaconda, primarily through either the
@@ -385,7 +367,7 @@ the command line.</p>
 </div>
 </div>
 <div class="section" id="hyperspy">
-<h4>HyperSpy<a class="headerlink" href="#hyperspy" title="Permalink to this headline">¶</a></h4>
+<h5>HyperSpy<a class="headerlink" href="#hyperspy" title="Permalink to this headline">¶</a></h5>
 <p>Like for Anaconda, detailed installation instructions for HyperSpy are
 available directly from its <a class="reference external" href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">documentation</a>.
 The process will also be summarized here with a bit more instruction.</p>
@@ -410,7 +392,7 @@ Anaconda prompt and the macOS/Linux terminal, so only use the commands
 specific to your operating system.</p>
 </div>
 <p>From the Start Menu (on Windows), open the <cite>Anaconda Prompt</cite>:</p>
-<div class="figure align-center" id="id8" style="width: 30%">
+<div class="figure align-default" id="id8" style="width: 30%">
 <a class="reference internal image-reference" href="_images/anaconda_post_install.png"><img alt="Windows programs installed by Anaconda" src="_images/anaconda_post_install.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
@@ -442,7 +424,7 @@ is not too powerful), then the installation was successful and you should be
 all set to use HyperSpy. Press <code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code> to exit the Python interpreter and
 return back to the Anaconda Prompt.</p>
 <div class="section" id="hyperspyui">
-<h5>HyperSpyUI<a class="headerlink" href="#hyperspyui" title="Permalink to this headline">¶</a></h5>
+<h6>HyperSpyUI<a class="headerlink" href="#hyperspyui" title="Permalink to this headline">¶</a></h6>
 <p>While most HyperSpy users find Jupyter Notebooks and the programmatic interface
 to be the best for reproducible analyses, there is a graphical user interface
 available that can accomplish a number of tasks and allow you to quickly browse
@@ -453,14 +435,14 @@ Prompt after the installation from the previous step is complete.</p>
 </div>
 </div>
 <div class="section" id="obtaining-the-tutorial-data">
-<h3>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h3>
+<h4>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h4>
 <p>Please click <a class="reference external" href="_static/hyperspy_tutorial.zip">this</a> link to download the
 tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file. Once downloaded (it is
 approximately 50 MB), extract the files into their own folder that is easily
 accessible. We recommend a folder on the Desktop named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>.</p>
 </div>
 <div class="section" id="running-the-jupyter-notebooks">
-<h3>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<h4>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h4>
 <p>To actually open the Jupyter Notebooks containing the tutorials, you will need
 to start a local Jupyter server and connect to it through your browser (don’t
 worry, everything stays local and there’s no security risk to running the
@@ -483,7 +465,7 @@ command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
 </pre></div>
 </div>
-<div class="figure align-center" id="id9" style="width: 70%">
+<div class="figure align-default" id="id9" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_starting_jupyter.png"><img alt="Starting the Jupyter Notebook on Windows" src="_images/anaconda_starting_jupyter.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Starting the Jupyter Notebook from the <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> folder on
 Windows</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
@@ -496,7 +478,7 @@ directory structure within <code class="docutils literal notranslate"><span clas
 create a new notebook, you can click the <cite>New</cite> button, and then specify the
 <cite>Python 3</cite> kernel to use (this tells the notebook to execute the cells using
 the version of Python you installed through Anaconda):</p>
-<div class="figure align-center" id="id10" style="width: 70%">
+<div class="figure align-default" id="id10" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_creating_a_notebook.png"><img alt="Creating a notebook in the Jupyter Server on Windows" src="_images/anaconda_creating_a_notebook.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Click the highlighted locations to open a new notebook in the Jupyter Server</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </div>
@@ -505,7 +487,7 @@ clicking on them from the Jupyter “homepage”.</p>
 </div>
 </div>
 <div class="section" id="getting-help">
-<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<h3>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h3>
 <p>In addition to the links in the header of this page, there are a few additional
 resources that can be used to get help with questions you may have about using
 the software. The <a class="reference external" href="http://hyperspy.org/support.html">support</a> page for the
@@ -517,6 +499,7 @@ project highlights the best avenues for help, but briefly they are:</p>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues">issue/bug tracker</a> on the HyperSpy Github page</p></li>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy-demos/">HyperSpy Demos</a> repository, which contains the foundations of the notebooks presented in this tutorial, together with some additional demos</p></li>
 </ul>
+</div>
 </div>
 </div>
 

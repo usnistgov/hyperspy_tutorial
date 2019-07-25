@@ -18,9 +18,9 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = '2019 CCEM HyperSpy Tutorial'
+project = '2019 M&M Short Course X-15'
 # copyright = '2019, Joshua Taillon'
-author = 'Joshua Taillon'
+author = 'HyperSpy Developers'
 
 
 # -- General configuration ---------------------------------------------------
@@ -52,7 +52,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = "NIST_logo.png"
+html_logo = "hyperspy_logo.png"
 html_favicon = "tutorial_favicon.ico"
 
 html_show_copyright = False
@@ -60,17 +60,17 @@ html_show_sphinx = False
 # html_add_permalinks = ''
 html_show_sourcelink = False
 
-html_sidebars = { '**': ['localtoc.html'] }
+html_sidebars = {'**': ['localtoc.html'] }
 
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "HyperSpy Tutorial",
+    'navbar_title': "X15: Data Analysis in Materials Science",
 
     # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Site",
+    'navbar_site_name': False,
 
     # A list of tuples containing pages or urls to link to.
     # Valid tuples should be in the following forms:
