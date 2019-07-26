@@ -15,13 +15,22 @@
 :tocdepth: 4
 
 
-==================================
-2019 M&M Sunday Short Course X-15:
-==================================
+.. raw:: html
 
-----------------------------------
-Data Analysis in Materials Science
-----------------------------------
+    <div class="text-center">
+        <a  class="downloadbutton"
+            href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-CCEM.zip">
+                Click here to download<br/>the tutorial data
+        </a>
+        <a  class="downloadbutton zineb"
+            target="_blank"
+            href="https://drive.google.com/file/d/1NSy4D99O5L7VWV8T_lo05ufexCXvlMAf/view?usp=sharing">
+                ImageJ tomography<br/>plugin files
+        </a>
+    </div>
+
+About the session
++++++++++++++++++
 
 Thank you for registering for the 2019 Microscopy and Microanalysis short course
 on data analysis in materials science, presented by the developers of HyperSpy.
@@ -201,8 +210,8 @@ Prerequisites
 
 For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
-the instructions below to install both Anaconda Python and HyperSpy (or use the
-web-based JupyterHub installation as described above).
+the instructions below to install both Anaconda Python and HyperSpy (or use machines in
+the computer lab that will have the software pre-installed).
 
 Installation
 ------------
@@ -241,8 +250,8 @@ Anaconda
 
 While it is mostly unattended, the download and installation of Anaconda can
 take a fair amount of time (approximately 10 to 15 minutes, depending on the
-speed of your system), so it is highly recommended to do this before you
-arrive at the tutorial session.
+speed of your system and network), so it is highly recommended to do this before
+you arrive at the tutorial session.
 
 Download
 ^^^^^^^^
@@ -384,14 +393,28 @@ before any of the ``conda`` commands will work. Again, `this is only for
 Mac/Linux`, the commands should be available with no problem on Windows when
 you launch the `Anaconda Prompt`.
 
-From the prompt, run the following to install HyperSpy (and its UI package):
+From the prompt, run the following three lines to install HyperSpy, its UI package, and the tools needed for
+tomography analysis:
 
 ..  code-block:: bash
 
-    $ conda install -c conda-forge hyperspy hyperspyui
+    $ conda install -c astra-toolbox astra-toolbox
+    $ conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0 opencv tomopy
+    $ conda install git
+    $ pip install git+https://github.com/AndrewHerzing/tomotools.git
 
-After Anaconda calculates the dependencies it will need to install, it will ask
-for confirmation to continue. Press ``Enter`` to accept the changes, and wait
+..  note::
+
+    Usually, the ``matplotlib=3.0`` part is not needed, but there is a |bug_link|
+    with the latest version (3.1) of the external ``matplotlib`` package, so we use the
+    command above to pin the version to the previous one. Also, if you do not want/need
+    tomography capabilities, running just ``conda install -c conda-forge hyperspy hyperspyui matplotlib=3.0``
+    is sufficient.
+
+.. |bug_link| replace:: `bug <https://github.com/hyperspy/hyperspy/issues/2195>`__
+
+After each line is run, Anaconda calculates the dependencies it will need to install,
+it will ask for confirmation to continue. Press ``Enter`` to accept the changes, and wait
 for the requested libraries to be installed. Once the install is completed,
 you can check that it was successful by starting the Python interpreter (run
 the ``python`` command) and entering:
@@ -432,19 +455,20 @@ Prompt after the installation from the previous step is complete.
 
         $ conda install -c conda-forge opencv tomopy
         $ conda install -c astra-toolbox astra-toolbox
+        $ conda install git
         $ pip install git+https://gitlab.com/aaherzing/tomotools.git
 
-    The last command will use the regular Python package manager (``pip``) instead
-    of ``conda`` to install the ``tomotools`` package directly from Andy's
+    The last two commands will use the regular Python package manager (``pip``) instead
+    of ``conda`` to install the ``tomotools`` package directly from Andy Herzing's
     Gitlab repository, so it will be accessible from your Jupyter Notebooks just
     like the other HyperSpy libraries.
 
 Obtaining the tutorial data
 ---------------------------
 
-Please click `this <_static/hyperspy_tutorial.zip>`_ link to download the
+Please click `this <hyperspy_tutorial.zip>`_ link to download the
 tutorial notebooks and data as a ``.zip`` file. Once downloaded (it is
-approximately 50 MB), extract the files into their own folder that is easily
+approximately 65 MB), extract the files into their own folder that is easily
 accessible. We recommend a folder on the Desktop named ``hyperspy_tutorial``.
 
 

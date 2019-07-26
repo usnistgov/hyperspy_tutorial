@@ -49,3 +49,46 @@ h2 {
 .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td {
     text-align: center;
 }
+
+/*!* Move the main container down a bit to prevent overlap with the navbar *!*/
+/*div#navbar + div.container {*/
+/*    margin-top: 50px;*/
+/*}*/
+
+/*!* Add some margin buffer for the footer so the NIST footer does not overlap the TOC *!*/
+/*.footer:before {*/
+/*  margin-bottom:100px;*/
+/*}*/
+
+
+/* Styling for the download buttons */
+
+.downloadbutton {
+    min-width: 250px;
+    margin-top: 25px;
+    background-color:#44c767;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-align: center;
+    text-shadow:0px 1px 0px #2f6627;
+}
+.downloadbutton:hover {
+    background-color:#39a656;
+}
+.downloadbutton:active {
+    position:relative;
+    top:1px;
+}
+
+a.downloadbutton:hover, a.downloadbutton:focus {
+    color: white;
+    text-decoration: none;
+}

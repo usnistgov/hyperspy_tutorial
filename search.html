@@ -37,12 +37,14 @@ $(document).ready(function(){
   // Mark external (non-nist.gov) A tags with class "external"
   //If the adress start with https and ends with nist.gov
   var re_nist = new RegExp('^https?:\\/\\/.*nist\\.gov(\\/|$)');
+  var re_nist_github = new RegExp('^https?:\\/\\/.*usnistgov.*(\\/|$)');
+  var re_drive = new RegExp('^https?:\\/\\/.*drive.google.com.*(\\/|$)');
   //Regex to find address that start with https
   var re_absolute_address = new RegExp('^((https?:)?\/\/)');
   $("a").each(function(){
     var url=$(this).attr('href');
     console.log(url)
-    if(re_nist.test(url) || !re_absolute_address.test(url)){
+    if(re_drive.test(url) || re_nist_github.test(url) || re_nist.test(url) || !re_absolute_address.test(url)){
         console.log(url + ' local')
       $(this).addClass('local');
     }else{
