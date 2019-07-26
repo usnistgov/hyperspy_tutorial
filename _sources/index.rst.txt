@@ -272,7 +272,7 @@ button slightly down the page:
    the "Releases" page that contains a link to the ``.exe`` installation file
 
 On the releases page, click on the appropriate installer for your system (most
-likely you will want the 64-bit version:
+likely you will want the 64-bit version):
 
 .. figure:: _static/bundle_release_download.png
    :width: 100 %
