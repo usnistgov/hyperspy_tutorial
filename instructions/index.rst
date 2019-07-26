@@ -377,3 +377,6 @@ project highlights the best avenues for help, but briefly they are:
 - The interactive `Gitter chat room <https://gitter.im/hyperspy/hyperspy>`_
 - The `issue/bug tracker <https://github.com/hyperspy/hyperspy/issues>`_ on the HyperSpy Github page
 - The `HyperSpy Demos <https://github.com/hyperspy/hyperspy-demos/>`_ repository, which contains the foundations of the notebooks presented in this tutorial, together with some additional demos
+
+|
+|
