@@ -12,6 +12,10 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -96,20 +100,19 @@ $(document).ready(function(){
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
 <li><a class="reference internal" href="#">2019 M&amp;M Sunday Short Course X-15:</a><ul>
 <li><a class="reference internal" href="#data-analysis-in-materials-science">Data Analysis in Materials Science</a><ul>
-<li><a class="reference internal" href="#about-the-session">About the session</a><ul>
 <li><a class="reference internal" href="#session-logistics">Session Logistics</a></li>
-<li><a class="reference internal" href="#about-the-instructor">About the instructor</a></li>
-<li><a class="reference internal" href="#rough-agenda">(Rough) Agenda</a></li>
+<li><a class="reference internal" href="#about-the-instructors">About the instructors</a></li>
+<li><a class="reference internal" href="#agenda">Agenda</a><ul>
+<li><a class="reference internal" href="#pre-tutorial-instructions">Pre-tutorial instructions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pre-tutorial-instructions">Pre-tutorial instructions</a><ul>
 <li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#obtaining-the-tutorial-data">Obtaining the tutorial data</a></li>
-<li><a class="reference internal" href="#running-the-jupyter-notebooks">Running the Jupyter Notebooks</a></li>
+<li><a class="reference internal" href="#running-the-jupyter-notebooks">Running the Jupyter Notebooks</a><ul>
+<li><a class="reference internal" href="#getting-help">Getting Help</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#getting-help">Getting Help</a></li>
 </ul>
 </li>
 </ul>
@@ -118,22 +121,20 @@ $(document).ready(function(){
 
         </div>
       </div>
-    <div class="body col-md-9 content" role="main">
+    <div class="col-md-9 content">
       
   <div class="section" id="m-m-sunday-short-course-x-15">
 <h1>2019 M&amp;M Sunday Short Course X-15:<a class="headerlink" href="#m-m-sunday-short-course-x-15" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="data-analysis-in-materials-science">
 <h2>Data Analysis in Materials Science<a class="headerlink" href="#data-analysis-in-materials-science" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="about-the-session">
-<h3>About the session<a class="headerlink" href="#about-the-session" title="Permalink to this headline">¶</a></h3>
-<p>Thank you for registering for the CCEM Summer School tutorial session on
-HyperSpy, presented by the NIST Office of Data and Informatics!
-This informal tutorial session will introduce you to the capabilities of
-HyperSpy in a casual and interactive environment, with plenty of time allocated
-for questions and individual help. The goal for the session is that by the end
-each attendee feels comfortable using HyperSpy for basic imaging and
-hyperspectral data analysis, and knows where to look for further help,
-if necessary.</p>
+<p>Thank you for registering for the 2019 Microscopy and Microanalysis short course
+on data analysis in materials science, presented by the developers of HyperSpy.
+This interactive tutorial session will introduce you to modern techniques of
+data analysis for materials science and microscopy data within the scientific
+Python environment, with plenty of time for questions and individual help.
+The ultimate goal for the session is that by its end, each attendee feels
+comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
+and knows where to look for further help, if necessary.</p>
 <p>There are a few useful links in the top header of this page. The first
 (<a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial">Tutorial Repository</a>)
 will take you to the git repository containing the notebooks and data we will
@@ -141,11 +142,11 @@ use during the tutorial. The next two point to the HyperSpy
 <a class="reference external" href="http://hyperspy.org">Homepage</a> and
 <a class="reference external" href="http://hyperspy.org/hyperspy-doc/current/user_guide/index.html">User Guide</a>,
 respectively. The homepage contains general information about the project as
-a whole, while the User Guide is an extensive piece of documentation that tries
-to explain how to use HyperSpy for all sorts of analyses. Feel free to refer
+a whole, while the User Guide is an extensive piece of documentation that explains
+how to use HyperSpy for all sorts of analyses. Feel free to refer
 to these links before and during the tutorial session for additional help.</p>
 <div class="section" id="session-logistics">
-<h4>Session Logistics<a class="headerlink" href="#session-logistics" title="Permalink to this headline">¶</a></h4>
+<h3>Session Logistics<a class="headerlink" href="#session-logistics" title="Permalink to this headline">¶</a></h3>
 <table class="table-bordered docutils align-default">
 <colgroup>
 <col style="width: 29%" />
@@ -154,34 +155,90 @@ to these links before and during the tutorial session for additional help.</p>
 <tbody>
 <tr class="row-odd"><td><p><strong>Date:</strong></p></td>
 <td><div class="line-block">
-<div class="line">Wednesday June 5, 2019</div>
-<div class="line">Thursday June 6, 2019</div>
+<div class="line">Sunday August 4, 2019</div>
 </div>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Time:</strong></p></td>
-<td><p>1:30 PM - 3:00 PM ET (Wednesday and Thursday)</p></td>
+<td><p>8:30 AM - 5:30 PM PT</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Location:</strong></p></td>
 <td><div class="line-block">
-<div class="line">CCEM - Hamilton, ON (Room TBD)</div>
+<div class="line">Oregon Convention Center - Portland, OR</div>
+<div class="line">(Room B118-119)</div>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="about-the-instructor">
-<h4>About the instructor<a class="headerlink" href="#about-the-instructor" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="about-the-instructors">
+<h3>About the instructors<a class="headerlink" href="#about-the-instructors" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 88%" />
+<col style="width: 13%" />
+<col style="width: 87%" />
 </colgroup>
 <tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/duncan_johnstone.jpg"><img alt="duncan" src="_images/duncan_johnstone.jpg" style="width: 100%;" /></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://www.emg.msm.cam.ac.uk/People/dnj23">Duncan Johnstone</a>    is a Research Associate in the Electron
+Microscopy Group of the Department of Materials Science &amp;
+Metallurgy, University of Cambridge, UK. His work focuses on
+developing materials characterization approaches based on
+electron diffraction and is currently particularly interested
+in determining structure on the nanoscale in soft materials.
+He leads the development of the <code class="docutils literal notranslate"><span class="pre">pyxem</span></code> python package for
+the analysis of scanning diffraction data in which
+diffraction patterns are acquired at every probe position
+across a specimen. The <code class="docutils literal notranslate"><span class="pre">pyxem</span></code> package builds on HyperSpy
+and he has made contributions to HyperSpy to enable that
+dependence. (Contact: <a class="reference external" href="mailto:dnj23&#37;&#52;&#48;cam&#46;ac&#46;uk">dnj23<span>&#64;</span>cam<span>&#46;</span>ac<span>&#46;</span>uk</a>)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/kate_macarthur.jpg"><img alt="kate" src="_images/kate_macarthur.jpg" style="width: 100%;" /></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="http://www.er-c.org/metals/staff/macarthur.htm">Katherine MacArthur</a> is a postdoctoral researcher at the Ernst
+Ruska Centre for Microscopy and Spectroscopy in the Helmholtz
+funded Research Centre Jülich, Germany. She completed her PhD
+at Oxford University in 2015 on quantitative EDX and HAADF
+STEM. She has interests in Materials Science, spectroscopy and
+microscopy analysis in a quantitative manner. Katherine got
+involved with HyperSpy development three years ago with the
+aim of automating her quantitative EDX analysis method.
+She has since expanded her contributions to more general
+data analysis functions and methods, with the interest of
+working towards automated analysis of in-situ spectroscopic
+data. (Contact: <a class="reference external" href="mailto:k&#46;macarthur&#37;&#52;&#48;fz-juelich&#46;de">k<span>&#46;</span>macarthur<span>&#64;</span>fz-juelich<span>&#46;</span>de</a>)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/magnus_nord.png"><img alt="magnus" src="_images/magnus_nord.png" style="width: 100%;" /></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://www.uantwerpen.be/en/staff/magnus-nord/">Magnus Nord</a> is a Marie Curie fellow at Electron Microscopy
+for Materials research (EMAT) at University of Antwerp,
+Belgium. He obtained his PhD at the Norwegian University of
+Science and Technology working on advanced analysis of both
+EELS and atomic resolution STEM data. The former resulting
+in many contributions to HyperSpy, and the latter in the
+creation of the Atomap Python library. His current research
+interests revolves around utilizing fast pixelated detectors
+in STEM with the <code class="docutils literal notranslate"><span class="pre">pixStem</span></code> library, to study both magnetic
+and structural properties at the nanoscale.
+(Contact: <a class="reference external" href="mailto:magnus&#46;nord&#37;&#52;&#48;uantwerpen&#46;be">magnus<span>&#46;</span>nord<span>&#64;</span>uantwerpen<span>&#46;</span>be</a>)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/eric_prestat.jpg"><img alt="eric" src="_images/eric_prestat.jpg" style="width: 100%;" /></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html">Eric Prestat</a> is a person that does microscopy.</div>
+</div>
+</td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/josh_taillon.jpg"><img alt="josh" src="_images/josh_taillon.jpg" style="width: 100%;" /></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="https://nist.gov/people/joshua-taillon">Josh Taillon</a> is a research engineer within the Office
+<div class="line"><a class="reference external" href="https://www.nist.gov/people/joshua-taillon">Josh Taillon</a> is a research engineer within the Office
 of Data and Informatics in the Material Measurement
 Laboratory at NIST, and has an extensive
 background in materials science, microscopy, and data analysis
@@ -197,73 +254,129 @@ been a user of the software for over 5 years.
 </tbody>
 </table>
 </div>
-<div class="section" id="rough-agenda">
-<h4>(Rough) Agenda<a class="headerlink" href="#rough-agenda" title="Permalink to this headline">¶</a></h4>
-<table class="colwidths-given left-align-last-col table-hover docutils align-default" id="id3">
-<caption><span class="caption-text"><em>Times are tentative and subject to adjustment during the day to meet the needs of the participants. Depending on overlap between attendees, either
-         the introduction sessions will be repeated, or more advanced topics will be covered (machine learning, EELS, and extensions).</em></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<div class="section" id="agenda">
+<h3>Agenda<a class="headerlink" href="#agenda" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given left-align-last-col table-hover docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 67%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 57%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Session #</p></th>
-<th class="head"><p>Notebook Link</p></th>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Leader(s)</p></th>
 <th class="head"><p>Topic</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0.0</p></td>
+<tr class="row-even"><td><p>08:30 - 09:00</p></td>
+<td><p>Talk</p></td>
+<td><p>JT</p></td>
+<td><p>Introduction to Python and HyperSpy</p></td>
+</tr>
+<tr class="row-odd"><td><p>09:00 - 10:30</p></td>
+<td><p>Practical</p></td>
+<td><p>EP</p></td>
+<td><p>HyperSpy Basics</p></td>
+</tr>
+<tr class="row-even"><td><p>10:30 - 10:45</p></td>
+<td colspan="2"></td>
+<td><p><em>Coffee Break</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>10:45 - 11:30</p></td>
+<td><p>Practical</p></td>
+<td><p>DJ</p></td>
+<td><p>Model Fitting</p></td>
+</tr>
+<tr class="row-even"><td><p>11:30 - 12:15</p></td>
+<td><p>Practical</p></td>
+<td><p>MN</p></td>
+<td><p>EELS Analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p>12:15 - 13:15</p></td>
 <td></td>
-<td><p>(<em>Optional</em>) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.</p></td>
-</tr>
-<tr class="row-odd"><td><p>0.1</p></td>
 <td></td>
-<td><p>Welcome and introductions</p></td>
+<td><p><em>Lunch Break</em></p></td>
 </tr>
-<tr class="row-even"><td><p>1.0</p></td>
-<td><p><a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/01%20-%20Getting%20Started.ipynb">Notebook 1</a></p></td>
-<td><p><em>Getting Started with HyperSpy</em> - Basics of using a Jupyter notebook and operating on HyperSpy Signals</p></td>
+<tr class="row-even"><td><p>13:15 - 13:30</p></td>
+<td><p>Talk</p></td>
+<td><p>JT</p></td>
+<td><p>Intro to Machine Learning in EM</p></td>
 </tr>
-<tr class="row-odd"><td><p>1.1</p></td>
-<td></td>
-<td><p><em>Using HyperSpyUI</em> - For simpler point-and-click analyses</p></td>
+<tr class="row-odd"><td><p>13:30 - 14:00</p></td>
+<td><p>Practical</p></td>
+<td><p>JT</p></td>
+<td><p>Machine Learning</p></td>
 </tr>
-<tr class="row-even"><td><p>2.0</p></td>
-<td><p><a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/02%20-%20Curve%20fitting.ipynb">Notebook 2</a></p></td>
-<td><p><em>Curve Fitting</em> - Introduction to Signal modeling and fitting in HyperSpy</p></td>
+<tr class="row-even"><td><p>14:00 - 15:00</p></td>
+<td><p>Practical</p></td>
+<td><p>KM</p></td>
+<td><p>EDS Analysis</p></td>
 </tr>
-<tr class="row-odd"><td><p>3.0</p></td>
-<td><p><a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/03%20-%20TEM_EDS_nanoparticles.ipynb">Notebook 3</a></p></td>
-<td><p><em>Unsupervised learning &amp; EDS Analysis</em> - Example analysis of TEM data from core-shell nanoparticles</p></td>
+<tr class="row-odd"><td><p>15:00 - 15:15</p></td>
+<td colspan="2"></td>
+<td><p><em>Coffee Break</em></p></td>
 </tr>
-<tr class="row-even"><td><p>4.0</p></td>
-<td><p><a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/04%20-%20EELS_analysis.ipynb">Notebook 4</a></p></td>
-<td><p><em>EELS Analysis in HyperSpy</em> - or… “What the commercial EELS vendors don’t want you to see”</p></td>
+<tr class="row-even"><td><p>15:15 - 16:00</p></td>
+<td><p>Practical</p></td>
+<td><p>EP</p></td>
+<td><p>Big Data Analysis</p></td>
 </tr>
-<tr class="row-odd"><td><p>5.0</p></td>
-<td></td>
-<td><p><em>Extending HyperSpy</em> - How HyperSpy can be extended for almost any use-case (non-interactive <code class="docutils literal notranslate"><span class="pre">tomotools</span></code> example)</p></td>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line">16:00 - 17:30</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line">Practical</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line">MN/KM</div>
+<div class="line">DJ</div>
+<div class="line">MN</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>Running in parallel, self-learning with provided</em></div>
+<div class="line"><em>notebooks and support from instructors:</em></div>
+<div class="line-block">
+<div class="line">- Atomic resolution image analysis</div>
+<div class="line">- Scanning electron diffraction analysis</div>
+<div class="line">- Pixelated STEM / 4D STEM</div>
+</div>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 <div class="section" id="pre-tutorial-instructions">
-<h3>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h3>
+<h4>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h4>
 <p>Please review this section in advance of Friday’s tutorial session, as it
 includes instructions for installing HyperSpy and the Jupyter interactive
 computing environment.</p>
+</div>
+</div>
 <div class="section" id="prerequisites">
-<h4>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h4>
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
 <p>For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
 the instructions below to install both Anaconda Python and HyperSpy (or use the
 web-based JupyterHub installation as described above).</p>
 </div>
 <div class="section" id="installation">
-<h4>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h4>
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p>At its core, HyperSpy is a third-party library that exists as part of the
 scientific Python ecosystem (as opposed to a stand-alone application). Because
 of this, installation is slightly more tricky than a normal program, but is not
@@ -288,16 +401,12 @@ HyperSpy installed (together with its own Python installation),
 but can lead to multiple redundant Python installations
 and is difficult to upgrade between versions. If you might use Python for
 any other sort of data analysis, plotting, or software development, we
-recommend installing via <a class="reference internal" href="#anaconda">Anaconda</a> instead.</p>
+recommend installing via <a href="#id9"><span class="problematic" id="id10">`Anaconda`_</span></a> instead.</p>
 </div>
-<div class="section" id="anaconda">
-<h5>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h5>
 <p>While it is mostly unattended, the download and installation of Anaconda can
 take a fair amount of time (approximately 10 to 15 minutes, depending on the
 speed of your system), so it is highly recommended to do this before you
 arrive at the tutorial session.</p>
-<div class="section" id="download">
-<h6>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h6>
 <p>In order for everyone to be on the same page, we will use the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a>
 distribution to install Python and manage the project dependencies. The
 installation process varies a bit depending on your operating system.
@@ -306,15 +415,12 @@ while if you run Linux, you will need to use the command line installer (an
 exercise left to the reader). From the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a> link, click the
 selector for your operating system, and then click the big green download button
 for the “Python 3.7 version”:</p>
-<div class="figure align-default" id="id4" style="width: 70%">
+<div class="figure align-default" id="id2" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_download_link.png"><img alt="Link to Windows download for Anaconda" src="_images/anaconda_download_link.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Make sure to select the 64-bit 3.7 graphical installer (the green button
 should get you the right version) - It’s a rather large download, so a decent
-connection is recommended</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+connection is recommended</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-<div class="section" id="id1">
-<h6>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h6>
 <p>Detailed instructions for
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a>,
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/mac-os/">macOS</a>, and
@@ -324,11 +430,11 @@ the Anaconda website. Specific instructions for Windows are reproduced below.</p
 straightforward. For the installation location, we recommend an easily accessed
 path that does not require administrative rights, such as the folder
 <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> within your user directory:</p>
-<div class="figure align-default" id="id5" style="width: 50%">
+<div class="figure align-default" id="id3" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_installation_path.png"><img alt="Anaconda installation path" src="_images/anaconda_installation_path.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">This path can be whatever you want (where you have write access), but
 a subfolder in the user directory is usually a convenient location - the
-default option is also fine</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+default option is also fine</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <p>The next screen will present you with options about adding Anaconda to the
 system <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable, and whether or not you want this installation to
@@ -336,22 +442,19 @@ be registered as the “default” Python installation on your system (via a
 key saved to the registry on Windows). We recommend the default options (as
 shown below), but if you have other Python installations on your system, you may
 want to uncheck the “Register as default” option:</p>
-<div class="figure align-default" id="id6" style="width: 50%">
+<div class="figure align-default" id="id4" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_PATH_options.png"><img alt="Installation options" src="_images/anaconda_PATH_options.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <p>Click the “Install” button at this point, and go to get a coffee or tea (or go
 for a walk), as the installation process takes some time depending on your disk
 speed.</p>
-<div class="figure align-default" id="id7" style="width: 50%">
+<div class="figure align-default" id="id5" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_install_complete.png"><img alt="Installation complete" src="_images/anaconda_install_complete.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 <p>Once the installation completes, click the “Next” button to continue and then
 “Finish” to exit the installer.</p>
-</div>
-<div class="section" id="usage">
-<h6>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h6>
 <p>After Anaconda is installed, we suggest taking a look at the
 “<a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a>” guide to familiarize yourself with how Anaconda is used.
 There are a few ways to interact with Anaconda, primarily through either the
@@ -364,10 +467,6 @@ environment. A common setup is to have one environment for each project or
 application you are working with. For this tutorial however, we will install
 HyperSpy into the <code class="docutils literal notranslate"><span class="pre">base</span></code> (the default) environment (for ease of use) using
 the command line.</p>
-</div>
-</div>
-<div class="section" id="hyperspy">
-<h5>HyperSpy<a class="headerlink" href="#hyperspy" title="Permalink to this headline">¶</a></h5>
 <p>Like for Anaconda, detailed installation instructions for HyperSpy are
 available directly from its <a class="reference external" href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">documentation</a>.
 The process will also be summarized here with a bit more instruction.</p>
@@ -392,9 +491,9 @@ Anaconda prompt and the macOS/Linux terminal, so only use the commands
 specific to your operating system.</p>
 </div>
 <p>From the Start Menu (on Windows), open the <cite>Anaconda Prompt</cite>:</p>
-<div class="figure align-default" id="id8" style="width: 30%">
+<div class="figure align-default" id="id6" style="width: 30%">
 <a class="reference internal image-reference" href="_images/anaconda_post_install.png"><img alt="Windows programs installed by Anaconda" src="_images/anaconda_post_install.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <p>On Mac or Linux, open a terminal as normal. If during installation you told
 the installer to “initialize” Anaconda3, all the <code class="docutils literal notranslate"><span class="pre">conda</span></code> commands should
@@ -423,8 +522,6 @@ the <code class="docutils literal notranslate"><span class="pre">python</span></
 is not too powerful), then the installation was successful and you should be
 all set to use HyperSpy. Press <code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code> to exit the Python interpreter and
 return back to the Anaconda Prompt.</p>
-<div class="section" id="hyperspyui">
-<h6>HyperSpyUI<a class="headerlink" href="#hyperspyui" title="Permalink to this headline">¶</a></h6>
 <p>While most HyperSpy users find Jupyter Notebooks and the programmatic interface
 to be the best for reproducible analyses, there is a graphical user interface
 available that can accomplish a number of tasks and allow you to quickly browse
@@ -432,17 +529,15 @@ through multiple data files.</p>
 <p>To start the user interface, run the command <code class="docutils literal notranslate"><span class="pre">hyperspyui</span></code> from the Anaconda
 Prompt after the installation from the previous step is complete.</p>
 </div>
-</div>
-</div>
 <div class="section" id="obtaining-the-tutorial-data">
-<h4>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h4>
+<h3>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h3>
 <p>Please click <a class="reference external" href="_static/hyperspy_tutorial.zip">this</a> link to download the
 tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file. Once downloaded (it is
 approximately 50 MB), extract the files into their own folder that is easily
 accessible. We recommend a folder on the Desktop named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>.</p>
 </div>
 <div class="section" id="running-the-jupyter-notebooks">
-<h4>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h4>
+<h3>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
 <p>To actually open the Jupyter Notebooks containing the tutorials, you will need
 to start a local Jupyter server and connect to it through your browser (don’t
 worry, everything stays local and there’s no security risk to running the
@@ -465,10 +560,10 @@ command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
 </pre></div>
 </div>
-<div class="figure align-default" id="id9" style="width: 70%">
+<div class="figure align-default" id="id7" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_starting_jupyter.png"><img alt="Starting the Jupyter Notebook on Windows" src="_images/anaconda_starting_jupyter.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Starting the Jupyter Notebook from the <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> folder on
-Windows</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+Windows</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 <p>This will start the server, and automatically open a browser window (or new tab)
 to connect to the notebook server. Make sure to leave the terminal window open
@@ -478,16 +573,14 @@ directory structure within <code class="docutils literal notranslate"><span clas
 create a new notebook, you can click the <cite>New</cite> button, and then specify the
 <cite>Python 3</cite> kernel to use (this tells the notebook to execute the cells using
 the version of Python you installed through Anaconda):</p>
-<div class="figure align-default" id="id10" style="width: 70%">
+<div class="figure align-default" id="id8" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_creating_a_notebook.png"><img alt="Creating a notebook in the Jupyter Server on Windows" src="_images/anaconda_creating_a_notebook.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Click the highlighted locations to open a new notebook in the Jupyter Server</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Click the highlighted locations to open a new notebook in the Jupyter Server</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
 <p>Notebook files have the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>, and can be opened by simply
 clicking on them from the Jupyter “homepage”.</p>
-</div>
-</div>
 <div class="section" id="getting-help">
-<h3>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h3>
+<h4>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h4>
 <p>In addition to the links in the header of this page, there are a few additional
 resources that can be used to get help with questions you may have about using
 the software. The <a class="reference external" href="http://hyperspy.org/support.html">support</a> page for the
@@ -499,6 +592,7 @@ project highlights the best avenues for help, but briefly they are:</p>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues">issue/bug tracker</a> on the HyperSpy Github page</p></li>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy-demos/">HyperSpy Demos</a> repository, which contains the foundations of the notebooks presented in this tutorial, together with some additional demos</p></li>
 </ul>
+</div>
 </div>
 </div>
 </div>

@@ -33,8 +33,19 @@ h2 {
 }
 
 /* Customize sidebar styling */
-div.bs-sidenav  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0 0 1em;
+/*div.bs-sidenav  ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0 0 0 1em;*/
+/*}*/
+
+/* Remove extra margins around multi-line blocks: */
+.line-block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Center table headers */
+.table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td {
+    text-align: center;
 }

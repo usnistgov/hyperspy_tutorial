@@ -9,6 +9,9 @@
     ``nist-pages`` branch to build the public site at
     https://pages.nist.gov/hyperspy_tutorial
 
+    Make sure to use sphinx-bootstrap-theme 0.6.5 (0.7.1 has a problem with
+    sidebar styling)
+
 :tocdepth: 4
 
 
@@ -20,17 +23,14 @@
 Data Analysis in Materials Science
 ----------------------------------
 
-About the session
-+++++++++++++++++
-
-Thank you for registering for the CCEM Summer School tutorial session on
-HyperSpy, presented by the NIST Office of Data and Informatics!
-This informal tutorial session will introduce you to the capabilities of
-HyperSpy in a casual and interactive environment, with plenty of time allocated
-for questions and individual help. The goal for the session is that by the end
-each attendee feels comfortable using HyperSpy for basic imaging and
-hyperspectral data analysis, and knows where to look for further help,
-if necessary.
+Thank you for registering for the 2019 Microscopy and Microanalysis short course
+on data analysis in materials science, presented by the developers of HyperSpy.
+This interactive tutorial session will introduce you to modern techniques of
+data analysis for materials science and microscopy data within the scientific
+Python environment, with plenty of time for questions and individual help.
+The ultimate goal for the session is that by its end, each attendee feels
+comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
+and knows where to look for further help, if necessary.
 
 There are a few useful links in the top header of this page. The first
 (`Tutorial Repository <https://github.com/usnistgov/hyperspy_tutorial>`_)
@@ -39,8 +39,8 @@ use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
 `User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`_,
 respectively. The homepage contains general information about the project as
-a whole, while the User Guide is an extensive piece of documentation that tries
-to explain how to use HyperSpy for all sorts of analyses. Feel free to refer
+a whole, while the User Guide is an extensive piece of documentation that explains
+how to use HyperSpy for all sorts of analyses. Feel free to refer
 to these links before and during the tutorial session for additional help.
 
 Session Logistics
@@ -49,68 +49,129 @@ Session Logistics
 .. cssclass:: table-bordered
 
     +--------------------+-------------------------------------------------+
-    | **Date:**          | | Wednesday June 5, 2019                        |
-    |                    | | Thursday June 6, 2019                         |
+    | **Date:**          | | Sunday August 4, 2019                         |
     +--------------------+-------------------------------------------------+
-    | **Time:**          | 1:30 PM - 3:00 PM ET (Wednesday and Thursday)   |
+    | **Time:**          | 8:30 AM - 5:30 PM PT                            |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | | CCEM - Hamilton, ON (Room TBD)                |
-    |                    |                                                 |
+    | **Location:**      | | Oregon Convention Center - Portland, OR       |
+    |                    | | (Room B118-119)                               |
     +--------------------+-------------------------------------------------+
 
-About the instructor
---------------------
+About the instructors
+---------------------
 
 .. table::
 
-    +---------+-----------------------------------------------------------------+
-    | |josh|  | | |josh_link| is a research engineer within the Office          |
-    |         |   of Data and Informatics in the Material Measurement           |
-    |         |   Laboratory at NIST, and has an extensive                      |
-    |         |   background in materials science, microscopy, and data analysis|
-    |         |   utilizing machine learning, artificial intelligence, and      |
-    |         |   state-of-the art signal processing techniques to facilitate   |
-    |         |   greater understanding of material systems. He is a (fairly)   |
-    |         |   regular |contributor| to the upstream HyperSpy project and has|
-    |         |   been a user of the software for over 5 years.                 |
-    |         |   (Contact: joshua.taillon@nist.gov)                            |
-    +---------+-----------------------------------------------------------------+
+    +----------+-----------------------------------------------------------------+
+    | |duncan| | | |duncan_link|    is a Research Associate in the Electron      |
+    |          |   Microscopy Group of the Department of Materials Science &     |
+    |          |   Metallurgy, University of Cambridge, UK. His work focuses on  |
+    |          |   developing materials characterization approaches based on     |
+    |          |   electron diffraction and is currently particularly interested |
+    |          |   in determining structure on the nanoscale in soft materials.  |
+    |          |   He leads the development of the ``pyxem`` python package for  |
+    |          |   the analysis of scanning diffraction data in which            |
+    |          |   diffraction patterns are acquired at every probe position     |
+    |          |   across a specimen. The ``pyxem`` package builds on HyperSpy   |
+    |          |   and he has made contributions to HyperSpy to enable that      |
+    |          |   dependence. (Contact: dnj23@cam.ac.uk)                        |
+    +----------+-----------------------------------------------------------------+
+    | |kate|   | | |kate_link| is a postdoctoral researcher at the Ernst         |
+    |          |   Ruska Centre for Microscopy and Spectroscopy in the Helmholtz |
+    |          |   funded Research Centre Jülich, Germany. She completed her PhD |
+    |          |   at Oxford University in 2015 on quantitative EDX and HAADF    |
+    |          |   STEM. She has interests in Materials Science, spectroscopy and|
+    |          |   microscopy analysis in a quantitative manner. Katherine got   |
+    |          |   involved with HyperSpy development three years ago with the   |
+    |          |   aim of automating her quantitative EDX analysis method.       |
+    |          |   She has since expanded her contributions to more general      |
+    |          |   data analysis functions and methods, with the interest of     |
+    |          |   working towards automated analysis of in-situ spectroscopic   |
+    |          |   data. (Contact: k.macarthur@fz-juelich.de)                    |
+    +----------+-----------------------------------------------------------------+
+    | |magnus| | | |magnus_link| is a Marie Curie fellow at Electron Microscopy  |
+    |          |   for Materials research (EMAT) at University of Antwerp,       |
+    |          |   Belgium. He obtained his PhD at the Norwegian University of   |
+    |          |   Science and Technology working on advanced analysis of both   |
+    |          |   EELS and atomic resolution STEM data. The former resulting    |
+    |          |   in many contributions to HyperSpy, and the latter in the      |
+    |          |   creation of the Atomap Python library. His current research   |
+    |          |   interests revolves around utilizing fast pixelated detectors  |
+    |          |   in STEM with the ``pixStem`` library, to study both magnetic  |
+    |          |   and structural properties at the nanoscale.                   |
+    |          |   (Contact: magnus.nord@uantwerpen.be)                          |
+    +----------+-----------------------------------------------------------------+
+    | |eric|   | | |eric_link| is a person that does microscopy.                 |
+    +----------+-----------------------------------------------------------------+
+    | |josh|   | | |josh_link| is a research engineer within the Office          |
+    |          |   of Data and Informatics in the Material Measurement           |
+    |          |   Laboratory at NIST, and has an extensive                      |
+    |          |   background in materials science, microscopy, and data analysis|
+    |          |   utilizing machine learning, artificial intelligence, and      |
+    |          |   state-of-the art signal processing techniques to facilitate   |
+    |          |   greater understanding of material systems. He is a (fairly)   |
+    |          |   regular |contributor| to the upstream HyperSpy project and has|
+    |          |   been a user of the software for over 5 years.                 |
+    |          |   (Contact: joshua.taillon@nist.gov)                            |
+    +----------+-----------------------------------------------------------------+
 
 
 .. |contributor| replace:: `contributor <https://github.com/hyperspy/hyperspy/commits?author=jat255>`__
-.. |josh_link| replace:: `Josh Taillon <https://nist.gov/people/joshua-taillon>`__
-.. |andy_link| replace:: `Andy Herzing <https://www.nist.gov/people/andrew-herzing>`__
+.. |josh_link| replace:: `Josh Taillon <https://www.nist.gov/people/joshua-taillon>`__
+.. |duncan_link| replace:: `Duncan Johnstone <https://www.emg.msm.cam.ac.uk/People/dnj23>`__
+.. |kate_link| replace:: `Katherine MacArthur <http://www.er-c.org/metals/staff/macarthur.htm>`__
+.. |magnus_link| replace:: `Magnus Nord <https://www.uantwerpen.be/en/staff/magnus-nord/>`__
+.. |eric_link| replace:: `Eric Prestat <https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html>`__
 .. |josh| image:: _static/josh_taillon.jpg
    :width: 100%
-.. |andy| image:: _static/andy_herzing.jpg
+.. |kate| image:: _static/kate_macarthur.jpg
+   :width: 100%
+.. |magnus| image:: _static/magnus_nord.png
+   :width: 100%
+.. |duncan| image:: _static/duncan_johnstone.jpg
+   :width: 100%
+.. |eric| image:: _static/eric_prestat.jpg
    :width: 100%
 
-(Rough) Agenda
---------------
+Agenda
+------
 
 ..  rst-class:: left-align-last-col
 ..  cssclass:: table-hover
-..  table:: *Times are tentative and subject to adjustment during the day to meet the needs of the participants. Depending on overlap between attendees, either
-             the introduction sessions will be repeated, or more advanced topics will be covered (machine learning, EELS, and extensions).*
-    :widths: 20 20 80
+..  table::
+    :widths: 20 20 20 80
 
-    ==================  ====================   ============
-    Session #           Notebook Link          Topic
-    ==================  ====================   ============
-    0.0                                        (*Optional*) Pre-tutorial time; instructors will be in the room to answer any specific setup questions, debugging, etc.
-    0.1                                        Welcome and introductions
-    1.0                 |nb01|                 *Getting Started with HyperSpy* - Basics of using a Jupyter notebook and operating on HyperSpy Signals
-    1.1                                        *Using HyperSpyUI* - For simpler point-and-click analyses
-    2.0                 |nb02|                 *Curve Fitting* - Introduction to Signal modeling and fitting in HyperSpy
-    3.0                 |nb03|                 *Unsupervised learning & EDS Analysis* - Example analysis of TEM data from core-shell nanoparticles
-    4.0                 |nb04|                 *EELS Analysis in HyperSpy* - or... "What the commercial EELS vendors don't want you to see"
-    5.0                                        *Extending HyperSpy* - How HyperSpy can be extended for almost any use-case (non-interactive ``tomotools`` example)
-    ==================  ====================   ============
-
-.. |nb01| replace:: `Notebook 1 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/01%20-%20Getting%20Started.ipynb>`__
-.. |nb02| replace:: `Notebook 2 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/02%20-%20Curve%20fitting.ipynb>`__
-.. |nb03| replace:: `Notebook 3 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/03%20-%20TEM_EDS_nanoparticles.ipynb>`__
-.. |nb04| replace:: `Notebook 4 <https://github.com/usnistgov/hyperspy_tutorial/blob/2019-06_CCEM_tutorial/notebooks/04%20-%20EELS_analysis.ipynb>`__
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | Time              | Format     | Leader(s) | Topic                                                |
+    +===================+============+===========+======================================================+
+    | 08:30 - 09:00     | Talk       | JT        | Introduction to Python and HyperSpy                  |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 09:00 - 10:30     | Practical  | EP        | HyperSpy Basics                                      |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 10:30 - 10:45     |                        | *Coffee Break*                                       |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 10:45 - 11:30     | Practical  | DJ        | Model Fitting                                        |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 11:30 - 12:15     | Practical  | MN        | EELS Analysis                                        |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 12:15 - 13:15     |            |           | *Lunch Break*                                        |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 13:15 - 13:30     | Talk       | JT        | Intro to Machine Learning in EM                      |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 13:30 - 14:00     | Practical  | JT        | Machine Learning                                     |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 14:00 - 15:00     | Practical  | KM        | EDS Analysis                                         |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 15:00 - 15:15     |                        | *Coffee Break*                                       |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | 15:15 - 16:00     | Practical  | EP        | Big Data Analysis                                    |
+    +-------------------+------------+-----------+------------------------------------------------------+
+    | |                 | |          |  |        | | *Running in parallel, self-learning with provided* |
+    | |                 | |          |  |        | | *notebooks and support from instructors:*          |
+    | | 16:00 - 17:30   | | Practical|  | MN/KM  | |   - Atomic resolution image analysis               |
+    | |                 | |          |  | DJ     | |   - Scanning electron diffraction analysis         |
+    | |                 | |          |  | MN     | |   - Pixelated STEM / 4D STEM                       |
+    +-------------------+------------+-----------+------------------------------------------------------+
 
 Pre-tutorial instructions
 +++++++++++++++++++++++++

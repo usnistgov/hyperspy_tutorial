@@ -12,11 +12,17 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="#" />
-  <script type="text/javascript" src="_static/searchtools.js "></script>
-  <script type="text/javascript" src="searchindex.js "></script>
+  <script type="text/javascript">
+    jQuery(function() { Search.loadIndex("searchindex.js"); });
+  </script>
   
   <script type="text/javascript" id="searchindexloader"></script>
   
@@ -102,7 +108,7 @@ $(document).ready(function(){
         <div id="sidebar" class="bs-sidenav" role="complementary">
         </div>
       </div>
-    <div class="body col-md-9 content" role="main">
+    <div class="col-md-9 content">
       
   <h1 id="search-documentation">Search</h1>
   <div id="fallback" class="admonition warning">
@@ -126,9 +132,9 @@ $(document).ready(function(){
     </div>
     <input type="submit" class="btn btn-default" value="search" />
     <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
+  </form>  
   
-
+  
   
   <div id="search-results">
   
