@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Installing via the “Bundle” &#8212; 2019 M&amp;M Short Course X-15  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom-styles.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing via Anaconda" href="install_anaconda.html" />
+    <link rel="prev" title="2019 M&amp;M Sunday Short Course X-15:" href="index.html" />
+<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+<script type="text/javascript" src="https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Mark external (non-nist.gov) A tags with class "external"
+  //If the adress start with https and ends with nist.gov
+  var re_nist = new RegExp('^https?:\\/\\/.*nist\\.gov(\\/|$)');
+  var re_nist_github = new RegExp('^https?:\\/\\/.*usnistgov.*(\\/|$)');
+  var re_drive = new RegExp('^https?:\\/\\/.*drive.google.com.*(\\/|$)');
+  //Regex to find address that start with https
+  var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+  $("a").each(function(){
+    var url=$(this).attr('href');
+    console.log(url)
+    if(re_drive.test(url) || re_nist_github.test(url) || re_nist.test(url) || !re_absolute_address.test(url)){
+        console.log(url + ' local')
+      $(this).addClass('local');
+    }else{
+      //This a href appears to be external, so tag it
+        console.log(url + ' external')
+      $(this).addClass('nist-external');
+    }
+  });
+  // Add leaveNotice to external A elements
+  $('a.nist-external').leaveNotice();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+
+
+  </head><body>
+
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/hyperspy_logo.png"></span>
+          X15: Data Analysis in Materials Science</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="https://github.com/usnistgov/hyperspy_tutorial">Tutorial Repository</a></li>
+                <li><a href="http://hyperspy.org">HyperSpy Homepage</a></li>
+                <li><a href="http://hyperspy.org/hyperspy-doc/current/user_guide/index.html">HyperSpy User Guide</a></li>
+            
+            
+              <!-- this blank file removes the "Site" global ToC dropdown from the page -->
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            <!-- this blank file removes the search box from the page -->
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Installing via the “Bundle”</a><ul>
+<li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#testing-the-installation">Testing the installation</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="installing-via-the-bundle">
+<span id="bundle-label"></span><h1>Installing via the “Bundle”<a class="headerlink" href="#installing-via-the-bundle" title="Permalink to this headline">¶</a></h1>
+<p>If you are running on Windows, the easiest way to install HyperSpy is using
+the “standalone” bundle package. This simple to install program provides a
+customized Python installation that has the HyperSpy libraries pre-installed.
+Instructions can be found at from the HyperSpy Bundle Github repository
+(<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">here</a>), and a detailed walk
+through of the process is provided below.</p>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
+<p>First, navigate to the repository home page
+(<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">https://github.com/hyperspy/hyperspy-bundle</a>), and click on the large green
+button slightly down the page:</p>
+<div class="figure align-default" id="id1" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_install_button.png"><img alt="Link to Windows download for standalone HyperSpy bundle" src="_images/bundle_install_button.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Clicking the big green button on the main repository page will bring you to
+the “Releases” page that contains a link to the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> installation file</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>On the releases page, click on the appropriate installer for your system (most
+likely you will want the 64-bit version):</p>
+<div class="figure align-default" id="id2" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_release_download.png"><img alt="Links HyperSpy bundle downloads" src="_images/bundle_release_download.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Most modern systems will need the “64-bit” version, but some older machines
+may still use the 32-bit option</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>After the download finishes, run the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file, accepting the default options.
+Doing so will install HyperSpy into your user folder under a subfolder named
+<code class="docutils literal notranslate"><span class="pre">&quot;HyperSpy</span> <span class="pre">Bundle&quot;</span></code>. The installation may take some time, but you should get
+a progress window that looks like:</p>
+<div class="figure align-default" id="id3" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_during_installation.png"><img alt="Bundle installation progress" src="_images/bundle_during_installation.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">A screenshot during the bundle installation process</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once the installation finishes, click the <em>Next</em> button, and then <em>Finish</em> to
+exit the installer. A command prompt window might open to pre-compile the included
+libraries. This will only happen once, and speeds up the code when it comes time
+to run any Python scripts. Wait for the process to finish, and the window should
+close on its own:</p>
+<div class="figure align-default" id="id4" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_compiling.png"><img alt="Pre-compiling the included Python libraries" src="_images/bundle_compiling.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">The last step of the installation is pre-compilation of the included Python
+libraries. This only happens one time, so please wait for it to finish. The
+command window should close itself when it is done.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>And that’s it! All the installed programs should now be available within the
+Start Menu under the “HyperSpy Bundle” folder. You can either continue following
+the next section to test the installation, or continue to the
+<a class="reference internal" href="index.html#getting-data"><span class="std std-ref">Obtaining the tutorial data</span></a> section on the main page.</p>
+</div>
+<div class="section" id="testing-the-installation">
+<h2>Testing the installation<a class="headerlink" href="#testing-the-installation" title="Permalink to this headline">¶</a></h2>
+<p>If you would like to test that your installation is working properly, you can
+run a small test example by opening the “Qt Console”. This is an interactive
+Python interpreter that allows you to type in Python statements directly. Launch
+the Qt Console from within the “HyperSpy Bundle” folder in the Start Menu:</p>
+<div class="figure align-default" id="id5" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_test_qtconsole.png"><img alt="Launching the interactive Python console" src="_images/bundle_test_qtconsole.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Launching the interactive Python console from the Start Menu</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>The Qt Console is an interactive Python interpreter that allows you to enter
+Python statements directly and immediately see their output. Once the console
+has opened and you see a prompt that says <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>, copy the following code
+snippet at the location of the blinking cursor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">qt</span>
+<span class="kn">import</span> <span class="nn">hyperspy.api</span> <span class="kn">as</span> <span class="nn">hs</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">hs</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">artificial_data</span><span class="o">.</span><span class="n">get_core_loss_eels_signal</span><span class="p">(</span><span class="n">add_powerlaw</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">remove_background</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Very briefly, this code is loading the interactive plotting libraries, loading
+HyperSpy, creating an example EELS signal from some artificial data, and then
+telling the interpreter you want to interactively remove the Power Law
+background. Press <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> within the console to run the lines of code
+you pasted in (it may take a few moments to run if this is the first time
+you’ve used HyperSpy on your machine):</p>
+<div class="figure align-default" id="id6" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>Eventually, you should see a spectrum window and a small tool window for
+removing the background open (they may be stacked on top of each other;
+drag them out of the way, if so). If you click and drag on part of the spectrum
+display, HyperSpy will fit a Power Law to the signal within that region,
+and also show you a preview of the background-subtracted signal:</p>
+<div class="figure align-default" id="id7" style="width: 90%">
+<a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
+in red). The fitted background is shown in blue, and a preview of the
+background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>Clicking “OK” in the <em>Background removal tool</em> window will perform the
+background subtraction, and replace the window with one showing the resulting
+signal:</p>
+<div class="figure align-default" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_test_bgremoval_sig.png"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval_sig.png" style="width: 100%;" /></a>
+</div>
+<p>Assuming all of this worked, congratulations! You have a working HyperSpy
+installation and you have run your first bit of open-source HyperSpy-based
+materials science data analysis! Click the button below to return to the main
+tutorial homepage:</p>
+<div class="text-center">
+    <a  class="downloadbutton"
+        href="index.html#obtaining-the-tutorial-data">
+            Click here to return<br/>to the main page
+    </a>
+</div><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
