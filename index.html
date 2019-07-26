@@ -104,19 +104,21 @@ $(document).ready(function(){
 <li><a class="reference internal" href="#data-analysis-in-materials-science">Data Analysis in Materials Science</a><ul>
 <li><a class="reference internal" href="#session-logistics">Session Logistics</a></li>
 <li><a class="reference internal" href="#about-the-instructors">About the instructors</a></li>
-<li><a class="reference internal" href="#agenda">Agenda</a><ul>
-<li><a class="reference internal" href="#pre-tutorial-instructions">Pre-tutorial instructions</a></li>
+<li><a class="reference internal" href="#agenda">Agenda</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#pre-tutorial-instructions">Pre-tutorial instructions</a><ul>
 <li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#bundle-installer">“Bundle” Installer</a></li>
+<li><a class="reference internal" href="#anaconda">Anaconda</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#obtaining-the-tutorial-data">Obtaining the tutorial data</a></li>
-<li><a class="reference internal" href="#running-the-jupyter-notebooks">Running the Jupyter Notebooks</a><ul>
+<li><a class="reference internal" href="#running-the-jupyter-notebooks">Running the Jupyter Notebooks</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#getting-help">Getting Help</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -125,7 +127,12 @@ $(document).ready(function(){
       </div>
     <div class="col-md-9 content">
       
-  <div class="section" id="m-m-sunday-short-course-x-15">
+  <div class="text-center">
+    <a  class="downloadbutton"
+        href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip">
+            Click here to download<br/>the tutorial data
+    </a>
+</div><div class="section" id="m-m-sunday-short-course-x-15">
 <h1>2019 M&amp;M Sunday Short Course X-15:<a class="headerlink" href="#m-m-sunday-short-course-x-15" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="data-analysis-in-materials-science">
 <h2>Data Analysis in Materials Science<a class="headerlink" href="#data-analysis-in-materials-science" title="Permalink to this headline">¶</a></h2>
@@ -184,7 +191,7 @@ to these links before and during the tutorial session for additional help.</p>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/duncan_johnstone.jpg"><img alt="duncan" src="_images/duncan_johnstone.jpg" style="width: 100%;" /></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="https://www.emg.msm.cam.ac.uk/People/dnj23">Duncan Johnstone</a>    is a Research Associate in the Electron
+<div class="line"><a class="reference external" href="https://www.emg.msm.cam.ac.uk/People/dnj23">Duncan Johnstone</a> (DJ) is a Research Associate in the Electron
 Microscopy Group of the Department of Materials Science &amp;
 Metallurgy, University of Cambridge, UK. His work focuses on
 developing materials characterization approaches based on
@@ -201,7 +208,7 @@ dependence. (Contact: <a class="reference external" href="mailto:dnj23&#37;&#52;
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/kate_macarthur.jpg"><img alt="kate" src="_images/kate_macarthur.jpg" style="width: 100%;" /></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="http://www.er-c.org/metals/staff/macarthur.htm">Katherine MacArthur</a> is a postdoctoral researcher at the Ernst
+<div class="line"><a class="reference external" href="http://www.er-c.org/metals/staff/macarthur.htm">Katherine MacArthur</a> (KM) is a postdoctoral researcher at the Ernst
 Ruska Centre for Microscopy and Spectroscopy in the Helmholtz
 funded Research Centre Jülich, Germany. She completed her PhD
 at Oxford University in 2015 on quantitative EDX and HAADF
@@ -218,7 +225,7 @@ data. (Contact: <a class="reference external" href="mailto:k&#46;macarthur&#37;&
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/magnus_nord.png"><img alt="magnus" src="_images/magnus_nord.png" style="width: 100%;" /></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="https://www.uantwerpen.be/en/staff/magnus-nord/">Magnus Nord</a> is a Marie Curie fellow at Electron Microscopy
+<div class="line"><a class="reference external" href="https://www.uantwerpen.be/en/staff/magnus-nord/">Magnus Nord</a> (MN) is a Marie Curie fellow at Electron Microscopy
 for Materials research (EMAT) at University of Antwerp,
 Belgium. He obtained his PhD at the Norwegian University of
 Science and Technology working on advanced analysis of both
@@ -234,13 +241,13 @@ and structural properties at the nanoscale.
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_images/eric_prestat.jpg"><img alt="eric" src="_images/eric_prestat.jpg" style="width: 100%;" /></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html">Eric Prestat</a> is a person that does microscopy.</div>
+<div class="line"><a class="reference external" href="https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html">Eric Prestat</a> (EP) is a person that does microscopy.</div>
 </div>
 </td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/josh_taillon.jpg"><img alt="josh" src="_images/josh_taillon.jpg" style="width: 100%;" /></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="https://www.nist.gov/people/joshua-taillon">Josh Taillon</a> is a research engineer within the Office
+<div class="line"><a class="reference external" href="https://www.nist.gov/people/joshua-taillon">Josh Taillon</a> (JT) is a research engineer within the Office
 of Data and Informatics in the Material Measurement
 Laboratory at NIST, and has an extensive
 background in materials science, microscopy, and data analysis
@@ -363,66 +370,122 @@ been a user of the software for over 5 years.
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <div class="section" id="pre-tutorial-instructions">
-<h4>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h4>
-<p>Please review this section in advance of Friday’s tutorial session, as it
+<h2>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h2>
+<p>Please review this section in advance of Sunday’s tutorial session, as it
 includes instructions for installing HyperSpy and the Jupyter interactive
 computing environment.</p>
-</div>
-</div>
 <div class="section" id="prerequisites">
 <h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
 <p>For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
-the instructions below to install both Anaconda Python and HyperSpy (or use the
-web-based JupyterHub installation as described above).</p>
+the instructions below to install HyperSpy using either the Anaconda Python
+distribution (Windows, Mac, or Linux), or the pre-compiled “bundle” installer
+(only available on Windows).</p>
 </div>
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p>At its core, HyperSpy is a third-party library that exists as part of the
-scientific Python ecosystem (as opposed to a stand-alone application). Because
-of this, installation is slightly more tricky than a normal program, but is not
-too difficult once you understand the steps required. The two pieces required
-are a Python distribution (pre-installed on Mac and Linux; not included on
-Windows), and then the HyperSpy libraries that operate within that Python
-environment.</p>
-<p>For all operating systems, the recommended Python distribution is
-<a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a>, due to its prevalence in the scientific community and the
+scientific greater Python ecosystem (as opposed to a stand-alone application).
+Because of this, installation is slightly more tricky than a normal program,
+but is not too difficult once you understand the steps required. The two pieces
+required are a Python distribution (typically pre-installed on Mac and Linux;
+but not included on by default on Windows), and then the HyperSpy libraries
+that operate within that Python environment.</p>
+<p>There are two possible approaches to getting a working HyperSpy environment. If
+you are brand-new to Python and the command line in general (and you are running
+Windows), we recommend using the pre-packaged <a class="reference internal" href="#bundle-installer">“Bundle” Installer</a>.</p>
+<p>For all other operating systems (and Windows, if you’re a bit more comfortable
+with Python and the command line), the recommended way to install HyperSpy is using
+<a class="reference internal" href="#anaconda">Anaconda</a>, due to its prevalence in the scientific community and the
 ease of managing multiple Python “environments” on one system. It also provides
 a uniform way of installing packages and managing the system regardless of
-operating system. It also provides up-to-date versions of Python and library
+operating system, as well as up-to-date versions of Python and library
 packages (often the “system” installation on Linux or Mac is out of date).
 Anaconda can also be installed and run without administrative privileges,
 meaning it can be used on remote systems easily regardless of ownership.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>There is also a “standalone” bundle installation package available (for Windows
-only) available from the HyperSpy Github repository (<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">here</a>).
-If you have never used Python before, it is the “simplest” way to get
-HyperSpy installed (together with its own Python installation),
-but can lead to multiple redundant Python installations
-and is difficult to upgrade between versions. If you might use Python for
-any other sort of data analysis, plotting, or software development, we
-recommend installing via <a href="#id9"><span class="problematic" id="id10">`Anaconda`_</span></a> instead.</p>
+<p>It is important that you install HyperSpy using either the
+<a class="reference internal" href="#bundle-installer">“Bundle” Installer</a>, or through <a class="reference internal" href="#anaconda">Anaconda</a> (and <em>not both</em>!). Installing
+both will leave you with multiple Python installations on your system, and
+it will be very confusing to try to solve any issues that arise.</p>
 </div>
+<div class="section" id="bundle-installer">
+<h4>“Bundle” Installer<a class="headerlink" href="#bundle-installer" title="Permalink to this headline">¶</a></h4>
+<p>If you are running on Windows, the easiest way to install HyperSpy is using
+the “standalone” bundle package. This simple to install program provides a
+customized Python installation that has the HyperSpy libraries pre-installed.
+Instructions can be found at from the HyperSpy Bundle Github repository
+(<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">here</a>), and a detailed walk
+through of the process is provided below.</p>
+<p>First, navigate to the repository home page
+(<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">https://github.com/hyperspy/hyperspy-bundle</a>), and click on the large green
+button slightly down the page:</p>
+<div class="figure align-default" id="id2" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_install_button.png"><img alt="Link to Windows download for standalone HyperSpy bundle" src="_images/bundle_install_button.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Clicking the big green button on the main repository page will bring you to
+the “Releases” page that contains a link to the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> installation file</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>On the releases page, click on the appropriate installer for your system (most
+likely you will want the 64-bit version:</p>
+<div class="figure align-default" id="id3" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_release_download.png"><img alt="Links HyperSpy bundle downloads" src="_images/bundle_release_download.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Most modern systems will need the “64-bit” version, but some older machines
+may still use the 32-bit option</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>After the download finishes, run the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file, accepting the default options.
+Doing so will install HyperSpy into your user folder under a subfolder named
+<code class="docutils literal notranslate"><span class="pre">&quot;HyperSpy</span> <span class="pre">Bundle&quot;</span></code>. The installation may take some time, but you should get
+a progress window that looks like:</p>
+<div class="figure align-default" id="id4" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_during_installation.png"><img alt="Bundle installation progress" src="_images/bundle_during_installation.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">A screenshot during the bundle installation process</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once the installation finishes, click the <em>Next</em> button, and then <em>Finish</em> to
+exit the installer. A command prompt window might open to pre-compile the included
+libraries. This will only happen once, and speeds up the code when it comes time
+to run any Python scripts. Wait for the process to finish, and the window should
+close on its own:</p>
+<div class="figure align-default" id="id5" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_compiling.png"><img alt="Pre-compiling the included Python libraries" src="_images/bundle_compiling.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">The last step of the installation is pre-compilation of the included Python
+libraries. This only happens one time, so please wait for it to finish. The
+command window should close itself when it is done.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>And that’s it! All the installed programs should now be available within the
+Start Menu under the “HyperSpy Bundle” folder. You should now continue to the
+<a class="reference internal" href="#obtaining-the-tutorial-data">Obtaining the tutorial data</a> section (skipping the <a class="reference internal" href="#anaconda">Anaconda</a> section).</p>
+</div>
+<div class="section" id="anaconda">
+<h4>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h4>
+<p>Installing HyperSpy with Anaconda is slightly more involved, but provides more
+flexibility if you plan to do more development with Python, or need to run many
+different Python programs on your machine alongside each other.</p>
 <p>While it is mostly unattended, the download and installation of Anaconda can
 take a fair amount of time (approximately 10 to 15 minutes, depending on the
 speed of your system), so it is highly recommended to do this before you
-arrive at the tutorial session.</p>
-<p>In order for everyone to be on the same page, we will use the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a>
-distribution to install Python and manage the project dependencies. The
-installation process varies a bit depending on your operating system.
-Instructions for Windows are detailed here. MacOS will be somewhat similar,
+arrive at the tutorial session (and when you have access to a decent internet
+connection).</p>
+<div class="section" id="download">
+<h5>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h5>
+<p>The installation process for Anaconda varies a bit depending on your operating
+system. Instructions for Windows are detailed here. MacOS will be somewhat similar,
 while if you run Linux, you will need to use the command line installer (an
 exercise left to the reader). From the <a class="reference external" href="https://www.anaconda.com/distribution">Anaconda Python</a> link, click the
 selector for your operating system, and then click the big green download button
 for the “Python 3.7 version”:</p>
-<div class="figure align-default" id="id2" style="width: 70%">
+<div class="figure align-default" id="id6" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_download_link.png"><img alt="Link to Windows download for Anaconda" src="_images/anaconda_download_link.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Make sure to select the 64-bit 3.7 graphical installer (the green button
 should get you the right version) - It’s a rather large download, so a decent
-connection is recommended</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+connection is recommended</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
+</div>
+<div class="section" id="installing-anaconda">
+<h5>Installing Anaconda<a class="headerlink" href="#installing-anaconda" title="Permalink to this headline">¶</a></h5>
 <p>Detailed instructions for
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a>,
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/mac-os/">macOS</a>, and
@@ -432,11 +495,11 @@ the Anaconda website. Specific instructions for Windows are reproduced below.</p
 straightforward. For the installation location, we recommend an easily accessed
 path that does not require administrative rights, such as the folder
 <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> within your user directory:</p>
-<div class="figure align-default" id="id3" style="width: 50%">
+<div class="figure align-default" id="id7" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_installation_path.png"><img alt="Anaconda installation path" src="_images/anaconda_installation_path.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">This path can be whatever you want (where you have write access), but
 a subfolder in the user directory is usually a convenient location - the
-default option is also fine</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+default option is also fine</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 <p>The next screen will present you with options about adding Anaconda to the
 system <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable, and whether or not you want this installation to
@@ -444,48 +507,46 @@ be registered as the “default” Python installation on your system (via a
 key saved to the registry on Windows). We recommend the default options (as
 shown below), but if you have other Python installations on your system, you may
 want to uncheck the “Register as default” option:</p>
-<div class="figure align-default" id="id4" style="width: 50%">
+<div class="figure align-default" id="id8" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_PATH_options.png"><img alt="Installation options" src="_images/anaconda_PATH_options.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
 <p>Click the “Install” button at this point, and go to get a coffee or tea (or go
 for a walk), as the installation process takes some time depending on your disk
 speed.</p>
-<div class="figure align-default" id="id5" style="width: 50%">
+<div class="figure align-default" id="id9" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_install_complete.png"><img alt="Installation complete" src="_images/anaconda_install_complete.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </div>
 <p>Once the installation completes, click the “Next” button to continue and then
 “Finish” to exit the installer.</p>
+</div>
+<div class="section" id="usage">
+<h5>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h5>
 <p>After Anaconda is installed, we suggest taking a look at the
-“<a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a>” guide to familiarize yourself with how Anaconda is used.
-There are a few ways to interact with Anaconda, primarily through either the
-“navigator” application, or on the command line. One of the most powerful
-features of Anaconda is the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment and package manager, which
-allows you to create multiple different “installations” (known as
+“<a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a>” guide from its documentation to familiarize yourself with
+how Anaconda is used. There are a few ways to interact with Anaconda, primarily
+through either the “navigator” application, or on the command line. One of the
+most powerful features of Anaconda is the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment and package
+manager, which allows you to create multiple different “installations” (known as
 <cite>environments</cite>) of Python, enabling you to select which version of Python is
 used for each environment and what packages are installed inside that
 environment. A common setup is to have one environment for each project or
 application you are working with. For this tutorial however, we will install
 HyperSpy into the <code class="docutils literal notranslate"><span class="pre">base</span></code> (the default) environment (for ease of use) using
 the command line.</p>
+</div>
+<div class="section" id="installing-hyperspy-with-anaconda">
+<h5>Installing HyperSpy with Anaconda<a class="headerlink" href="#installing-hyperspy-with-anaconda" title="Permalink to this headline">¶</a></h5>
 <p>Like for Anaconda, detailed installation instructions for HyperSpy are
 available directly from its <a class="reference external" href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">documentation</a>.
 The process will also be summarized here with a bit more instruction.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>In my experience with NIST systems on Windows, certain <code class="docutils literal notranslate"><span class="pre">conda</span></code> commands
-can take an excessive amount of time to complete. They will finish
-eventually, but installing HyperSpy (for example) can take a number of
-minutes to complete (on a Surface Pro 4, for reference). I believe this
-is due to the antivirus software that is installed on NIST Windows machines,
-so unfortunately there is little to do but wait…</p>
-</div>
 <div class="admonition-info-about-code-blocks admonition">
 <p class="admonition-title">Info about code blocks</p>
 <p>In the following section, lines in code blocks will be prefaced with <code class="docutils literal notranslate"><span class="pre">$</span></code>
-or <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code>. The former is used to indicate terminal input, while the latter
-represents inputs to the Python interpreter. Any lines without these symbols
+or <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code>. <code class="docutils literal notranslate"><span class="pre">$</span></code> is used to indicate regular terminal input, while <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code>
+represents inputs to the Python interpreter (accessed by running <code class="docutils literal notranslate"><span class="pre">python</span></code>
+from the regular command line. Any lines without these symbols
 indicate the expected output of the given command. To run the
 commands provided, copy everything after the <code class="docutils literal notranslate"><span class="pre">$</span></code> or <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> character into
 your terminal. Where necessary, commands will be given for both the Windows
@@ -493,9 +554,9 @@ Anaconda prompt and the macOS/Linux terminal, so only use the commands
 specific to your operating system.</p>
 </div>
 <p>From the Start Menu (on Windows), open the <cite>Anaconda Prompt</cite>:</p>
-<div class="figure align-default" id="id6" style="width: 30%">
+<div class="figure align-default" id="id10" style="width: 30%">
 <a class="reference internal image-reference" href="_images/anaconda_post_install.png"><img alt="Windows programs installed by Anaconda" src="_images/anaconda_post_install.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </div>
 <p>On Mac or Linux, open a terminal as normal. If during installation you told
 the installer to “initialize” Anaconda3, all the <code class="docutils literal notranslate"><span class="pre">conda</span></code> commands should
@@ -507,7 +568,8 @@ the bracketed term with the actual path in which you installed Anaconda:</p>
 <p>before any of the <code class="docutils literal notranslate"><span class="pre">conda</span></code> commands will work. Again, <cite>this is only for
 Mac/Linux</cite>, the commands should be available with no problem on Windows when
 you launch the <cite>Anaconda Prompt</cite>.</p>
-<p>From the prompt, run the following to install HyperSpy (and its UI package):</p>
+<p>From the prompt, run the following to install HyperSpy, its UI package, and its
+dependencies:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install -c conda-forge hyperspy hyperspyui
 </pre></div>
 </div>
@@ -524,19 +586,17 @@ the <code class="docutils literal notranslate"><span class="pre">python</span></
 is not too powerful), then the installation was successful and you should be
 all set to use HyperSpy. Press <code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code> to exit the Python interpreter and
 return back to the Anaconda Prompt.</p>
-<p>While most HyperSpy users find Jupyter Notebooks and the programmatic interface
-to be the best for reproducible analyses, there is a graphical user interface
-available that can accomplish a number of tasks and allow you to quickly browse
-through multiple data files.</p>
-<p>To start the user interface, run the command <code class="docutils literal notranslate"><span class="pre">hyperspyui</span></code> from the Anaconda
-Prompt after the installation from the previous step is complete.</p>
+</div>
+</div>
 </div>
 <div class="section" id="obtaining-the-tutorial-data">
 <h3>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h3>
-<p>Please click <a class="reference external" href="_static/hyperspy_tutorial.zip">this</a> link to download the
-tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file. Once downloaded (it is
-approximately 50 MB), extract the files into their own folder that is easily
-accessible. We recommend a folder on the Desktop named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>.</p>
+<p>Please click <a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip">this</a>
+link to download the tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file
+(or click the big green button at the top of this page). Once downloaded, extract
+the files into their own folder that is easily accessible. We recommend a folder
+in your user’s home directory named``hyperspy_tutorial``
+(i.e. <code class="docutils literal notranslate"><span class="pre">C:\Users\username\hyperspy_tutorial</span></code> on Windows).</p>
 </div>
 <div class="section" id="running-the-jupyter-notebooks">
 <h3>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
@@ -544,14 +604,21 @@ accessible. We recommend a folder on the Desktop named <code class="docutils lit
 to start a local Jupyter server and connect to it through your browser (don’t
 worry, everything stays local and there’s no security risk to running the
 notebook on <code class="docutils literal notranslate"><span class="pre">localhost</span></code>).</p>
-<p>To start the server, open the Anaconda Prompt (Windows) or a regular terminal
+<p>If you installed using the bundle, this is very simple. Just open the Start Menu
+and navigate to the “Jupyter Notebook” option within the “HyperSpy Bundle” folder:</p>
+<div class="figure align-default" id="id11" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_start_menu_notebook.png"><img alt="Starting the notebook server from the bundle Start Menu" src="_images/bundle_start_menu_notebook.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Starting the notebook server from the Start Menu shortcut installed in the
+bundle</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<p>If you installed with Anaconda, open the Anaconda Prompt (Windows) or a regular terminal
 (macOS/Linux). From that prompt, use the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command to change to the
 directory that contains the tutorial notebooks and data that you downloaded
 in the previous section. For example, if you saved the data into a folder named
-<code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> on your desktop, you would change to that folder with
+<code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> in your user folder, you would change to that folder with
 one of the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For Windows:</span>
-$ <span class="nb">cd</span> %USERPROFILE%<span class="se">\\</span>Desktop<span class="se">\\</span>hyperspy_tutorial
+$ <span class="nb">cd</span> %USERPROFILE%<span class="se">\\</span>hyperspy_tutorial
 
 <span class="c1"># For macOS or Linux:</span>
 $ <span class="nb">cd</span> ~/Desktop/hyperspy_tutorial
@@ -562,27 +629,35 @@ command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
 </pre></div>
 </div>
-<div class="figure align-default" id="id7" style="width: 70%">
+<div class="figure align-default" id="id12" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_starting_jupyter.png"><img alt="Starting the Jupyter Notebook on Windows" src="_images/anaconda_starting_jupyter.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Starting the Jupyter Notebook from the <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> folder on
-Windows</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+Windows</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
 </div>
-<p>This will start the server, and automatically open a browser window (or new tab)
-to connect to the notebook server. Make sure to leave the terminal window open
-in the background, as closing it will shut down the notebook server.
-If everything has worked as expected, then you will see a representation of the
-directory structure within <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> on the Notebook homepage. To
-create a new notebook, you can click the <cite>New</cite> button, and then specify the
-<cite>Python 3</cite> kernel to use (this tells the notebook to execute the cells using
-the version of Python you installed through Anaconda):</p>
-<div class="figure align-default" id="id8" style="width: 70%">
+<p>Regardless if you used the bundle or Anaconda, once you start the notebook “server”,
+it will automatically open a browser window (or new tab) to connect to the local server.
+Make sure to leave the terminal window open in the background, as closing it will
+shut down the notebook server. If everything has worked as expected, then you
+will see a representation of the directory structure within <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>
+on the Notebook homepage. If you do not, you can click through the file structure
+displayed on the page to get to the correct folder. To create a new notebook,
+you can click the <cite>New</cite> button, and then specify the <cite>Python 3</cite> kernel:</p>
+<div class="figure align-default" id="id13" style="width: 70%">
 <a class="reference internal image-reference" href="_images/anaconda_creating_a_notebook.png"><img alt="Creating a notebook in the Jupyter Server on Windows" src="_images/anaconda_creating_a_notebook.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Click the highlighted locations to open a new notebook in the Jupyter Server</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Click the highlighted locations to open a new notebook in the Jupyter Server</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
 </div>
-<p>Notebook files have the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>, and can be opened by simply
-clicking on them from the Jupyter “homepage”.</p>
+<p>Otherwise, to open the notebook files you downloaded earlier, just
+click on any file with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. The notebook will open in a new
+tab, and can be interacted with as you need. The original Jupyter “homepage” will
+stay open, and you can open as many notebooks as you wish at once (as long as you
+leave the terminal window open in the background).</p>
+<p>Congratulations! You should now be ready for the tutorial. If you ran into any
+trouble, please try to arrive on Sunday morning a bit early, and one of the
+instructors will be happy to help get you up and running.</p>
+</div>
+</div>
 <div class="section" id="getting-help">
-<h4>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h4>
+<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the links in the header of this page, there are a few additional
 resources that can be used to get help with questions you may have about using
 the software. The <a class="reference external" href="http://hyperspy.org/support.html">support</a> page for the
@@ -594,8 +669,6 @@ project highlights the best avenues for help, but briefly they are:</p>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues">issue/bug tracker</a> on the HyperSpy Github page</p></li>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy-demos/">HyperSpy Demos</a> repository, which contains the foundations of the notebooks presented in this tutorial, together with some additional demos</p></li>
 </ul>
-</div>
-</div>
 </div>
 </div>
 
