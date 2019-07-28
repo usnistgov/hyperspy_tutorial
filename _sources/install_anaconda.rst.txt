@@ -23,14 +23,16 @@ for the "Python 3.7 version":
 
 .. figure:: _static/anaconda_download_link.png
    :width: 100 %
+   :target: `Anaconda Python`_
    :alt: Link to Windows download for Anaconda
    :figwidth: 70%
 
    Make sure to select the 64-bit 3.7 graphical installer (the green button
    should get you the right version) - It's a rather large download, so a decent
-   connection is recommended
+   connection is recommended. Also make sure to choose Windows, macOS, or Linux
+   in the top section.
 
-..  _Anaconda Python: https://www.anaconda.com/distribution
+..  _Anaconda Python: https://www.anaconda.com/distribution/#download-section
 
 Installing Anaconda
 ^^^^^^^^^^^^^^^^^^^

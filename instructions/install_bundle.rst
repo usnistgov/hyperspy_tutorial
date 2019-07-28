@@ -19,6 +19,7 @@ button slightly down the page:
 
 .. figure:: _static/bundle_install_button.png
    :width: 100 %
+   :target: https://github.com/hyperspy/hyperspy-bundle
    :alt: Link to Windows download for standalone HyperSpy bundle
    :figwidth: 70%
 
@@ -30,6 +31,7 @@ likely you will want the 64-bit version):
 
 .. figure:: _static/bundle_release_download.png
    :width: 100 %
+   :target: https://github.com/hyperspy/hyperspy-bundle/releases
    :alt: Links HyperSpy bundle downloads
    :figwidth: 70%
 

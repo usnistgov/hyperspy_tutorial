@@ -30,6 +30,7 @@ Data Analysis in Materials Science
                 Click here to download<br/>the tutorial data
         </a>
     </div>
+
 |
 |
 
@@ -265,6 +266,7 @@ instructions for each method:
                 Click here for Anaconda Python<br/>installation instructions
         </a>
     </div>
+
 |
 |
 
