@@ -14,6 +14,13 @@
 
 :tocdepth: 4
 
+.. toctree::
+   :hidden:
+
+   install_bundle
+   install_anaconda
+   coming_soon
+
 ==================================
 2019 M&M Sunday Short Course X-15:
 ==================================
@@ -22,11 +29,21 @@
 Data Analysis in Materials Science
 ----------------------------------
 
+.. .. raw:: html
+
+        <div class="text-center">
+            <a  class="downloadbutton"
+                href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip">
+                    Click here to download<br/>the tutorial data
+            </a>
+        </div>
+
+
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip">
+            href="coming_soon.html">
                 Click here to download<br/>the tutorial data
         </a>
     </div>
@@ -220,12 +237,6 @@ distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer
 Installation
 ------------
 
-.. toctree::
-   :hidden:
-
-   install_bundle
-   install_anaconda
-
 At its core, HyperSpy is a third-party library that exists as part of the
 scientific greater Python ecosystem (as opposed to a stand-alone application).
 Because of this, installation is slightly more tricky than a normal program,
@@ -283,7 +294,10 @@ instructions for each method:
 Obtaining the tutorial data
 ---------------------------
 
-Please click `this <https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip>`_
+.. `this <https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip>`_
+
+Please click
+`this <coming_soon.html>`_
 link to download the tutorial notebooks and data as a ``.zip`` file
 (or click the `big green button <#>`_ at the top of this page). Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
