@@ -16,6 +16,7 @@ table.table {
 /* make mark tag more obvious */
 mark {
     text-decoration: underline;
+    background-color: #d6e0fb;
     /* color: white; */
     padding: .1em;
 }
@@ -29,6 +30,90 @@ mark {
   scrollbar-width: none;
 }
 
+.rise-enabled .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.rise-enabled .fig-caption {
+  position: absolute;
+  margin: auto;
+  max-width: 45%;
+  width: 45%;
+  right: 0;
+  text-align: center;
+  bottom: 28%;
+  height: auto;
+  display: block;
+  font-style: italic;
+  color: #4a4a4a;
+  font-size: x-large;
+}
+
+.rise-enabled .fig-caption-center {
+  position: relative;
+  margin: auto;
+  max-width: 55%;
+  width: 55%;
+  text-align: center;
+  bottom: 28%;
+  height: auto;
+  display: block;
+  font-style: italic;
+  color: #4a4a4a;
+  font-size: xx-large;
+}
+
+.rise-enabled .two-cols{
+  display: flex;
+  top: 25%;
+  position: relative;
+}
+.rise-enabled .col{
+  flex: 1;
+}
+.rise-enabled .col > ul > ul > li {
+  font-weight: normal !important;
+}
+.rise-enabled .col.pro-con > ul {
+  font-size:0.8em;
+}
+
+.rise-enabled .pro-con li {
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+
+.rise-enabled .text_left_im_right > ul {
+  max-width: 50%;
+  float: left;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rise-enabled .text_left_im_right > p ~ ul {
+  max-width: 50%;
+  float: left;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rise-enabled .text_left_im_right > img,
+.rise-enabled .text_left_im_right > video {
+  position: absolute;
+  max-width: 45% !important;
+  right: 0;
+  bottom: 18%;
+}
 
 /*********************************************
  * HEADERS
