@@ -129,7 +129,19 @@ About the instructors
     |          |   and structural properties at the nanoscale.                       |
     |          |   (Contact: magnus.nord@uantwerpen.be)                              |
     +----------+---------------------------------------------------------------------+
-    | |eric|   | | |eric_link| (EP) is a person that does microscopy.                |
+    | |eric|   | | |eric_link| (EP) is a Lecturer in Materials Characterisation at   |
+    |          |   the University of Manchester and the SuperSTEM Laboratory. His    |
+    |          |   main areas of research focus on the development, implementation   |
+    |          |   and application of new TEM methodologies &mdash; from specimen    |
+    |          |   preparation, experimental workflow to advanced data processing    |
+    |          |   and analysis &mdash; with the aim to uncover the                  |
+    |          |   structure-property relationships of materials. He is an open      |
+    |          |   source enthusiast, and started to use the HyperSpy                |
+    |          |   library as a user during his PhD and made his first code          |
+    |          |   contribution during his Post-Doc. He has since increased his      |
+    |          |   contribution and commitment to the development of HyperSpy        |
+    |          |   and is now a core developer.                                      |
+    |          |   (Contact: eric.prestat@manchester.ac.uk)                          |
     +----------+---------------------------------------------------------------------+
     | |josh|   | | |josh_link| (JT) is a research engineer within the Office         |
     |          |   of Data and Informatics in the Material Measurement               |
