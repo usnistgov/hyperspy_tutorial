@@ -132,8 +132,8 @@ $(document).ready(function(){
 <h2>Data Analysis in Materials Science<a class="headerlink" href="#data-analysis-in-materials-science" title="Permalink to this headline">¶</a></h2>
 <div class="text-center">
     <a  class="downloadbutton"
-        href="coming_soon.html">
-            Click here to download<br/>the tutorial data
+        href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">
+            Click here to download<br/>the tutorial data (1.9 GB)
     </a>
 </div><div class="line-block">
 <div class="line"><br /></div>
@@ -452,12 +452,23 @@ if you are not experienced with Python.</p>
 <div class="section" id="obtaining-the-tutorial-data">
 <span id="getting-data"></span><h3>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h3>
 <p>Please click
-<a class="reference external" href="coming_soon.html">this</a>
+<a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">this</a>
 link to download the tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file
-(or click the <a class="reference external" href="#">big green button</a> at the top of this page). Once downloaded,
+(or click the <a class="reference external" href="#">big green button</a> at the top of this page). Due to the inclusion
+of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
+enough disk space and bandwidth for the download. Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
 a folder in your user’s home directory named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>
 (i.e. <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\hyperspy_tutorial</span></code> on Windows).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have limited disk space and/or internet availability, you can download
+a smaller version of the same data
+<a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip">here</a>.
+This archive is missing three large datasets, and so you will not be able to
+interactively participate in the <em>Big Data</em> and <em>pyXem</em> sessions. The
+remaining files are all the same.</p>
+</div>
 </div>
 <div class="section" id="running-the-jupyter-notebooks">
 <h3>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
@@ -501,17 +512,27 @@ Make sure to leave the terminal window open in the background, as closing it wil
 shut down the notebook server. If everything has worked as expected, then you
 will see a representation of the directory structure within <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>
 on the Notebook homepage. If you do not, you can click through the file structure
-displayed on the page to get to the correct folder. To create a new notebook,
-you can click the <cite>New</cite> button, and then specify the <cite>Python 3</cite> kernel:</p>
+displayed on the page to get to the correct folder:</p>
 <div class="figure align-default" id="id4" style="width: 70%">
-<a class="reference internal image-reference" href="_images/anaconda_creating_a_notebook.png"><img alt="Creating a notebook in the Jupyter Server on Windows" src="_images/anaconda_creating_a_notebook.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Click the highlighted locations to open a new notebook in the Jupyter Server</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="_images/anaconda_creating_a_notebook.png"><img alt="The notebook server home page" src="_images/anaconda_creating_a_notebook.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Click a folder name to browse into that folder, or a notebook name to open
+that file</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
-<p>Otherwise, to open the notebook files you downloaded earlier, just
-click on any file with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. The notebook will open in a new
-tab, and can be interacted with as you need. The original Jupyter “homepage” will
-stay open, and you can open as many notebooks as you wish at once (as long as you
-leave the terminal window open in the background).</p>
+<div class="figure align-default" id="id5" style="width: 70%">
+<a class="reference internal image-reference" href="_images/opening_getting_started_folder.png"><img alt="Navigating to a folder" src="_images/opening_getting_started_folder.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">(For example) click the “02 HyperSpy basics” link to browse into that folder</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Once inside one of the folders, simply click on any file with the extension
+<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> to open the notebook. The notebook will open in a new tab, and can
+be interacted with as you need:</p>
+<div class="figure align-default" id="id6" style="width: 70%">
+<a class="reference internal image-reference" href="_images/opening_getting_started.png"><img alt="Opening a notebook" src="_images/opening_getting_started.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Opening the “Getting Started” notebook within the “02 HyperSpy basics”
+folder</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>The original Jupyter “homepage” will stay open in the first tab, and you can
+open as many notebooks as you wish at once (as long as you leave the terminal
+window open in the background).</p>
 <p>Congratulations! You should now be ready for the tutorial. If you ran into any
 trouble, please try to arrive on Sunday morning a bit early, and one of the
 instructors will be happy to help get you up and running.</p>

@@ -43,8 +43,8 @@ Data Analysis in Materials Science
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="coming_soon.html">
-                Click here to download<br/>the tutorial data
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">
+                Click here to download<br/>the tutorial data (1.9 GB)
         </a>
     </div>
 
@@ -309,12 +309,22 @@ Obtaining the tutorial data
 .. `this <https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip>`_
 
 Please click
-`this <coming_soon.html>`_
+`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
 link to download the tutorial notebooks and data as a ``.zip`` file
-(or click the `big green button <#>`_ at the top of this page). Once downloaded,
+(or click the `big green button <#>`_ at the top of this page). Due to the inclusion
+of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
+enough disk space and bandwidth for the download. Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
 a folder in your user's home directory named ``hyperspy_tutorial``
 (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
+
+.. note::
+   If you have limited disk space and/or internet availability, you can download
+   a smaller version of the same data
+   `here <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip>`_.
+   This archive is missing three large datasets, and so you will not be able to
+   interactively participate in the *Big Data* and *pyXem* sessions. The
+   remaining files are all the same.
 
 
 Running the Jupyter Notebooks
@@ -372,21 +382,39 @@ Make sure to leave the terminal window open in the background, as closing it wil
 shut down the notebook server. If everything has worked as expected, then you
 will see a representation of the directory structure within ``hyperspy_tutorial``
 on the Notebook homepage. If you do not, you can click through the file structure
-displayed on the page to get to the correct folder. To create a new notebook,
-you can click the `New` button, and then specify the `Python 3` kernel:
+displayed on the page to get to the correct folder:
 
 ..  figure:: _static/anaconda_creating_a_notebook.png
     :width: 100 %
-    :alt: Creating a notebook in the Jupyter Server on Windows
+    :alt: The notebook server home page
     :figwidth: 70%
 
-    Click the highlighted locations to open a new notebook in the Jupyter Server
+    Click a folder name to browse into that folder, or a notebook name to open
+    that file
 
-Otherwise, to open the notebook files you downloaded earlier, just
-click on any file with the extension ``.ipynb``. The notebook will open in a new
-tab, and can be interacted with as you need. The original Jupyter "homepage" will
-stay open, and you can open as many notebooks as you wish at once (as long as you
-leave the terminal window open in the background).
+..  figure:: _static/opening_getting_started_folder.png
+    :width: 100 %
+    :alt: Navigating to a folder
+    :figwidth: 70%
+
+    (For example) click the "02 HyperSpy basics" link to browse into that folder
+
+Once inside one of the folders, simply click on any file with the extension
+``.ipynb`` to open the notebook. The notebook will open in a new tab, and can
+be interacted with as you need:
+
+
+..  figure:: _static/opening_getting_started.png
+    :width: 100 %
+    :alt: Opening a notebook
+    :figwidth: 70%
+
+    Opening the "Getting Started" notebook within the "02 HyperSpy basics"
+    folder
+
+The original Jupyter "homepage" will stay open in the first tab, and you can
+open as many notebooks as you wish at once (as long as you leave the terminal
+window open in the background).
 
 Congratulations! You should now be ready for the tutorial. If you ran into any
 trouble, please try to arrive on Sunday morning a bit early, and one of the
