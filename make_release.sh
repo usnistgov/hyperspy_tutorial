@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-zip -r hyperspy_tutorial.zip . -x "*/.*" -x ".*" -x "make_release.sh" -x "./*.zip"
+# zip everything into one archive, ignoreing hidden files and directories, this 
+# file, and any zip files in the root of the directory tree
+find . -not -path '*/\.*' -not -path './make_release.sh' -not -path './*.zip' \
+       -type f | zip -9 hyperspy_tutorial.zip --names-stdin
 
-zip -r hyperspy_tutorial_no_big_data.zip . -x "*/.*" -x ".*" -x "make_release.sh" -x "./*.zip"
+# same as above, ignoring files larger than 100M:
+find . -not -path '*/\.*' -not -path './make_release.sh' -not -path './*.zip' \
+       -type f -not -size +100M | zip hyperspy_tutorial_no_big_data.zip --names-stdin
