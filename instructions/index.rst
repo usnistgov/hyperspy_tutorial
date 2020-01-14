@@ -65,7 +65,7 @@ There are a few useful links in the top header of this page. The first
 will take you to the git repository containing the notebooks and data we will
 use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
-`User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`_,
+`User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`__,
 respectively. The homepage contains general information about the project as
 a whole, while the User Guide is an extensive piece of documentation that explains
 how to use HyperSpy for all sorts of analyses. Feel free to refer

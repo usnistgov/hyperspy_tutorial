@@ -52,8 +52,8 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = "hyperspy_logo.png"
-html_favicon = "tutorial_favicon.ico"
+html_logo = "_static/hyperspy_logo.png"
+html_favicon = "_static/tutorial_favicon.ico"
 
 html_show_copyright = False
 html_show_sphinx = False
