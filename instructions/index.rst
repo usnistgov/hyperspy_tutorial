@@ -21,9 +21,9 @@
    install_anaconda
    coming_soon
 
-==================================
-2019 M&M Sunday Short Course X-15:
-==================================
+============================
+2020 ACMM HyperSpy workshop:
+============================
 
 ----------------------------------
 Data Analysis in Materials Science
@@ -51,11 +51,11 @@ Data Analysis in Materials Science
 |
 |
 
-Thank you for registering for the 2019 Microscopy and Microanalysis short course
-on data analysis in materials science, presented by the developers of HyperSpy.
+Thank you for registering for the 2020 ACMM HyperSpy workshop on data analysis 
+in materials science.
 This interactive tutorial session will introduce you to modern techniques of
 data analysis for materials science and microscopy data within the scientific
-Python environment, with plenty of time for questions and individual help.
+Python environment, with time for questions and individual help.
 The ultimate goal for the session is that by its end, each attendee feels
 comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
 and knows where to look for further help, if necessary.
@@ -65,7 +65,7 @@ There are a few useful links in the top header of this page. The first
 will take you to the git repository containing the notebooks and data we will
 use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
-`User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`_,
+`User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`__,
 respectively. The homepage contains general information about the project as
 a whole, while the User Guide is an extensive piece of documentation that explains
 how to use HyperSpy for all sorts of analyses. Feel free to refer
@@ -77,12 +77,12 @@ Session Logistics
 .. cssclass:: table-bordered
 
     +--------------------+-------------------------------------------------+
-    | **Date:**          | | Sunday August 4, 2019                         |
+    | **Date:**          | | Sunday 16th February                          |
     +--------------------+-------------------------------------------------+
     | **Time:**          | 8:30 AM - 5:30 PM PT                            |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | | Oregon Convention Center - Portland, OR       |
-    |                    | | (Room B118-119)                               |
+    | **Location:**      | |                                               |
+    |                    | |                                               |
     +--------------------+-------------------------------------------------+
 
 About the instructors
@@ -91,50 +91,12 @@ About the instructors
 .. table::
 
     +----------+---------------------------------------------------------------------+
-    | |duncan| | | |duncan_link| (DJ) is a Research Associate in the Electron        |
-    |          |   Microscopy Group of the Department of Materials Science &         |
-    |          |   Metallurgy, University of Cambridge, UK. His work focuses on      |
-    |          |   developing materials characterization approaches based on         |
-    |          |   electron diffraction and is currently particularly interested     |
-    |          |   in determining structure on the nanoscale in soft materials.      |
-    |          |   He leads the development of the ``pyxem`` python package for      |
-    |          |   the analysis of scanning diffraction data in which                |
-    |          |   diffraction patterns are acquired at every probe position         |
-    |          |   across a specimen. The ``pyxem`` package builds on HyperSpy       |
-    |          |   and he has made contributions to HyperSpy to enable that          |
-    |          |   dependence. (Contact: dnj23@cam.ac.uk)                            |
-    +----------+---------------------------------------------------------------------+
-    | |kate|   | | |kate_link| (KM) is a postdoctoral researcher at the Ernst        |
-    |          |   Ruska Centre for Microscopy and Spectroscopy in the Helmholtz     |
-    |          |   funded Research Centre Jülich, Germany. She completed her PhD     |
-    |          |   at Oxford University in 2015 on quantitative EDX and HAADF        |
-    |          |   STEM. She has interests in Materials Science, spectroscopy and    |
-    |          |   microscopy analysis in a quantitative manner. Katherine got       |
-    |          |   involved with HyperSpy development three years ago with the       |
-    |          |   aim of automating her quantitative EDX analysis method.           |
-    |          |   She has since expanded her contributions to more general          |
-    |          |   data analysis functions and methods, with the interest of         |
-    |          |   working towards automated analysis of in-situ spectroscopic       |
-    |          |   data. (Contact: k.macarthur@fz-juelich.de)                        |
-    +----------+---------------------------------------------------------------------+
-    | |magnus| | | |magnus_link| (MN) is a Marie Curie fellow at Electron Microscopy |
-    |          |   for Materials research (EMAT) at University of Antwerp,           |
-    |          |   Belgium. He obtained his PhD at the Norwegian University of       |
-    |          |   Science and Technology working on advanced analysis of both       |
-    |          |   EELS and atomic resolution STEM data. The former resulting        |
-    |          |   in many contributions to HyperSpy, and the latter in the          |
-    |          |   creation of the Atomap Python library. His current research       |
-    |          |   interests revolves around utilizing fast pixelated detectors      |
-    |          |   in STEM with the ``pixStem`` library, to study both magnetic      |
-    |          |   and structural properties at the nanoscale.                       |
-    |          |   (Contact: magnus.nord@uantwerpen.be)                              |
-    +----------+---------------------------------------------------------------------+
     | |eric|   | | |eric_link| (EP) is a Lecturer in Materials Characterisation at   |
     |          |   the University of Manchester and the SuperSTEM Laboratory. His    |
     |          |   main areas of research focus on the development, implementation   |
-    |          |   and application of new TEM methodologies &mdash; from specimen    |
+    |          |   and application of new TEM methodologies - from specimen          |
     |          |   preparation, experimental workflow to advanced data processing    |
-    |          |   and analysis &mdash; with the aim to uncover the                  |
+    |          |   and analysis - with the aim to uncover the                        |
     |          |   structure-property relationships of materials. He is an open      |
     |          |   source enthusiast, and started to use the HyperSpy                |
     |          |   library as a user during his PhD and made his first code          |
@@ -143,33 +105,9 @@ About the instructors
     |          |   and is now a core developer.                                      |
     |          |   (Contact: eric.prestat@manchester.ac.uk)                          |
     +----------+---------------------------------------------------------------------+
-    | |josh|   | | |josh_link| (JT) is a research engineer within the Office         |
-    |          |   of Data and Informatics in the Material Measurement               |
-    |          |   Laboratory at NIST, and has an extensive                          |
-    |          |   background in materials science, microscopy, and data analysis    |
-    |          |   utilizing machine learning, artificial intelligence, and          |
-    |          |   state-of-the art signal processing techniques to facilitate       |
-    |          |   greater understanding of material systems. He is a (fairly)       |
-    |          |   regular |contributor| to the upstream HyperSpy project and has    |
-    |          |   been a user of the software for over 5 years.                     |
-    |          |   (Contact: joshua.taillon@nist.gov)                                |
-    +----------+---------------------------------------------------------------------+
 
 
-.. |contributor| replace:: `contributor <https://github.com/hyperspy/hyperspy/commits?author=jat255>`__
-.. |josh_link| replace:: `Josh Taillon <https://www.nist.gov/people/joshua-taillon>`__
-.. |duncan_link| replace:: `Duncan Johnstone <https://www.emg.msm.cam.ac.uk/People/dnj23>`__
-.. |kate_link| replace:: `Katherine MacArthur <http://www.er-c.org/metals/staff/macarthur.htm>`__
-.. |magnus_link| replace:: `Magnus Nord <https://www.uantwerpen.be/en/staff/magnus-nord/>`__
 .. |eric_link| replace:: `Eric Prestat <https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html>`__
-.. |josh| image:: _static/josh_taillon.jpg
-   :width: 100%
-.. |kate| image:: _static/kate_macarthur.jpg
-   :width: 100%
-.. |magnus| image:: _static/magnus_nord.png
-   :width: 100%
-.. |duncan| image:: _static/duncan_johnstone.jpg
-   :width: 100%
 .. |eric| image:: _static/eric_prestat.jpg
    :width: 100%
 
@@ -184,23 +122,23 @@ Agenda
     +-------------------+------------+-----------+------------------------------------------------------+
     | Time              | Format     | Leader(s) | Topic                                                |
     +===================+============+===========+======================================================+
-    | 08:30 - 09:00     | Talk       | JT        | Introduction to Python and HyperSpy                  |
+    | 08:30 - 09:00     | Talk       | EP        | Introduction to Python and HyperSpy                  |
     +-------------------+------------+-----------+------------------------------------------------------+
     | 09:00 - 10:30     | Practical  | EP        | HyperSpy Basics                                      |
     +-------------------+------------+-----------+------------------------------------------------------+
     | 10:30 - 10:45     |                        | *Coffee Break*                                       |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 10:45 - 11:30     | Practical  | DJ        | Model Fitting                                        |
+    | 10:45 - 11:30     | Practical  | EP        | Model Fitting                                        |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 11:30 - 12:15     | Practical  | MN        | EELS Analysis                                        |
+    | 11:30 - 12:15     | Practical  | EP        | EELS Analysis                                        |
     +-------------------+------------+-----------+------------------------------------------------------+
     | 12:15 - 13:15     |            |           | *Lunch Break*                                        |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 13:15 - 13:30     | Talk       | JT        | Intro to Machine Learning in EM                      |
+    | 13:15 - 13:30     | Talk       | EP        | Intro to Machine Learning in EM                      |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 13:30 - 14:00     | Practical  | JT        | Machine Learning                                     |
+    | 13:30 - 14:00     | Practical  | EP        | Machine Learning                                     |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 14:00 - 15:00     | Practical  | KM        | EDS Analysis                                         |
+    | 14:00 - 15:00     | Practical  | EP        | EDS Analysis                                         |
     +-------------------+------------+-----------+------------------------------------------------------+
     | 15:00 - 15:15     |                        | *Coffee Break*                                       |
     +-------------------+------------+-----------+------------------------------------------------------+
@@ -208,9 +146,9 @@ Agenda
     +-------------------+------------+-----------+------------------------------------------------------+
     | |                 | |          |  |        | | *Running in parallel, self-learning with provided* |
     | |                 | |          |  |        | | *notebooks and support from instructors:*          |
-    | | 16:00 - 17:30   | | Practical|  | MN/KM  | |   - Atomic resolution image analysis               |
-    | |                 | |          |  | DJ     | |   - Scanning electron diffraction analysis         |
-    | |                 | |          |  | MN     | |   - Pixelated STEM / 4D STEM                       |
+    | | 16:00 - 17:30   | | Practical|  | EP     | |   - Atomic resolution image analysis               |
+    | |                 | |          |  |        | |   - Scanning electron diffraction analysis         |
+    | |                 | |          |  |        | |   - Pixelated STEM / 4D STEM                       |
     +-------------------+------------+-----------+------------------------------------------------------+
 
 -------------------------
