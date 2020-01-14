@@ -18,7 +18,7 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = '2019 M&M Short Course X-15'
+project = '2020 ACMM HyperSpy'
 # copyright = '2019, Joshua Taillon'
 author = 'HyperSpy Developers'
 
