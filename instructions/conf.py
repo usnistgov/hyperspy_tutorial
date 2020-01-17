@@ -110,7 +110,7 @@ html_theme_options = {
 
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"
-    'navbar_class': "navbar navbar-inverse",
+    'navbar_class': "navbar navbar-default",
 
     # Fix navigation bar to top of page?
     # Values: "true" (default) or "false"
@@ -131,7 +131,7 @@ html_theme_options = {
     # Currently, the supported themes are:
     # - Bootstrap 2: https://bootswatch.com/2
     # - Bootstrap 3: https://bootswatch.com/3
-    'bootswatch_theme': "yeti",
+    'bootswatch_theme': "simplex",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
