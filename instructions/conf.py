@@ -81,9 +81,9 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Tutorial Repository",
-         "https://github.com/usnistgov/hyperspy_tutorial", True),
+         "https://github.com/ericpre/hyperspy_tutorial", True),
         ("HyperSpy Homepage", "http://hyperspy.org", True),
-        ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/user_guide/index.html", True),
+        ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/index.html", True),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)

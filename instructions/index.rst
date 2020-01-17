@@ -21,30 +21,29 @@
    install_anaconda
    coming_soon
 
-============================
-2020 ACMM HyperSpy workshop:
-============================
+===========================
+ACMM 2020 HyperSpy workshop
+===========================
 
-----------------------------------
-Data Analysis in Materials Science
-----------------------------------
-
-.. .. raw:: html
-
+..
+    .. raw:: html
+    
         <div class="text-center">
             <a  class="downloadbutton"
-                href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip">
-                    Click here to download<br/>the tutorial data
+                href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">
+                    Click here to download<br/>the tutorial data (1.9 GB)
             </a>
         </div>
-
+    
+    |
+    |
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">
-                Click here to download<br/>the tutorial data (1.9 GB)
+            >
+                Download tutorial data (1.9 GB)<br/> <b>coming soon</b>
         </a>
     </div>
 
@@ -61,11 +60,11 @@ comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
 and knows where to look for further help, if necessary.
 
 There are a few useful links in the top header of this page. The first
-(`Tutorial Repository <https://github.com/usnistgov/hyperspy_tutorial>`_)
+(`Tutorial Repository <https://github.com/ericpre/hyperspy_tutorial>`_)
 will take you to the git repository containing the notebooks and data we will
 use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
-`User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`__,
+`User Guide <http://hyperspy.org/hyperspy-doc/current/index.html>`__,
 respectively. The homepage contains general information about the project as
 a whole, while the User Guide is an extensive piece of documentation that explains
 how to use HyperSpy for all sorts of analyses. Feel free to refer
@@ -79,9 +78,9 @@ Session Logistics
     +--------------------+-------------------------------------------------+
     | **Date:**          | | Sunday 16th February                          |
     +--------------------+-------------------------------------------------+
-    | **Time:**          | 8:30 AM - 5:30 PM PT                            |
+    | **Time:**          | 9:00 AM - 5:00 PM PT                            |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | |                                               |
+    | **Location:**      | | Information coming soon                       |
     |                    | |                                               |
     +--------------------+-------------------------------------------------+
 
@@ -122,31 +121,31 @@ Agenda
     +-------------------+------------+-----------+------------------------------------------------------+
     | Time              | Format     | Leader(s) | Topic                                                |
     +===================+============+===========+======================================================+
-    | 08:30 - 09:00     | Talk       | EP        | Introduction to Python and HyperSpy                  |
+    | 09:00 - 09:15     | Talk       | EP        | Introduction to Python and HyperSpy                  |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 09:00 - 10:30     | Practical  | EP        | HyperSpy Basics                                      |
+    | 09:15 - 10:30     | Practical  | EP        | HyperSpy Basics                                      |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 10:30 - 10:45     |                        | *Coffee Break*                                       |
+    | 10:30 - 11:00     |                        | *Coffee Break*                                       |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 10:45 - 11:30     | Practical  | EP        | Model Fitting                                        |
+    | 11:00 - 11:45     | Practical  | EP        | Model Fitting                                        |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 11:30 - 12:15     | Practical  | EP        | EELS Analysis                                        |
+    | 11:45 - 12:30     | Practical  | EP        | EELS Analysis                                        |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 12:15 - 13:15     |            |           | *Lunch Break*                                        |
+    | 12:30 - 13:30     |            |           | *Lunch Break*                                        |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 13:15 - 13:30     | Talk       | EP        | Intro to Machine Learning in EM                      |
+    | 13:30 - 13:45     | Talk       | EP        | Intro to Machine Learning in EM                      |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 13:30 - 14:00     | Practical  | EP        | Machine Learning                                     |
+    | 13:45 - 14:15     | Practical  | EP        | Machine Learning                                     |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 14:00 - 15:00     | Practical  | EP        | EDS Analysis                                         |
+    | 14:15 - 15:00     | Practical  | EP        | EDS Analysis                                         |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 15:00 - 15:15     |                        | *Coffee Break*                                       |
+    | 15:00 - 15:30     |                        | *Coffee Break*                                       |
     +-------------------+------------+-----------+------------------------------------------------------+
-    | 15:15 - 16:00     | Practical  | EP        | Big Data Analysis                                    |
+    | 15:30 - 16:15     | Practical  | EP        | Big Data Analysis                                    |
     +-------------------+------------+-----------+------------------------------------------------------+
     | |                 | |          |  |        | | *Running in parallel, self-learning with provided* |
     | |                 | |          |  |        | | *notebooks and support from instructors:*          |
-    | | 16:00 - 17:30   | | Practical|  | EP     | |   - Atomic resolution image analysis               |
+    | | 16:15 - 17:00   | | Practical|  | EP     | |   - Atomic resolution image analysis               |
     | |                 | |          |  |        | |   - Scanning electron diffraction analysis         |
     | |                 | |          |  |        | |   - Pixelated STEM / 4D STEM                       |
     +-------------------+------------+-----------+------------------------------------------------------+
@@ -178,8 +177,8 @@ computing environment.
 Prerequisites
 -------------
 
-For participation in the session, a basic familiarity with Python and command
-line tools will be helpful, but not strictly required. You will need to follow
+No prior knowledge of Python is required for this workshop but a basic familiarity
+with Python will be helpful. You will need to follow
 the instructions below to install HyperSpy using either the Anaconda Python
 distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer
 (only available on Windows).
@@ -219,12 +218,12 @@ instructions for each method:
     <div class="text-center">
         <a  class="downloadbutton"
             href="install_bundle.html">
-                Click here for the "bundle"<br/>installation instructions
+                "Bundle" installation <br/>instructions
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a  class="downloadbutton"
             href="install_anaconda.html">
-                Click here for Anaconda Python<br/>installation instructions
+                Anaconda installation <br/>instructions
         </a>
     </div>
 
@@ -244,25 +243,27 @@ instructions for each method:
 Obtaining the tutorial data
 ---------------------------
 
-.. `this <https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip>`_
+The data will be available shortly before the workshop (most likely a couple of
+days).
 
-Please click
-`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
-link to download the tutorial notebooks and data as a ``.zip`` file
-(or click the `big green button <#>`_ at the top of this page). Due to the inclusion
-of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
-enough disk space and bandwidth for the download. Once downloaded,
-extract the files into their own folder that is easily accessible. We recommend
-a folder in your user's home directory named ``hyperspy_tutorial``
-(i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
-
-.. note::
-   If you have limited disk space and/or internet availability, you can download
-   a smaller version of the same data
-   `here <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip>`_.
-   This archive is missing three large datasets, and so you will not be able to
-   interactively participate in the *Big Data* and *pyXem* sessions. The
-   remaining files are all the same.
+..
+    Please click
+    `this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
+    link to download the tutorial notebooks and data as a ``.zip`` file
+    (or click the `big green button <#>`_ at the top of this page). Due to the inclusion
+    of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
+    enough disk space and bandwidth for the download. Once downloaded,
+    extract the files into their own folder that is easily accessible. We recommend
+    a folder in your user's home directory named ``hyperspy_tutorial``
+    (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
+    
+    .. note::
+       If you have limited disk space and/or internet availability, you can download
+       a smaller version of the same data
+       `here <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip>`_.
+       This archive is missing three large datasets, and so you will not be able to
+       interactively participate in the *Big Data* and *pyXem* sessions. The
+       remaining files are all the same.
 
 
 Running the Jupyter Notebooks
