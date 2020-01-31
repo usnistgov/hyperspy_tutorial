@@ -17,42 +17,26 @@
 .. toctree::
    :hidden:
 
-   install_bundle
-   install_anaconda
-   coming_soon
+   install_bundle_windows
+   install_bundle_mac
 
-===========================
-ACMM 2020 HyperSpy workshop
-===========================
-
-..
-    .. raw:: html
-    
-        <div class="text-center">
-            <a  class="downloadbutton"
-                href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">
-                    Click here to download<br/>the tutorial data (1.9 GB)
-            </a>
-        </div>
-    
-    |
-    |
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            >
-                Download tutorial data (1.9 GB)<br/> <b>coming soon</b>
+            href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">
+                Click here to download<br/>the workshop data (1.9 GB)
         </a>
     </div>
 
 |
 |
 
+
 Thank you for registering for the 2020 ACMM HyperSpy workshop on data analysis 
 in materials science.
-This interactive tutorial session will introduce you to modern techniques of
+This interactive workshop session will introduce you to modern techniques of
 data analysis for materials science and microscopy data within the scientific
 Python environment, with time for questions and individual help.
 The ultimate goal for the session is that by its end, each attendee feels
@@ -60,7 +44,7 @@ comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
 and knows where to look for further help, if necessary.
 
 There are a few useful links in the top header of this page. The first
-(`Tutorial Repository <https://github.com/ericpre/hyperspy_tutorial>`_)
+(`Workshop Repository <https://github.com/ericpre/hyperspy_tutorial>`_)
 will take you to the git repository containing the notebooks and data we will
 use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
@@ -68,7 +52,7 @@ use during the tutorial. The next two point to the HyperSpy
 respectively. The homepage contains general information about the project as
 a whole, while the User Guide is an extensive piece of documentation that explains
 how to use HyperSpy for all sorts of analyses. Feel free to refer
-to these links before and during the tutorial session for additional help.
+to these links before and during the workshop session for additional help.
 
 Session Logistics
 -----------------
@@ -84,8 +68,8 @@ Session Logistics
     |                    | |                                               |
     +--------------------+-------------------------------------------------+
 
-About the instructors
----------------------
+About the instructor
+--------------------
 
 .. table::
 
@@ -144,17 +128,17 @@ Agenda
     | 15:30 - 16:15     | Practical  | EP        | Big Data Analysis                                    |
     +-------------------+------------+-----------+------------------------------------------------------+
     | |                 | |          |  |        | | *Running in parallel, self-learning with provided* |
-    | |                 | |          |  |        | | *notebooks and support from instructors:*          |
+    | |                 | |          |  |        | | *notebooks and support from the instructor:*       |
     | | 16:15 - 17:00   | | Practical|  | EP     | |   - Atomic resolution image analysis               |
     | |                 | |          |  |        | |   - Scanning electron diffraction analysis         |
     | |                 | |          |  |        | |   - Pixelated STEM / 4D STEM                       |
     +-------------------+------------+-----------+------------------------------------------------------+
 
--------------------------
-Pre-tutorial instructions
+
+Pre-workshop instructions
 -------------------------
 
-Please review this section in advance of Sunday's tutorial session, as it
+Please review this section in advance of Sunday's workshop session, as it
 includes instructions for installing HyperSpy and the Jupyter interactive
 computing environment.
 
@@ -175,7 +159,7 @@ computing environment.
     ..  _JupyterHub: https://jupyterhub.readthedocs.io/en/stable/
 
 Prerequisites
--------------
+^^^^^^^^^^^^^
 
 No prior knowledge of Python is required for this workshop but a basic familiarity
 with Python will be helpful. You will need to follow
@@ -184,7 +168,7 @@ distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer
 (only available on Windows).
 
 Installation
-------------
+^^^^^^^^^^^^
 
 At its core, HyperSpy is a third-party library that exists as part of the
 scientific greater Python ecosystem (as opposed to a stand-alone application).
@@ -194,46 +178,32 @@ required are a Python distribution (typically pre-installed on Mac and Linux;
 but not included on by default on Windows), and then the HyperSpy libraries
 that operate within that Python environment.
 
-There are two possible approaches to getting a working HyperSpy environment. If
-you are brand-new to Python and the command line in general (and you are running
-Windows), we recommend using the pre-packaged
-:doc:`"Bundle" Installer <../install_bundle>`.
-
-For all other operating systems (and Windows, if you're a bit more comfortable
-with Python and the command line), the recommended way to install HyperSpy is
-using :doc:`Anaconda <../install_anaconda>`, due to its prevalence in the
-scientific community and the ease of managing multiple Python "environments" on
-one system. It also provides a uniform way of installing packages and managing
-the system regardless of operating system, as well as up-to-date versions of
-Python and library packages (often the "system" installation on Linux or Mac is
-out of date). Anaconda can also be installed and run without administrative
-privileges, meaning it can be used on remote systems easily regardless of
-ownership.
-
-Click one of the following buttons to view the specific installation
-instructions for each method:
+If you are not already using a python distribution on your system, we recommend
+to use the bundle installer:
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="install_bundle.html">
-                "Bundle" installation <br/>instructions
+            href="install_bundle_windows.html">
+                "Bundle" installation <br/>instructions for Windows
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a  class="downloadbutton"
-            href="install_anaconda.html">
-                Anaconda installation <br/>instructions
+            href="install_bundle_mac.html">
+                "Bundle" installation <br/>instructions for Mac
         </a>
     </div>
 
 |
 |
 
+If you already using an anaconda distribution, we recommend to follow the 
+`installation instructions <http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows>`_
+
 ..  caution::
-    It is important that you install HyperSpy using either the
-    :doc:`"Bundle" Installer <../install_bundle>`, or through
-    :doc:`Anaconda <../install_anaconda>` (*not both*!). Installing
+    It is important that you install HyperSpy using either the "Bundle" installer,
+    or in an existing Python distribution (*not both*!). Installing
     both can work, but will leave you with multiple Python installations on your
     system, and it will be very confusing to try to solve any issues that arise
     if you are not experienced with Python.
@@ -241,63 +211,85 @@ instructions for each method:
 .. _getting-data:
 
 Obtaining the tutorial data
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The data will be available shortly before the workshop (most likely a couple of
-days).
+.. raw:: html
 
-..
-    Please click
-    `this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
-    link to download the tutorial notebooks and data as a ``.zip`` file
-    (or click the `big green button <#>`_ at the top of this page). Due to the inclusion
-    of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
-    enough disk space and bandwidth for the download. Once downloaded,
-    extract the files into their own folder that is easily accessible. We recommend
-    a folder in your user's home directory named ``hyperspy_tutorial``
-    (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
-    
-    .. note::
-       If you have limited disk space and/or internet availability, you can download
-       a smaller version of the same data
-       `here <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip>`_.
-       This archive is missing three large datasets, and so you will not be able to
-       interactively participate in the *Big Data* and *pyXem* sessions. The
-       remaining files are all the same.
+    <div class="text-center">
+        <a  class="downloadbutton"
+            href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">
+                Click here to download<br/>the workshop data (1.9 GB)
+        </a>
+    </div>
 
+|
+|
 
-Running the Jupyter Notebooks
------------------------------
+Due to the inclusion
+of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
+enough disk space and bandwidth for the download. Once downloaded,
+extract the files into their own folder that is easily accessible. We recommend
+a folder in your user's home directory named ``hyperspy_tutorial``
+(i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
+
+.. note::
+   If you have limited disk space and/or internet availability, you can download
+   a smaller version of the same data
+   `here <https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial_no_big_data.zip>`_.
+   This archive is missing three large datasets, and so you will not be able to
+   interactively participate in the *Big Data* and *pyXem* sessions. The
+   remaining files are all the same.
+
+Starting the Jupyter Notebooks
+------------------------------
 
 To actually open the Jupyter Notebooks containing the tutorials, you will need
 to start a local Jupyter server and connect to it through your browser (don't
 worry, everything stays local and there's no security risk to running the
 notebook on ``localhost``).
 
-If you installed using the bundle, this is very simple. Just open the Start Menu
-and navigate to the "Jupyter Notebook" option within the "HyperSpy Bundle" folder:
+If you installed using the bundle, this is very simple: you will have a shortcut
+in `the context menu <https://github.com/hyperspy/start_jupyter_cm>`_ 
+(right click), which will open a notebook from this folder.
+Make sure to right click on this folder.
 
-.. figure:: _static/bundle_start_menu_notebook.png
+.. list-table::
+
+   * - .. figure:: _static/jupyter_cm_windows.png
+          :height: 175 px
+
+          Short cut to start the jupyter notebook from the current folder
+          on Windows.
+    
+     - .. figure:: _static/jupyter_cm_macos.png
+    
+          Short cut to start the jupyter notebook from the current folder
+          on macOS.
+
+     - .. figure:: _static/jupyter_cm_gnome.png
+    
+          Short cut to start the jupyter notebook from the current folder
+          on Linux with a Gnome desktop.
+
+
+On windows, you can also use the short cut in the start to start the jupyter
+notebook in your home folder.
+
+.. figure:: _static/bundle_start_menu_notebook_labels.png
    :width: 100 %
-   :alt: Starting the notebook server from the bundle Start Menu
-   :figwidth: 50%
+   :alt: Starting the notebook server from the Start Menu
+   :figwidth: 30%
 
-   Starting the notebook server from the Start Menu shortcut installed in the
-   bundle
+   Starting the notebook server from the start menu shortcut.
 
-If you installed with Anaconda, open the Anaconda Prompt (Windows) or a regular terminal
-(macOS/Linux). From that prompt, use the ``cd`` command to change to the
-directory that contains the tutorial notebooks and data that you downloaded
+On macOS and Linux, open a terminal and use the ``cd`` command to change to the
+directory that contains the workshop notebooks and data that you downloaded
 in the previous section. For example, if you saved the data into a folder named
 ``hyperspy_tutorial`` in your user folder, you would change to that folder with
 one of the following commands:
 
 ..  code-block:: bash
 
-    # For Windows:
-    $ cd %USERPROFILE%\\hyperspy_tutorial
-
-    # For macOS or Linux:
     $ cd ~/hyperspy_tutorial
 
 Once in that folder, start the Jupyter Notebook server with the following
@@ -307,14 +299,6 @@ command:
 
     $ jupyter notebook
 
-..  figure:: _static/anaconda_starting_jupyter.png
-    :width: 100 %
-    :alt: Starting the Jupyter Notebook on Windows
-    :figwidth: 70%
-
-    Starting the Jupyter Notebook from the ``hyperspy_tutorial`` folder on
-    Windows
-
 Regardless if you used the bundle or Anaconda, once you start the notebook "server",
 it will automatically open a browser window (or new tab) to connect to the local server.
 Make sure to leave the terminal window open in the background, as closing it will
@@ -323,7 +307,7 @@ will see a representation of the directory structure within ``hyperspy_tutorial`
 on the Notebook homepage. If you do not, you can click through the file structure
 displayed on the page to get to the correct folder:
 
-..  figure:: _static/anaconda_creating_a_notebook.png
+..  figure:: _static/notebook_folder_labels.png
     :width: 100 %
     :alt: The notebook server home page
     :figwidth: 70%
@@ -331,24 +315,17 @@ displayed on the page to get to the correct folder:
     Click a folder name to browse into that folder, or a notebook name to open
     that file
 
-..  figure:: _static/opening_getting_started_folder.png
-    :width: 100 %
-    :alt: Navigating to a folder
-    :figwidth: 70%
-
-    (For example) click the "02 HyperSpy basics" link to browse into that folder
-
 Once inside one of the folders, simply click on any file with the extension
 ``.ipynb`` to open the notebook. The notebook will open in a new tab, and can
 be interacted with as you need:
 
 
-..  figure:: _static/opening_getting_started.png
+..  figure:: _static/notebook_open_labels.png
     :width: 100 %
     :alt: Opening a notebook
     :figwidth: 70%
 
-    Opening the "Getting Started" notebook within the "02 HyperSpy basics"
+    Opening the "Getting Started" notebook within the "01 HyperSpy basics"
     folder
 
 The original Jupyter "homepage" will stay open in the first tab, and you can
@@ -356,10 +333,10 @@ open as many notebooks as you wish at once (as long as you leave the terminal
 window open in the background).
 
 Congratulations! You should now be ready for the tutorial. If you ran into any
-trouble, please try to arrive on Sunday morning a bit early, and one of the
-instructors will be happy to help get you up and running.
+trouble, please try to arrive on Sunday morning a bit early, and we will get
+you up and running.
 
-------------
+
 Getting Help
 ------------
 

@@ -60,7 +60,7 @@ html_show_sphinx = False
 # html_add_permalinks = ''
 html_show_sourcelink = False
 
-html_sidebars = {'**': ['localtoc.html'] }
+html_sidebars = {'**': ['localtoc.html', 'searchbox.html'] }
 
 
 # Theme options are theme-specific and customize the look and feel of a
@@ -80,7 +80,7 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-        ("Tutorial Repository",
+        ("Workshop Repository",
          "https://github.com/ericpre/hyperspy_tutorial", True),
         ("HyperSpy Homepage", "http://hyperspy.org", True),
         ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/index.html", True),
