@@ -19,6 +19,7 @@
 
    install_bundle_windows
    install_bundle_mac
+   install_bundle_linux
 
 
 .. raw:: html
@@ -180,19 +181,24 @@ that operate within that Python environment.
 
 Select one of following instructions, depending on:
 
-* if youd are not already using a python distribution on your system:
+* if you are not already using a python distribution on your system:
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
             href="install_bundle_windows.html">
-                Installation <br/>for Windows
+                Windows
         </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <a  class="downloadbutton"
             href="install_bundle_mac.html">
-                Installation <br/>for Mac
+                Mac
+        </a>
+        &nbsp;&nbsp;
+        <a  class="downloadbutton"
+            href="install_bundle_linux.html">
+                Linux
         </a>
     </div>
 
@@ -215,7 +221,7 @@ Select one of following instructions, depending on:
 
 ..  caution::
     It is important that you install HyperSpy using either the "Bundle" installer,
-    or in an existing Python distribution (*not both*!). Installing
+    or in an existing Python distribution (*not both!*). Installing
     both can work, but will leave you with multiple Python installations on your
     system, and it will be very confusing to try to solve any issues that arise
     if you are not experienced with Python.
@@ -258,7 +264,7 @@ Getting started
 
 .. _start_jupyter:
 
-Starting Hyperspy
+Starting HyperSpy
 ^^^^^^^^^^^^^^^^^
 
 HyperSpy is a python library which can be used in different environment,
@@ -295,7 +301,7 @@ Make sure to right click on this folder.
 On windows, you can also use the short cut in the start menu to start the jupyter
 notebook in your home folder.
 
-.. figure:: _static/bundle_start_menu_notebook_labels.png
+.. figure:: _static/windows_start_menu_notebook_labels.png
    :width: 100 %
    :alt: Starting the notebook server from the Start Menu
    :figwidth: 30%

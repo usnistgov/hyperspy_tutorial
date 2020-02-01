@@ -1,12 +1,13 @@
 .. _bundle_windows-label:
 
-Installing on windows
+Installing on Windows
 ---------------------
 
-If you are running on Windows, the easiest way to install HyperSpy is using
-the "standalone" bundle package. This simple to install program provides a
-customized Anaconda installation that has the HyperSpy libraries pre-installed.
-A detailed walk through of the process is provided below.
+On Windows, the easiest way to install HyperSpy is to use the HyperSpy bundle
+installer. This simple to install program provides a customized Anaconda 
+installation, which contains the HyperSpy libraries but also other libraries 
+used in the field of electron microsocpy. A detailed walk through of the 
+process is provided below.
 
 Download
 ^^^^^^^^
@@ -30,7 +31,7 @@ straightforward. For the installation location, we *highly* recommend to install
 as single user in a folder that does not require administrative rights, as set 
 by default.
 
-.. figure:: _static/bundle_single_user.png
+.. figure:: _static/windows_single_user.png
    :width: 100 %
    :alt: Bundle installation progress
    :figwidth: 50%
@@ -39,7 +40,7 @@ by default.
 
 Keep the default options unless you know what you are doing.
 
-.. figure:: _static/bundle_defaults_option.png
+.. figure:: _static/windows_defaults_option.png
    :width: 100 %
    :alt: Bundle installation progress
    :figwidth: 50%
