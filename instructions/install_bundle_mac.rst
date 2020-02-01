@@ -51,19 +51,4 @@ Start Menu under the "HyperSpy Bundle" folder. You can either continue following
 the next section to test the installation, or continue to the
 :ref:`getting-data` section on the main page.
 
-Testing the installation
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you would like to test that your installation is working properly, you can
-run a small test example by opening the "Qt Console". This is an interactive
-Python interpreter that allows you to type in Python statements directly. Launch
-the Qt Console from within the "HyperSpy Bundle" folder in the Start Menu:
-
-.. figure:: _static/bundle_test_qtconsole.png
-   :width: 100 %
-   :alt: Launching the interactive Python console
-   :figwidth: 50%
-
-   Launching the interactive Python console from the Start Menu
-
 .. include:: testing_install.rst

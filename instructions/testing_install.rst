@@ -1,3 +1,9 @@
+Testing the installation
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Start the jupyter qconsole using the context menu (right click) short cut, see
+the :ref:`start_jupyter` section
+
 The Qt Console is an interactive Python interpreter that allows you to enter
 Python statements directly and immediately see their output. Once the console
 has opened and you see a prompt that says ``In [1]:``, copy the following code
@@ -57,7 +63,7 @@ tutorial homepage:
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="index.html#obtaining-the-tutorial-data">
+            href="index.html">
                 Click here to return<br/>to the main page
         </a>
     </div>

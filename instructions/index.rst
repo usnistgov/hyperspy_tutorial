@@ -178,28 +178,40 @@ required are a Python distribution (typically pre-installed on Mac and Linux;
 but not included on by default on Windows), and then the HyperSpy libraries
 that operate within that Python environment.
 
-If you are not already using a python distribution on your system, we recommend
-to use the bundle installer:
+Select one of following instructions, depending on:
+
+* if youd are not already using a python distribution on your system:
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
             href="install_bundle_windows.html">
-                "Bundle" installation <br/>instructions for Windows
+                Installation <br/>for Windows
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a  class="downloadbutton"
             href="install_bundle_mac.html">
-                "Bundle" installation <br/>instructions for Mac
+                Installation <br/>for Mac
         </a>
     </div>
 
 |
 |
 
-If you already using an anaconda distribution, we recommend to follow the 
-`installation instructions <http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows>`_
+* if you already using an anaconda distribution:
+
+.. raw:: html
+
+    <div class="text-center">
+        <a  class="downloadbutton"
+            href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">
+                Installation in an existing <br/> Anaconda distribution
+        </a>
+    </div>
+
+|
+|
 
 ..  caution::
     It is important that you install HyperSpy using either the "Bundle" installer,
@@ -233,6 +245,7 @@ a folder in your user's home directory named ``hyperspy_tutorial``
 (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
 
 .. note::
+
    If you have limited disk space and/or internet availability, you can download
    a smaller version of the same data
    `here <https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial_no_big_data.zip>`_.
@@ -240,13 +253,21 @@ a folder in your user's home directory named ``hyperspy_tutorial``
    interactively participate in the *Big Data* and *pyXem* sessions. The
    remaining files are all the same.
 
-Starting the Jupyter Notebooks
-------------------------------
+Getting started
+---------------
 
-To actually open the Jupyter Notebooks containing the tutorials, you will need
-to start a local Jupyter server and connect to it through your browser (don't
-worry, everything stays local and there's no security risk to running the
-notebook on ``localhost``).
+.. _start_jupyter:
+
+Starting Hyperspy
+^^^^^^^^^^^^^^^^^
+
+HyperSpy is a python library which can be used in different environment,
+typically, we will use `jupyter software <https://jupyter.org/>`_, which comes
+in different variants:
+
+* `notebook <https://jupyter-notebook.readthedocs.io/en/stable/>`_
+* `qtconsole <https://qtconsole.readthedocs.io/en/stable/>`_
+* `lab <https://jupyterlab.readthedocs.io/en/stable/>`_
 
 If you installed using the bundle, this is very simple: you will have a shortcut
 in `the context menu <https://github.com/hyperspy/start_jupyter_cm>`_ 
@@ -271,8 +292,7 @@ Make sure to right click on this folder.
           Short cut to start the jupyter notebook from the current folder
           on Linux with a Gnome desktop.
 
-
-On windows, you can also use the short cut in the start to start the jupyter
+On windows, you can also use the short cut in the start menu to start the jupyter
 notebook in your home folder.
 
 .. figure:: _static/bundle_start_menu_notebook_labels.png
@@ -282,11 +302,28 @@ notebook in your home folder.
 
    Starting the notebook server from the start menu shortcut.
 
-On macOS and Linux, open a terminal and use the ``cd`` command to change to the
-directory that contains the workshop notebooks and data that you downloaded
-in the previous section. For example, if you saved the data into a folder named
-``hyperspy_tutorial`` in your user folder, you would change to that folder with
-one of the following commands:
+Then you can import HyperSpy by executing in a notebook cell or in the qtconsole:
+
+..  code-block:: python
+
+    %matplotlib qt
+    import hyperspy.api as hs
+
+It may worth checking that your install is running correctly by following the
+instructions in the the :ref:`test_install_label` section.
+
+Opening the workshop notebooks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For the workshop, we will use notebooks which can be run using the 
+``jupyter notebook`` or the ``jupyter lab``. The simplest is to use the short
+cut in the context menu as explained above in the :ref:`start_jupyter` section.
+
+Alternatively, you can open a terminal (Anaconda prompt on windows) and 
+navigate to the folder containing the workshop data by using the ``cd`` command.
+For example, if you saved the data into a folder named ``hyperspy_tutorial`` 
+in your user folder, you would change to that folder with one of the following
+commands:
 
 ..  code-block:: bash
 
@@ -299,8 +336,8 @@ command:
 
     $ jupyter notebook
 
-Regardless if you used the bundle or Anaconda, once you start the notebook "server",
-it will automatically open a browser window (or new tab) to connect to the local server.
+Once you start the notebook "server", a browser window (or new tab) will 
+automatically open to connect to the local server.
 Make sure to leave the terminal window open in the background, as closing it will
 shut down the notebook server. If everything has worked as expected, then you
 will see a representation of the directory structure within ``hyperspy_tutorial``
