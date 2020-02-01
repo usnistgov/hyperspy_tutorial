@@ -33,8 +33,8 @@ control-clicking the app icon, then choosing ``Open`` from the shortcut menu
 will allow to run the installer, as explained in the 
 `macOS documentation <https://support.apple.com/en-gb/guide/mac-help/mh40616/mac>`_.
 
-.. figure:: _static/macOS_control_click_open.png
-   :width: 100 %
+.. figure:: _static/macOS_right_click_open.png
+   :width: 60 %
    :alt: Links HyperSpy bundle downloads
    :figwidth: 70%
 

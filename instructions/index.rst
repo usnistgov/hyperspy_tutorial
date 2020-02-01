@@ -177,11 +177,13 @@ Because of this, installation is slightly more tricky than a normal program,
 but is not too difficult once you understand the steps required. The two pieces
 required are a Python distribution (typically pre-installed on Mac and Linux;
 but not included on by default on Windows), and then the HyperSpy libraries
-that operate within that Python environment.
+that operate within that Python environment. It is generally adviced not to use
+the pre-installed system python and to use a separate python distribution for
+data analysis.
 
 Select one of following instructions, depending on:
 
-* if you are not already using a python distribution on your system:
+* if you are *not* already using a python distribution on your system:
 
 .. raw:: html
 
@@ -190,12 +192,12 @@ Select one of following instructions, depending on:
             href="install_bundle_windows.html">
                 Windows
         </a>
-        &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <a  class="downloadbutton"
             href="install_bundle_mac.html">
                 Mac
         </a>
-        &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <a  class="downloadbutton"
             href="install_bundle_linux.html">
                 Linux
@@ -205,7 +207,7 @@ Select one of following instructions, depending on:
 |
 |
 
-* if you already using an anaconda distribution:
+* if you are already using a miniconda or anaconda distribution:
 
 .. raw:: html
 
