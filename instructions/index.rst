@@ -26,14 +26,18 @@
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">
+            href="https://drive.google.com/a/superstem.org/uc?export=download&confirm=CJYg&id=1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24">
                 Click here to download<br/>the workshop data (1.9 GB)
         </a>
+        <br>
+        <a href="https://drive.google.com/file/d/1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24/view?usp=sharing">Download link 2</a>
+        <br>
+        <a href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">Download link 3 (source from Github: slow)</a>
     </div>
 
 |
 |
-
+ 
 
 Thank you for registering for the 2020 ACMM HyperSpy workshop on data analysis 
 in materials science.
@@ -58,16 +62,24 @@ to these links before and during the workshop session for additional help.
 Session Logistics
 -----------------
 
-.. cssclass:: table-bordered
+.. table::
+    :widths: auto
 
     +--------------------+-------------------------------------------------+
     | **Date:**          | | Sunday 16th February                          |
     +--------------------+-------------------------------------------------+
-    | **Time:**          | 9:00 AM - 5:00 PM PT                            |
+    | **Time:**          | | 9:00 AM - 5:00 PM                             |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | | Information coming soon                       |
-    |                    | |                                               |
+    | **Location:**      | | RSPhys Huxley teaching room                   |
+    |                    | | Building 56 (|campus_map_link|)               |
     +--------------------+-------------------------------------------------+
+
+.. 
+	.. |campus_map_link| replace:: `Campus map <_static/ANU_Campus_Map_2019.pdf>`__
+
+.. |campus_map_link| raw:: html
+
+   <a href="_static/ANU_Campus_Map_2019.pdf" target="_blank">Campus map</a>
 
 About the instructor
 --------------------
@@ -237,17 +249,20 @@ Obtaining the tutorial data
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">
+            href="https://drive.google.com/a/superstem.org/uc?export=download&confirm=CJYg&id=1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24">
                 Click here to download<br/>the workshop data (1.9 GB)
         </a>
+        <br>
+        <a href="https://drive.google.com/file/d/1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24/view?usp=sharing">Download link 2</a>
+        <br>
+        <a href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">Download link 3 (source from Github: slow)</a>
     </div>
 
 |
 |
 
-Due to the inclusion
-of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
-enough disk space and bandwidth for the download. Once downloaded,
+Due to the inclusion of some larger files, it is nearly 2.0 GB in size, so please 
+ensure that you have enough disk space and bandwidth for the download. Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
 a folder in your user's home directory named ``hyperspy_tutorial``
 (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
