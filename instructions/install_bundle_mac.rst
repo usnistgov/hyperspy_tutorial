@@ -42,8 +42,7 @@ will allow to run the installer, as explained in the
    the shortcut menu.
 
 This rest of the process is fairly straightforward. For the installation 
-location, we *highly* recommend to select ``Install for me only``, as set 
-by default:
+location, we *highly* recommend to select ``Install for me only``:
 
 .. figure:: _static/macOS_install_destination.png
    :width: 100 %

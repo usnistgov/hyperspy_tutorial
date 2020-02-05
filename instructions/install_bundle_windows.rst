@@ -33,19 +33,34 @@ by default.
 
 .. figure:: _static/windows_single_user.png
    :width: 100 %
-   :alt: Bundle installation progress
+   :alt: Windows single user installation
    :figwidth: 50%
 
    Single user installation is recommended.
 
-Keep the default options unless you know what you are doing.
+It is recommended to install the HyperSpy bundle in a folder with a short path
+(less than 32 characters) to avoid issues with the JupyterLab and its deeply
+nested folder structure. The default folder should be fine in most situations
+(non domain user account):
 
-.. figure:: _static/windows_defaults_option.png
+.. figure:: _static/windows_install_location.png
+   :width: 100 %
+   :alt: Windows installation location
+   :figwidth: 50%
+
+   It is recommended to install the HyperSpy bundle in a folder with a short
+   path (less than 32 characters).
+
+Keep the default options unless you know what you are doing:
+
+.. figure:: _static/windows_default_options.png
    :width: 100 %
    :alt: Bundle installation progress
    :figwidth: 50%
 
-   A screenshot showing the default options.
+   A screenshot showing the default options. If a dfferent Python distribution is
+   installed on the system, by default this distribution will not be registered
+   as the default Python distribution.
 
 Doing so will install HyperSpy into your user folder under a subfolder named
 ``"Anaconda (64 bits)"``. The installation may take some time, but you should get
