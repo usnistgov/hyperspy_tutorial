@@ -22,17 +22,17 @@
    install_bundle_linux
 
 
+2020 CCEM Workshop - HyperSpy
+-----------------------------
+
+
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://drive.google.com/a/superstem.org/uc?export=download&confirm=CJYg&id=1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24">
-                Click here to download<br/>the workshop data (1.9 GB)
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2020-04_CCEM_IP_Workshop/hyperspy_tutorial.zip">
+                Click here to download<br/>the workshop data (22.4 MB)
         </a>
-        <br>
-        <a href="https://drive.google.com/file/d/1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24/view?usp=sharing">Download link 2</a>
-        <br>
-        <a href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">Download link 3 (source from Github: slow)</a>
     </div>
 
 |
@@ -227,23 +227,19 @@ Obtaining the tutorial data
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://drive.google.com/a/superstem.org/uc?export=download&confirm=CJYg&id=1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24">
-                Click here to download<br/>the workshop data (1.9 GB)
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2020-04_CCEM_IP_Workshop/hyperspy_tutorial.zip">
+                Click here to download<br/>the workshop data (22.4 MB)
         </a>
-        <br>
-        <a href="https://drive.google.com/file/d/1Bo-eNf43L85zoqwoi3Ae1ntkt0KF3_24/view?usp=sharing">Download link 2</a>
-        <br>
-        <a href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial.zip">Download link 3 (source from Github: slow)</a>
     </div>
 
 |
 |
 
-Due to the inclusion of some larger files, it is nearly 2.0 GB in size, so please 
-ensure that you have enough disk space and bandwidth for the download. Once downloaded,
-extract the files into their own folder that is easily accessible. We recommend
-a folder in your user's home directory named ``hyperspy_tutorial``
-(i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
+Click th button above to download the files that will be used in the interactive
+workshop. Once downloaded, extract the files into their own folder that is
+easily accessible. We recommend a folder in your user's home directory named
+``hyperspy_tutorial`` (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on 
+Windows).
 
 .. note::
 
