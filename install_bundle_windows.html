@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Testing the installation &#8212; 2020 CCEM Image Processing Workshop – HyperSpy  documentation</title>
+    <title>Installing on Windows &#8212; 2020 CCEM Image Processing Workshop – HyperSpy  documentation</title>
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/custom-styles.css" />
@@ -19,6 +19,8 @@
     <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing on macOS" href="install_bundle_mac.html" />
+    <link rel="prev" title="2020 CCEM Workshop - HyperSpy" href="index.html" />
 <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
   <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
@@ -100,15 +102,70 @@ $(document).ready(function(){
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Testing the installation</a></li>
+<li><a class="reference internal" href="#">Installing on Windows</a><ul>
+<li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#testing-the-installation">Testing the installation</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
       </div>
     <div class="col-md-9 content">
       
-  <div class="section" id="testing-the-installation">
-<h1>Testing the installation<a class="headerlink" href="#testing-the-installation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="installing-on-windows">
+<span id="bundle-windows-label"></span><h1>Installing on Windows<a class="headerlink" href="#installing-on-windows" title="Permalink to this headline">¶</a></h1>
+<p>On Windows, the easiest way to install HyperSpy is to use the HyperSpy bundle
+installer. This simple to install program provides a customized Anaconda
+installation, which contains the HyperSpy libraries but also other libraries
+used in the field of electron microscopy. A detailed walk through of the
+process is provided below.</p>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
+<p>First, download the installer by visiting
+<a class="reference external" href="https://github.com/ericpre/hyperspy-bundle/releases">this link</a> and selecting
+the correct option for your operating system:</p>
+<div class="figure align-default" id="id1" style="width: 70%">
+<a class="reference external image-reference" href="https://github.com/ericpre/hyperspy-bundle/releases"><img alt="Links HyperSpy bundle downloads" src="_images/github_download_labels.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Download the installer corresponding to your system.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>Run the downloaded file to proceed with the installation. This process is fairly
+straightforward. For the installation location, we <em>highly</em> recommend to install
+as single user in a folder that does not require administrative rights, as set
+by default.</p>
+<div class="figure align-default" id="id2" style="width: 50%">
+<a class="reference internal image-reference" href="_images/windows_single_user.png"><img alt="Windows single user installation" src="_images/windows_single_user.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Single user installation is recommended.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>It is recommended to install the HyperSpy bundle in a folder with a short path
+(less than 32 characters) such as your user folder. The default folder should
+be fine in most situations:</p>
+<div class="figure align-default" id="id3" style="width: 50%">
+<a class="reference internal image-reference" href="_images/windows_install_location.png"><img alt="Windows installation location" src="_images/windows_install_location.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">It is recommended to install the HyperSpy bundle in a folder with a short
+path (less than 32 characters).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Keep the default options unless you know what you are doing:</p>
+<div class="figure align-default" id="id4" style="width: 50%">
+<a class="reference internal image-reference" href="_images/windows_default_options.png"><img alt="Bundle installation progress" src="_images/windows_default_options.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">A screenshot showing the default options. If a different Python distribution is
+installed on the system, by default this distribution will not be registered
+as the default Python distribution.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Doing so will install HyperSpy into your user folder under a subfolder named
+<code class="docutils literal notranslate"><span class="pre">&quot;Anaconda</span> <span class="pre">(64</span> <span class="pre">bits)&quot;</span></code>. The installation may take some time, but should
+eventually complete and inform you that the bundle has been installed.</p>
+<p>And that’s it! All the installed programs should now be available within the
+Start Menu under the “HyperSpy Bundle” folder. You can either continue following
+the next section to test the installation, or continue to the
+<a class="reference internal" href="index.html#getting-data"><span class="std std-ref">Obtaining the tutorial data</span></a> section on the main page.</p>
+</div>
+<div class="section" id="testing-the-installation">
+<span id="test-install-label"></span><h2>Testing the installation<a class="headerlink" href="#testing-the-installation" title="Permalink to this headline">¶</a></h2>
 <p>Start the Jupyter Qt Console using the context menu (right click) shortcut (see
 the <a class="reference internal" href="index.html#start-jupyter"><span class="std std-ref">Starting HyperSpy</span></a> section for details).</p>
 <p>The Qt Console is an interactive Python interpreter that allows you to enter
@@ -127,20 +184,20 @@ telling the interpreter you want to interactively remove the Power Law
 background. Press <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> within the console to run the lines of code
 you pasted in (it may take a few moments to run if this is the first time
 you’ve used HyperSpy on your machine):</p>
-<div class="figure align-default" id="id1" style="width: 70%">
+<div class="figure align-default" id="id5" style="width: 70%">
 <a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 <p>Eventually, you should see a spectrum window and a small tool window for
 removing the background open (they may be stacked on top of each other;
 drag them out of the way, if so). If you click and drag on part of the spectrum
 display, HyperSpy will fit a Power Law to the signal within that region,
 and also show you a preview of the background-subtracted signal:</p>
-<div class="figure align-default" id="id2" style="width: 90%">
+<div class="figure align-default" id="id6" style="width: 90%">
 <a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
 in red). The fitted background is shown in blue, and a preview of the
-background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <p>Clicking “OK” in the <em>Background removal tool</em> window will perform the
 background subtraction, and replace the window with one showing the resulting
@@ -161,6 +218,7 @@ tutorial homepage:</p>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
+</div>
 </div>
 </div>
 

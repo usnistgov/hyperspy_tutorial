@@ -1,3 +1,9 @@
+/* Overwrite navbar color */
+.navbar-inverse {
+    background-color: #005ea2;
+    font-weight: 500;
+}
+
 /* Better colors for notes and admonitions */
 .alert-info {
     background-color: #f8fbff;
@@ -64,13 +70,13 @@ h2 {
 /* Styling for the download buttons */
 
 .downloadbutton {
-    min-width: 250px;
+    min-width: 200px;
     margin-top: 25px;
-    background-color:#39a656;
+    background-color:#008817;
     -moz-border-radius:28px;
     -webkit-border-radius:28px;
     border-radius:28px;
-    border:1px solid #18ab29;
+    border:1px solid #0d6318;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -81,7 +87,7 @@ h2 {
     text-shadow:0px 1px 0px #2f6627;
 }
 .downloadbutton:hover {
-    background-color:#44c767;
+    background-color:#00a91c;
 }
 .downloadbutton:active {
     position:relative;

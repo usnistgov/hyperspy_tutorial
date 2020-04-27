@@ -17,139 +17,75 @@
 .. toctree::
    :hidden:
 
-   install_bundle
-   install_anaconda
-   coming_soon
+   install_bundle_windows
+   install_bundle_mac
+   install_bundle_linux
 
-==================================
-2019 M&M Sunday Short Course X-15:
-==================================
 
-----------------------------------
-Data Analysis in Materials Science
-----------------------------------
-
-.. .. raw:: html
-
-        <div class="text-center">
-            <a  class="downloadbutton"
-                href="https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip">
-                    Click here to download<br/>the tutorial data
-            </a>
-        </div>
+2020 CCEM Workshop - HyperSpy
+-----------------------------
 
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">
-                Click here to download<br/>the tutorial data (1.9 GB)
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2020-04_CCEM_IP_Workshop/hyperspy_tutorial.zip">
+                Click here to download<br/>the workshop data (22.4 MB)
         </a>
     </div>
 
 |
 |
+ 
 
-Thank you for registering for the 2019 Microscopy and Microanalysis short course
-on data analysis in materials science, presented by the developers of HyperSpy.
-This interactive tutorial session will introduce you to modern techniques of
+Thank you for attending  the 2020 CCEM Image Processing workshop on using
+HyperSpy for open source EELS data analysis.
+This interactive workshop session will introduce you to modern techniques of
 data analysis for materials science and microscopy data within the scientific
-Python environment, with plenty of time for questions and individual help.
+Python environment, with time for questions and individual help.
 The ultimate goal for the session is that by its end, each attendee feels
 comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
 and knows where to look for further help, if necessary.
 
 There are a few useful links in the top header of this page. The first
-(`Tutorial Repository <https://github.com/usnistgov/hyperspy_tutorial>`_)
+(`Workshop Repository <https://github.com/usnistgov/hyperspy_tutorial>`_)
 will take you to the git repository containing the notebooks and data we will
 use during the tutorial. The next two point to the HyperSpy
 `Homepage <http://hyperspy.org>`_ and
-`User Guide <http://hyperspy.org/hyperspy-doc/current/user_guide/index.html>`_,
+`User Guide <http://hyperspy.org/hyperspy-doc/current/index.html>`__,
 respectively. The homepage contains general information about the project as
 a whole, while the User Guide is an extensive piece of documentation that explains
 how to use HyperSpy for all sorts of analyses. Feel free to refer
-to these links before and during the tutorial session for additional help.
+to these links before and during the workshop session for additional help.
 
 Session Logistics
 -----------------
 
-.. cssclass:: table-bordered
+.. table::
+    :widths: auto
 
     +--------------------+-------------------------------------------------+
-    | **Date:**          | | Sunday August 4, 2019                         |
+    | **Date:**          | | Friday May 1st, 2020                          |
     +--------------------+-------------------------------------------------+
-    | **Time:**          | 8:30 AM - 5:30 PM PT                            |
+    | **Time:**          | | 11:10 AM - 12:40 PM EDT (UTC-4h)              |
     +--------------------+-------------------------------------------------+
-    | **Location:**      | | Oregon Convention Center - Portland, OR       |
-    |                    | | (Room B118-119)                               |
+    | **Location:**      | | Online webinar                                |
     +--------------------+-------------------------------------------------+
 
-About the instructors
----------------------
+About the instructor
+--------------------
 
 .. table::
 
     +----------+---------------------------------------------------------------------+
-    | |duncan| | | |duncan_link| (DJ) is a Research Associate in the Electron        |
-    |          |   Microscopy Group of the Department of Materials Science &         |
-    |          |   Metallurgy, University of Cambridge, UK. His work focuses on      |
-    |          |   developing materials characterization approaches based on         |
-    |          |   electron diffraction and is currently particularly interested     |
-    |          |   in determining structure on the nanoscale in soft materials.      |
-    |          |   He leads the development of the ``pyxem`` python package for      |
-    |          |   the analysis of scanning diffraction data in which                |
-    |          |   diffraction patterns are acquired at every probe position         |
-    |          |   across a specimen. The ``pyxem`` package builds on HyperSpy       |
-    |          |   and he has made contributions to HyperSpy to enable that          |
-    |          |   dependence. (Contact: dnj23@cam.ac.uk)                            |
-    +----------+---------------------------------------------------------------------+
-    | |kate|   | | |kate_link| (KM) is a postdoctoral researcher at the Ernst        |
-    |          |   Ruska Centre for Microscopy and Spectroscopy in the Helmholtz     |
-    |          |   funded Research Centre Jülich, Germany. She completed her PhD     |
-    |          |   at Oxford University in 2015 on quantitative EDX and HAADF        |
-    |          |   STEM. She has interests in Materials Science, spectroscopy and    |
-    |          |   microscopy analysis in a quantitative manner. Katherine got       |
-    |          |   involved with HyperSpy development three years ago with the       |
-    |          |   aim of automating her quantitative EDX analysis method.           |
-    |          |   She has since expanded her contributions to more general          |
-    |          |   data analysis functions and methods, with the interest of         |
-    |          |   working towards automated analysis of in-situ spectroscopic       |
-    |          |   data. (Contact: k.macarthur@fz-juelich.de)                        |
-    +----------+---------------------------------------------------------------------+
-    | |magnus| | | |magnus_link| (MN) is a Marie Curie fellow at Electron Microscopy |
-    |          |   for Materials research (EMAT) at University of Antwerp,           |
-    |          |   Belgium. He obtained his PhD at the Norwegian University of       |
-    |          |   Science and Technology working on advanced analysis of both       |
-    |          |   EELS and atomic resolution STEM data. The former resulting        |
-    |          |   in many contributions to HyperSpy, and the latter in the          |
-    |          |   creation of the Atomap Python library. His current research       |
-    |          |   interests revolves around utilizing fast pixelated detectors      |
-    |          |   in STEM with the ``pixStem`` library, to study both magnetic      |
-    |          |   and structural properties at the nanoscale.                       |
-    |          |   (Contact: magnus.nord@uantwerpen.be)                              |
-    +----------+---------------------------------------------------------------------+
-    | |eric|   | | |eric_link| (EP) is a Lecturer in Materials Characterisation at   |
-    |          |   the University of Manchester and the SuperSTEM Laboratory. His    |
-    |          |   main areas of research focus on the development, implementation   |
-    |          |   and application of new TEM methodologies &mdash; from specimen    |
-    |          |   preparation, experimental workflow to advanced data processing    |
-    |          |   and analysis &mdash; with the aim to uncover the                  |
-    |          |   structure-property relationships of materials. He is an open      |
-    |          |   source enthusiast, and started to use the HyperSpy                |
-    |          |   library as a user during his PhD and made his first code          |
-    |          |   contribution during his Post-Doc. He has since increased his      |
-    |          |   contribution and commitment to the development of HyperSpy        |
-    |          |   and is now a core developer.                                      |
-    |          |   (Contact: eric.prestat@manchester.ac.uk)                          |
-    +----------+---------------------------------------------------------------------+
-    | |josh|   | | |josh_link| (JT) is a research engineer within the Office         |
+    | |josh|   | | |josh_link|  is a research engineer within the Office             |
     |          |   of Data and Informatics in the Material Measurement               |
     |          |   Laboratory at NIST, and has an extensive                          |
     |          |   background in materials science, microscopy, and data analysis    |
     |          |   utilizing machine learning, artificial intelligence, and          |
     |          |   state-of-the art signal processing techniques to facilitate       |
-    |          |   greater understanding of material systems. He is a (fairly)       |
+    |          |   greater understanding of material systems. He is a                |
     |          |   regular |contributor| to the upstream HyperSpy project and has    |
     |          |   been a user of the software for over 5 years.                     |
     |          |   (Contact: joshua.taillon@nist.gov)                                |
@@ -176,48 +112,23 @@ About the instructors
 Agenda
 ------
 
-..  rst-class:: left-align-last-col
 ..  cssclass:: table-hover
 ..  table::
-    :widths: 20 20 20 80
+    :widths: 30 80
 
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | Time              | Format     | Leader(s) | Topic                                                |
-    +===================+============+===========+======================================================+
-    | 08:30 - 09:00     | Talk       | JT        | Introduction to Python and HyperSpy                  |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 09:00 - 10:30     | Practical  | EP        | HyperSpy Basics                                      |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 10:30 - 10:45     |                        | *Coffee Break*                                       |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 10:45 - 11:30     | Practical  | DJ        | Model Fitting                                        |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 11:30 - 12:15     | Practical  | MN        | EELS Analysis                                        |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 12:15 - 13:15     |            |           | *Lunch Break*                                        |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 13:15 - 13:30     | Talk       | JT        | Intro to Machine Learning in EM                      |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 13:30 - 14:00     | Practical  | JT        | Machine Learning                                     |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 14:00 - 15:00     | Practical  | KM        | EDS Analysis                                         |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 15:00 - 15:15     |                        | *Coffee Break*                                       |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | 15:15 - 16:00     | Practical  | EP        | Big Data Analysis                                    |
-    +-------------------+------------+-----------+------------------------------------------------------+
-    | |                 | |          |  |        | | *Running in parallel, self-learning with provided* |
-    | |                 | |          |  |        | | *notebooks and support from instructors:*          |
-    | | 16:00 - 17:30   | | Practical|  | MN/KM  | |   - Atomic resolution image analysis               |
-    | |                 | |          |  | DJ     | |   - Scanning electron diffraction analysis         |
-    | |                 | |          |  | MN     | |   - Pixelated STEM / 4D STEM                       |
-    +-------------------+------------+-----------+------------------------------------------------------+
+    +-------------------+------------------------------------------------------+
+    | Time              | Topic                                                |
+    +===================+======================================================+
+    | 11:10 - 11:40     | HyperSpy Basics                                      |
+    +-------------------+------------------------------------------------------+
+    | 11:40 - 12:40     | EELS Analysis                                        |
+    +-------------------+------------------------------------------------------+
 
--------------------------
-Pre-tutorial instructions
+
+Pre-workshop instructions
 -------------------------
 
-Please review this section in advance of Sunday's tutorial session, as it
+Please review this section in advance of Sunday's workshop session, as it
 includes instructions for installing HyperSpy and the Jupyter interactive
 computing environment.
 
@@ -238,55 +149,62 @@ computing environment.
     ..  _JupyterHub: https://jupyterhub.readthedocs.io/en/stable/
 
 Prerequisites
--------------
+^^^^^^^^^^^^^
 
-For participation in the session, a basic familiarity with Python and command
-line tools will be helpful, but not strictly required. You will need to follow
+No prior knowledge of Python is required for this workshop but a basic familiarity
+with Python will be helpful. You will need to follow
 the instructions below to install HyperSpy using either the Anaconda Python
 distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer
 (only available on Windows).
 
 Installation
-------------
+^^^^^^^^^^^^
 
 At its core, HyperSpy is a third-party library that exists as part of the
-scientific greater Python ecosystem (as opposed to a stand-alone application).
+greater scientific Python ecosystem (as opposed to a stand-alone application).
 Because of this, installation is slightly more tricky than a normal program,
 but is not too difficult once you understand the steps required. The two pieces
 required are a Python distribution (typically pre-installed on Mac and Linux;
 but not included on by default on Windows), and then the HyperSpy libraries
-that operate within that Python environment.
+that operate within that Python environment. Even for systems (like macOS and Linux)
+that have Python pre-installed, we recommend to use a separate Python
+distribution for scientific data analysis installed through Anaconda, so that
+there are no conflicts with the system version.
 
-There are two possible approaches to getting a working HyperSpy environment. If
-you are brand-new to Python and the command line in general (and you are running
-Windows), we recommend using the pre-packaged
-:doc:`"Bundle" Installer <../install_bundle>`.
+Select one of following instructions, depending on:
 
-For all other operating systems (and Windows, if you're a bit more comfortable
-with Python and the command line), the recommended way to install HyperSpy is
-using :doc:`Anaconda <../install_anaconda>`, due to its prevalence in the
-scientific community and the ease of managing multiple Python "environments" on
-one system. It also provides a uniform way of installing packages and managing
-the system regardless of operating system, as well as up-to-date versions of
-Python and library packages (often the "system" installation on Linux or Mac is
-out of date). Anaconda can also be installed and run without administrative
-privileges, meaning it can be used on remote systems easily regardless of
-ownership.
-
-Click one of the following buttons to view the specific installation
-instructions for each method:
+* If you are *not* already using an Anaconda Python distribution on your system:
 
 .. raw:: html
 
     <div class="text-center">
         <a  class="downloadbutton"
-            href="install_bundle.html">
-                Click here for the "bundle"<br/>installation instructions
+            href="install_bundle_windows.html">
+                Windows
         </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <a  class="downloadbutton"
-            href="install_anaconda.html">
-                Click here for Anaconda Python<br/>installation instructions
+            href="install_bundle_mac.html">
+                Mac
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  class="downloadbutton"
+            href="install_bundle_linux.html">
+                Linux
+        </a>
+    </div>
+
+|
+|
+
+* If you are already using a Miniconda or Anaconda distribution:
+
+.. raw:: html
+
+    <div class="text-center">
+        <a  class="downloadbutton"
+            href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">
+                Installation in an existing <br/> Anaconda distribution
         </a>
     </div>
 
@@ -294,9 +212,8 @@ instructions for each method:
 |
 
 ..  caution::
-    It is important that you install HyperSpy using either the
-    :doc:`"Bundle" Installer <../install_bundle>`, or through
-    :doc:`Anaconda <../install_anaconda>` (*not both*!). Installing
+    It is important that you install HyperSpy using either the "Bundle" installer,
+    or in an existing Python distribution (*not both!*). Installing
     both can work, but will leave you with multiple Python installations on your
     system, and it will be very confusing to try to solve any issues that arise
     if you are not experienced with Python.
@@ -304,61 +221,113 @@ instructions for each method:
 .. _getting-data:
 
 Obtaining the tutorial data
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. `this <https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip>`_
+.. raw:: html
 
-Please click
-`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
-link to download the tutorial notebooks and data as a ``.zip`` file
-(or click the `big green button <#>`_ at the top of this page). Due to the inclusion
-of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
-enough disk space and bandwidth for the download. Once downloaded,
-extract the files into their own folder that is easily accessible. We recommend
-a folder in your user's home directory named ``hyperspy_tutorial``
-(i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
+    <div class="text-center">
+        <a  class="downloadbutton"
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2020-04_CCEM_IP_Workshop/hyperspy_tutorial.zip">
+                Click here to download<br/>the workshop data (22.4 MB)
+        </a>
+    </div>
+
+|
+|
+
+Click th button above to download the files that will be used in the interactive
+workshop. Once downloaded, extract the files into their own folder that is
+easily accessible. We recommend a folder in your user's home directory named
+``hyperspy_tutorial`` (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on 
+Windows).
 
 .. note::
+
    If you have limited disk space and/or internet availability, you can download
    a smaller version of the same data
-   `here <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip>`_.
+   `here <https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial_no_big_data.zip>`_.
    This archive is missing three large datasets, and so you will not be able to
    interactively participate in the *Big Data* and *pyXem* sessions. The
    remaining files are all the same.
 
+Getting started
+---------------
 
-Running the Jupyter Notebooks
------------------------------
+.. _start_jupyter:
 
-To actually open the Jupyter Notebooks containing the tutorials, you will need
-to start a local Jupyter server and connect to it through your browser (don't
-worry, everything stays local and there's no security risk to running the
-notebook on ``localhost``).
+Starting HyperSpy
+^^^^^^^^^^^^^^^^^
 
-If you installed using the bundle, this is very simple. Just open the Start Menu
-and navigate to the "Jupyter Notebook" option within the "HyperSpy Bundle" folder:
+HyperSpy is a Python library which can be used in different environments.
+Typically, we use  `Jupyter <https://jupyter.org/>`_, which has three
+different interfaces available:
 
-.. figure:: _static/bundle_start_menu_notebook.png
+* `Notebook <https://jupyter-notebook.readthedocs.io/en/stable/>`_
+* `Qt Console <https://qtconsole.readthedocs.io/en/stable/>`_
+* `JupyterLab <https://jupyterlab.readthedocs.io/en/stable/>`_
+
+For this workshop, we'll be using the Notebook interface.
+If you installed HyperSpy using the bundle, opening a Jupyter environment is very
+simple: you will have a shortcut in
+`the context menu <https://github.com/hyperspy/start_jupyter_cm>`_
+(right click), which will open a Jupyter Notebook instance within this folder.
+Make sure to right click on a folder, rather than an individual file, or the
+shortcut will not appear.
+
+.. list-table::
+
+   * - .. figure:: _static/jupyter_cm_windows.png
+          :height: 175 px
+
+          Shortcut to start Jupyter from the current folder
+          on Windows.
+    
+     - .. figure:: _static/jupyter_cm_macos.png
+    
+          Shortcut to start Jupyter from the current folder
+          on macOS.
+
+     - .. figure:: _static/jupyter_cm_gnome.png
+    
+          Shortcut to start Jupyter from the current folder
+          on Linux with a Gnome desktop.
+
+On Windows, you can also use the shortcut in the Start Menu to start Jupyter
+in your user folder.
+
+.. figure:: _static/windows_start_menu_notebook_labels.png
    :width: 100 %
-   :alt: Starting the notebook server from the bundle Start Menu
-   :figwidth: 50%
+   :alt: Starting Jupyter from the Start Menu
+   :figwidth: 30%
 
-   Starting the notebook server from the Start Menu shortcut installed in the
-   bundle
+   Starting the notebook server from the start menu shortcut.
 
-If you installed with Anaconda, open the Anaconda Prompt (Windows) or a regular terminal
-(macOS/Linux). From that prompt, use the ``cd`` command to change to the
-directory that contains the tutorial notebooks and data that you downloaded
-in the previous section. For example, if you saved the data into a folder named
-``hyperspy_tutorial`` in your user folder, you would change to that folder with
-one of the following commands:
+Then you can import HyperSpy by executing in a notebook cell or in the Qt
+Console:
+
+..  code-block:: python
+
+    %matplotlib qt
+    import hyperspy.api as hs
+
+It may worth checking that your install is running correctly by following the
+instructions in the the :ref:`test_install_label` section.
+
+Opening the workshop notebooks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For the workshop, we will use notebooks which can be run using the 
+``jupyter notebook`` or the ``jupyter lab``. The simplest is to use the shortcut
+in the context menu as explained above in the :ref:`start_jupyter` section.
+
+Alternatively, you can open a terminal (on Windows, start the `Anaconda Prompt`
+program from your Start Menu) and
+navigate to the folder containing the workshop data by using the ``cd`` command.
+For example, if you saved the data into a folder named ``hyperspy_tutorial`` 
+in your user folder, you would change to that folder with a command such as:
 
 ..  code-block:: bash
 
-    # For Windows:
-    $ cd %USERPROFILE%\\hyperspy_tutorial
-
-    # For macOS or Linux:
     $ cd ~/hyperspy_tutorial
 
 Once in that folder, start the Jupyter Notebook server with the following
@@ -368,23 +337,24 @@ command:
 
     $ jupyter notebook
 
-..  figure:: _static/anaconda_starting_jupyter.png
-    :width: 100 %
-    :alt: Starting the Jupyter Notebook on Windows
-    :figwidth: 70%
+Once you start the notebook "server", a browser window (or new tab) will 
+automatically open to connect to the local server. If it does not automatically
+open, the link to connect to the server will also be displayed in your terminal.
 
-    Starting the Jupyter Notebook from the ``hyperspy_tutorial`` folder on
-    Windows
+.. note::
 
-Regardless if you used the bundle or Anaconda, once you start the notebook "server",
-it will automatically open a browser window (or new tab) to connect to the local server.
+   While we use the term "server", the Jupyter software runs only on your
+   local machine, and cannot (by default) be connected to from any other location.
+   Internet connectivity is not required to run the software, even though
+   you access it through the web browser.
+
 Make sure to leave the terminal window open in the background, as closing it will
 shut down the notebook server. If everything has worked as expected, then you
 will see a representation of the directory structure within ``hyperspy_tutorial``
 on the Notebook homepage. If you do not, you can click through the file structure
 displayed on the page to get to the correct folder:
 
-..  figure:: _static/anaconda_creating_a_notebook.png
+..  figure:: _static/notebook_folder_labels.png
     :width: 100 %
     :alt: The notebook server home page
     :figwidth: 70%
@@ -392,24 +362,17 @@ displayed on the page to get to the correct folder:
     Click a folder name to browse into that folder, or a notebook name to open
     that file
 
-..  figure:: _static/opening_getting_started_folder.png
-    :width: 100 %
-    :alt: Navigating to a folder
-    :figwidth: 70%
-
-    (For example) click the "02 HyperSpy basics" link to browse into that folder
-
 Once inside one of the folders, simply click on any file with the extension
 ``.ipynb`` to open the notebook. The notebook will open in a new tab, and can
 be interacted with as you need:
 
 
-..  figure:: _static/opening_getting_started.png
+..  figure:: _static/notebook_open_labels.png
     :width: 100 %
     :alt: Opening a notebook
     :figwidth: 70%
 
-    Opening the "Getting Started" notebook within the "02 HyperSpy basics"
+    Opening the "Getting Started" notebook within the "01 HyperSpy basics"
     folder
 
 The original Jupyter "homepage" will stay open in the first tab, and you can
@@ -417,10 +380,10 @@ open as many notebooks as you wish at once (as long as you leave the terminal
 window open in the background).
 
 Congratulations! You should now be ready for the tutorial. If you ran into any
-trouble, please try to arrive on Sunday morning a bit early, and one of the
-instructors will be happy to help get you up and running.
+trouble, please `contact Josh <mailto:joshua.taillon@nist.gov>`_ prior to the
+workshop, and he'll help get you up and running.
 
-------------
+
 Getting Help
 ------------
 
