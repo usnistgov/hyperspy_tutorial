@@ -4,6 +4,11 @@
     font-weight: 500;
 }
 
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: #017fdc;
+}
+
 /* Better colors for notes and admonitions */
 .alert-info {
     background-color: #f8fbff;
