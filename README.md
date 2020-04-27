@@ -1,9 +1,13 @@
-# 2020 ACMM HyperSpy Workshop:
+# 2020 CCEM Image Processing Workshop Tutorial:
 
-This repository contains the files needed for the HyperSpy tutorial session/short course 
-presented at ACMM on the 16th February 2020. Most users will need to download the files
-from the `notebooks` directory in order to get the files needed for the session.
+This repository contains the files needed for the HyperSpy tutorial session 
+presented at the virtual CCEM Image Processing Workshop on May 1, 2020.
+The content is structured by topic, with [Jupyter](https://jupyter.org/)
+Notebooks in each folder containing the workshop materials. We recommend
+following along in the *non*-completed notebook file, and leaving the notebook
+marked `_completed` as a reference (an "answer key") that contains the expected
+outputs of each command.
 
 For additional information, please visit the 
-[website](https://www.superstem.org/acmm2020hyperspy) set up for the
+[website](https://pages.nist.gov/hyperspy_tutorial) set up for the
 tutorial.
