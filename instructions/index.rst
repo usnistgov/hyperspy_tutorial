@@ -128,9 +128,10 @@ Agenda
 Pre-workshop instructions
 -------------------------
 
-Please review this section in advance of Sunday's workshop session, as it
-includes instructions for installing HyperSpy and the Jupyter interactive
-computing environment.
+Please review this section in advance of Friday's workshop session if you would
+like to follow along interactively during the demonstration, as it includes
+instructions for installing HyperSpy and the Jupyter interactive computing
+environment.
 
 ..
     ..  admonition:: Installation alternatives
@@ -235,7 +236,7 @@ Obtaining the tutorial data
 |
 |
 
-Click th button above to download the files that will be used in the interactive
+Click the button above to download the files that will be used in the interactive
 workshop. Once downloaded, extract the files into their own folder that is
 easily accessible. We recommend a folder in your user's home directory named
 ``hyperspy_tutorial`` (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on 
