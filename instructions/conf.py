@@ -18,7 +18,7 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = '2020 ACMM HyperSpy'
+project = '2020 CCEM Image Processing Workshop – HyperSpy'
 # copyright = '2019, Joshua Taillon'
 author = 'HyperSpy Developers'
 
@@ -52,7 +52,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = "_static/hyperspy_logo.png"
+html_logo = "_static/NIST_logo.png"
 html_favicon = "_static/tutorial_favicon.ico"
 
 html_show_copyright = False
@@ -60,14 +60,14 @@ html_show_sphinx = False
 # html_add_permalinks = ''
 html_show_sourcelink = False
 
-html_sidebars = {'**': ['localtoc.html', 'searchbox.html'] }
+html_sidebars = {'**': ['localtoc.html'] }
 
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "2020 ACMM HyperSpy workshop",
+    'navbar_title': "2020 CCEM HyperSpy Workshop",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': False,
@@ -81,7 +81,7 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Workshop Repository",
-         "https://github.com/ericpre/hyperspy_tutorial", True),
+         "https://github.com/usnistgov/hyperspy_tutorial", True),
         ("HyperSpy Homepage", "http://hyperspy.org", True),
         ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/index.html", True),
     ],
@@ -110,7 +110,7 @@ html_theme_options = {
 
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"
-    'navbar_class': "navbar navbar-default",
+    'navbar_class': "navbar navbar-inverse",
 
     # Fix navigation bar to top of page?
     # Values: "true" (default) or "false"
@@ -131,7 +131,7 @@ html_theme_options = {
     # Currently, the supported themes are:
     # - Bootstrap 2: https://bootswatch.com/2
     # - Bootstrap 3: https://bootswatch.com/3
-    'bootswatch_theme': "simplex",
+    'bootswatch_theme': "yeti",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)

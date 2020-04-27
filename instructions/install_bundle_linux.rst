@@ -3,16 +3,18 @@
 Installing on Linux
 -------------------
 
-On macOS, the easiest way to install HyperSpy is to use the HyperSpy bundle
+On Linux, the easiest way to install HyperSpy is to use the HyperSpy bundle
 installer. This simple to install program provides a customized Anaconda 
 installation, which contains the HyperSpy libraries but also other libraries 
-used in the field of electron microsocpy.
+used in the field of electron microscopy. A detailed walk through of the
+process is provided below.
 
 Download
 ^^^^^^^^
 
-First, download the installer using the following link
-(https://github.com/ericpre/hyperspy-bundle/releases):
+First, download the installer by visiting
+`this link <https://github.com/ericpre/hyperspy-bundle/releases>`_ and selecting
+the correct option for your operating system:
 
 .. figure:: _static/github_download_labels.png
    :width: 100 %
@@ -26,14 +28,14 @@ Installing
 ^^^^^^^^^^
 
 The process is exactly the same as 
-`installing miniconda <https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html>`_
-or anaconda:
+`installing Miniconda <https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html>`_
+or Anaconda:
 
 1. In your terminal window, run:
 
    ..  code-block:: bash
     
-       bash HyperSpy-bundle-2020.01.26-Linux-x86_64.sh
+       bash HyperSpy-bundle-2020.02.05-Linux-x86_64.sh
 
 2. Follow the prompts on the installer screens.
    If you are unsure about any setting, accept the defaults. You can change

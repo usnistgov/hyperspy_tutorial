@@ -1,8 +1,8 @@
 Testing the installation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start the jupyter qconsole using the context menu (right click) short cut, see
-the :ref:`start_jupyter` section
+Start the Jupyter Qt Console using the context menu (right click) shortcut (see
+the :ref:`start_jupyter` section for details).
 
 The Qt Console is an interactive Python interpreter that allows you to enter
 Python statements directly and immediately see their output. Once the console

@@ -6,14 +6,15 @@ Installing on macOS
 On macOS, the easiest way to install HyperSpy is to use the HyperSpy bundle
 installer. This simple to install program provides a customized Anaconda 
 installation, which contains the HyperSpy libraries but also other libraries 
-used in the field of electron microsocpy. A detailed walk through of the 
+used in the field of electron microscopy. A detailed walk through of the
 process is provided below.
 
 Download
 ^^^^^^^^
 
-First, download the installer using the following link
-(https://github.com/ericpre/hyperspy-bundle/releases):
+First, download the installer by visiting
+`this link <https://github.com/ericpre/hyperspy-bundle/releases>`_ and selecting
+the correct option for your operating system:
 
 .. figure:: _static/github_download_labels.png
    :width: 100 %
@@ -27,10 +28,10 @@ Installing
 ^^^^^^^^^^
 
 Run the downloaded file to proceed with the installation. This installer is
-currently not identified as trusted party by macOS, meaning that macOS will
-not allow to run the installer simply by double-clicking on it. However, 
-control-clicking the app icon, then choosing ``Open`` from the shortcut menu 
-will allow to run the installer, as explained in the 
+currently not identified as coming from a trusted party by macOS, meaning that
+macOS will not allow to run the installer simply by double-clicking on it.
+However, control-clicking the app icon, then choosing ``Open`` from the
+shortcut menu will allow to run the installer, as explained in the
 `macOS documentation <https://support.apple.com/en-gb/guide/mac-help/mh40616/mac>`_.
 
 .. figure:: _static/macOS_right_click_open.png

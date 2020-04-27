@@ -6,14 +6,15 @@ Installing on Windows
 On Windows, the easiest way to install HyperSpy is to use the HyperSpy bundle
 installer. This simple to install program provides a customized Anaconda 
 installation, which contains the HyperSpy libraries but also other libraries 
-used in the field of electron microsocpy. A detailed walk through of the 
+used in the field of electron microscopy. A detailed walk through of the
 process is provided below.
 
 Download
 ^^^^^^^^
 
-First, download the installer using the following link
-(https://github.com/ericpre/hyperspy-bundle/releases):
+First, download the installer by visiting
+`this link <https://github.com/ericpre/hyperspy-bundle/releases>`_ and selecting
+the correct option for your operating system:
 
 .. figure:: _static/github_download_labels.png
    :width: 100 %
@@ -39,9 +40,8 @@ by default.
    Single user installation is recommended.
 
 It is recommended to install the HyperSpy bundle in a folder with a short path
-(less than 32 characters) to avoid issues with the JupyterLab and its deeply
-nested folder structure. The default folder should be fine in most situations
-(non domain user account):
+(less than 32 characters) such as your user folder. The default folder should
+be fine in most situations:
 
 .. figure:: _static/windows_install_location.png
    :width: 100 %
@@ -58,13 +58,13 @@ Keep the default options unless you know what you are doing:
    :alt: Bundle installation progress
    :figwidth: 50%
 
-   A screenshot showing the default options. If a dfferent Python distribution is
+   A screenshot showing the default options. If a different Python distribution is
    installed on the system, by default this distribution will not be registered
    as the default Python distribution.
 
 Doing so will install HyperSpy into your user folder under a subfolder named
-``"Anaconda (64 bits)"``. The installation may take some time, but you should get
-a progress window that looks like:
+``"Anaconda (64 bits)"``. The installation may take some time, but should
+eventually complete and inform you that the bundle has been installed.
 
 And that's it! All the installed programs should now be available within the
 Start Menu under the "HyperSpy Bundle" folder. You can either continue following
