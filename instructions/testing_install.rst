@@ -55,8 +55,8 @@ tutorial homepage:
 
 .. raw:: html
 
-    <div class="text-center">
-        <a  class="downloadbutton"
+    <div class="links-container-grid">
+        <a  class="container-link" style="grid-column: 2 / span 2;"
             href="index.html#obtaining-the-tutorial-data">
                 Click here to return<br/>to the main page
         </a>

@@ -18,8 +18,8 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = '2019 M&M Short Course X-15'
-# copyright = '2019, Joshua Taillon'
+project = '2021 M&M Short Course X-15'
+# copyright = '2021, Joshua Taillon'
 author = 'HyperSpy Developers'
 
 
@@ -44,34 +44,35 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'bootstrap'
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme = 'furo'
+# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = "_static/hyperspy_logo.png"
+html_logo = "_static/hyperspy_mandm21_logo.png"
 html_favicon = "_static/tutorial_favicon.ico"
-
+html_title = project
 html_show_copyright = False
 html_show_sphinx = False
 # html_add_permalinks = ''
 html_show_sourcelink = False
 
-html_sidebars = {'**': ['localtoc.html'] }
-
+html_sidebars = {'**': [
+    "sidebar/scroll-start.html",
+    "sidebar/brand.html",
+    "sidebar/navigation.html",
+    "sidebar/scroll-end.html",
+] }
+html_css_files = [
+    'css/custom-styles.css',
+]
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 html_theme_options = {
-    # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "X15: Data Analysis in Materials Science",
-
-    # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': False,
-
     # A list of tuples containing pages or urls to link to.
     # Valid tuples should be in the following forms:
     #    (name, page)                 # a link to a page
@@ -79,25 +80,25 @@ html_theme_options = {
     #    (name, "http://example.com", True) # arbitrary absolute url
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
-    'navbar_links': [
-        ("Tutorial Repository",
-         "https://github.com/usnistgov/hyperspy_tutorial", True),
-        ("HyperSpy Homepage", "http://hyperspy.org", True),
-        ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/user_guide/index.html", True),
-    ],
+    # 'navbar_links': [
+    #     ("Tutorial Repository",
+    #      "https://github.com/usnistgov/hyperspy_tutorial", True),
+    #     ("HyperSpy Homepage", "http://hyperspy.org", True),
+    #     ("HyperSpy User Guide", "http://hyperspy.org/hyperspy-doc/current/user_guide/index.html", True),
+    # ],
 
     # Render the next and previous page links in navbar. (Default: true)
-    'navbar_sidebarrel': False,
+    # 'navbar_sidebarrel': False,
 
     # Render the current pages TOC in the navbar. (Default: true)
-    'navbar_pagenav': False,
+    # 'navbar_pagenav': False,
 
     # Tab name for the current pages TOC. (Default: "Page")
-    'navbar_pagenav_name': "Page",
+    # 'navbar_pagenav_name': "Page",
 
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
-    'globaltoc_depth': 0,
+    # 'globaltoc_depth': 0,
 
     # Include hidden TOCs in Site navbar?
     #
@@ -110,15 +111,15 @@ html_theme_options = {
 
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"
-    'navbar_class': "navbar navbar-inverse",
+    # 'navbar_class': "navbar navbar-inverse",
 
     # Fix navigation bar to top of page?
     # Values: "true" (default) or "false"
-    'navbar_fixed_top': "true",
+    # 'navbar_fixed_top': "true",
 
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
-    'source_link_position': "nav",
+    # 'source_link_position': "nav",
 
     # Bootswatch (http://bootswatch.com/) theme.
     #
@@ -131,13 +132,19 @@ html_theme_options = {
     # Currently, the supported themes are:
     # - Bootstrap 2: https://bootswatch.com/2
     # - Bootstrap 3: https://bootswatch.com/3
-    'bootswatch_theme': "yeti",
+    # 'bootswatch_theme': "yeti",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
-    'bootstrap_version': "3",
+    # 'bootstrap_version': "3",
+    "announcement": 'We look forward to seeing you on Sunday, August 1 for the short course!',
+    "light_css_variables": {
+        "color-brand-primary": "#008cba",
+        "color-brand-content": "#008cba",
+        "font-stack": '"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif',
+        "font-stack--monospace": "Courier, monospace",
+    },
 }
 
-
-def setup(app):
-    app.add_stylesheet("custom-styles.css")
+# def setup(app):
+#     app.add_css_file('css/custom-styles.css')  # may also be an URL

@@ -1,30 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title>Testing the installation &#8212; 2020 CCEM Image Processing Workshop – HyperSpy  documentation</title>
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom-styles.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="_static/js/jquery-1.11.0.min.js"></script>
-    <script src="_static/js/jquery-fix.js"></script>
-    <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script src="_static/bootstrap-sphinx.js"></script>
-    <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+    <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2021.07.05.beta38"/>
+        <title>&lt;no title&gt; - 2021 M&amp;M Short Course X-15</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom-styles.css" />
+    
 
 
-<script type="text/javascript" src="https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js"></script>
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #008cba;
+  --color-brand-content: #008cba;
+  --font-stack: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-stack--monospace: Courier, monospace;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #008cba;
+  --color-brand-content: #008cba;
+  --font-stack: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-stack--monospace: Courier, monospace;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
+<link rel="stylesheet" href="_static/css/nist-combined.css">
+<script src="_static/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="_static/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+<script type="text/javascript" src="_static/js/jquery.leaveNotice-nist.min.js" defer='defer'></script>
+
 <script>
 $(document).ready(function(){
   // Mark external (non-nist.gov) A tags with class "external"
@@ -52,66 +82,110 @@ $(document).ready(function(){
 </script>
 <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
 
+</head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
 
-  </head><body>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
+<div class="announcement">
+  <aside class="announcement-content">
+     We look forward to seeing you on Sunday, August 1 for the short course! 
+  </aside>
+</div>
 
-  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><span><img src="_static/NIST_logo.png"></span>
-          2020 CCEM HyperSpy Workshop</a>
-        <span class="navbar-text navbar-version pull-left"><b></b></span>
-      </div>
-
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
-            
-                <li><a href="https://github.com/usnistgov/hyperspy_tutorial">Workshop Repository</a></li>
-                <li><a href="http://hyperspy.org">HyperSpy Homepage</a></li>
-                <li><a href="http://hyperspy.org/hyperspy-doc/current/index.html">HyperSpy User Guide</a></li>
-            
-            
-              <!-- this blank file removes the "Site" global ToC dropdown from the page -->
-              
-            
-            
-            
-            
-            
-              <li class="hidden-sm"></li>
-            
-          </ul>
-
-          
-            <!-- this blank file removes the search box from the page -->
-          
-        </div>
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
     </div>
-  </div>
-
-<div class="container">
-  <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Testing the installation</a></li>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9 content">
+    <div class="header-center">
+      <a href="index.html"><div class="brand">2021 M&M Short Course X-15</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
       
-  <div class="section" id="testing-the-installation">
-<h1>Testing the installation<a class="headerlink" href="#testing-the-installation" title="Permalink to this headline">¶</a></h1>
-<p>Start the Jupyter Qt Console using the context menu (right click) shortcut (see
-the <a class="reference internal" href="index.html#start-jupyter"><span class="std std-ref">Starting HyperSpy</span></a> section for details).</p>
-<p>The Qt Console is an interactive Python interpreter that allows you to enter
+      <div class="sidebar-sticky"><div class="sidebar-scroll"><a class="sidebar-brand centered" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/hyperspy_mandm21_logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">2021 M&M Short Course X-15</span>
+  
+</a><div class="sidebar-tree">
+    <h5>
+        Helpful links:
+    </h5>
+    <div class="links-container-grid-v">
+        <a class="container-link" href="https://github.com/usnistgov/hyperspy_tutorial"
+            target="_blank">
+            Tutorial files/repository
+        </a>
+        <a class="container-link" href="#" target="_blank">Launch
+            Interactive Binder
+        </a>
+        <a class="container-link" href="http://hyperspy.org" target="_blank">
+            HyperSpy Homepage
+        </a>
+        <a class="container-link" href="http://hyperspy.org/hyperspy-doc/current/user_guide/intro.html"
+            target="_blank">
+            HyperSpy User Guide
+        </a>
+    </div>
+</div></div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <p>The Qt Console is an interactive Python interpreter that allows you to enter
 Python statements directly and immediately see their output. Once the console
 has opened and you see a prompt that says <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>, copy the following code
 snippet at the location of the blinking cursor:</p>
@@ -127,57 +201,83 @@ telling the interpreter you want to interactively remove the Power Law
 background. Press <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> within the console to run the lines of code
 you pasted in (it may take a few moments to run if this is the first time
 you’ve used HyperSpy on your machine):</p>
-<div class="figure align-default" id="id1" style="width: 70%">
-<a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="id1" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Eventually, you should see a spectrum window and a small tool window for
 removing the background open (they may be stacked on top of each other;
 drag them out of the way, if so). If you click and drag on part of the spectrum
 display, HyperSpy will fit a Power Law to the signal within that region,
 and also show you a preview of the background-subtracted signal:</p>
-<div class="figure align-default" id="id2" style="width: 90%">
-<a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
+<figure class="align-default" id="id2" style="width: 90%">
+<a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
 in red). The fitted background is shown in blue, and a preview of the
 background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 <p>Clicking “OK” in the <em>Background removal tool</em> window will perform the
 background subtraction, and replace the window with one showing the resulting
 signal:</p>
-<div class="figure align-default" style="width: 50%">
-<a class="reference internal image-reference" href="_images/bundle_test_bgremoval_sig.png"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval_sig.png" style="width: 100%;" /></a>
-</div>
+<figure class="align-default" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_test_bgremoval_sig.png"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval_sig.png" style="width: 100%;"/></a>
+</figure>
 <p>Assuming all of this worked, congratulations! You have a working HyperSpy
 installation and you have run your first bit of open-source HyperSpy-based
 materials science data analysis! Click the button below to return to the main
 tutorial homepage:</p>
-<div class="text-center">
-    <a  class="downloadbutton"
-        href="index.html">
+<div class="links-container-grid">
+<a class="container-link" href="index.html#obtaining-the-tutorial-data" style="grid-column: 2 / span 2;">
             Click here to return<br/>to the main page
     </a>
 </div><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
+<div class="line"><br/></div>
+<div class="line"><br/></div>
+<div class="line"><br/></div>
 </div>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
 
+        <div class="related-information">
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
       
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
       
-    </p>
-    <p>
-    </p>
-  </div>
-</footer>
-  </body>
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul class="simple">
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/main.js"></script>
+    </body>
 </html>

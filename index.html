@@ -1,31 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installing via the “Bundle”" href="install_bundle.html" />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title>2020 CCEM Workshop - HyperSpy &#8212; 2020 CCEM Image Processing Workshop – HyperSpy  documentation</title>
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom-styles.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="_static/js/jquery-1.11.0.min.js"></script>
-    <script src="_static/js/jquery-fix.js"></script>
-    <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script src="_static/bootstrap-sphinx.js"></script>
-    <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installing on Windows" href="install_bundle_windows.html" />
-<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+    <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2021.07.05.beta38"/>
+        <title>Home - 2021 M&amp;M Short Course X-15</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom-styles.css" />
+    
 
 
-<script type="text/javascript" src="https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js"></script>
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #008cba;
+  --color-brand-content: #008cba;
+  --font-stack: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-stack--monospace: Courier, monospace;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #008cba;
+  --color-brand-content: #008cba;
+  --font-stack: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-stack--monospace: Courier, monospace;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
+<link rel="stylesheet" href="_static/css/nist-combined.css">
+<script src="_static/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="_static/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+<script type="text/javascript" src="_static/js/jquery.leaveNotice-nist.min.js" defer='defer'></script>
+
 <script>
 $(document).ready(function(){
   // Mark external (non-nist.gov) A tags with class "external"
@@ -53,351 +82,479 @@ $(document).ready(function(){
 </script>
 <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
 
+</head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
 
-  </head><body>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
+<div class="announcement">
+  <aside class="announcement-content">
+     We look forward to seeing you on Sunday, August 1 for the short course! 
+  </aside>
+</div>
 
-  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><span><img src="_static/NIST_logo.png"></span>
-          2020 CCEM HyperSpy Workshop</a>
-        <span class="navbar-text navbar-version pull-left"><b></b></span>
-      </div>
-
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
-            
-                <li><a href="https://github.com/usnistgov/hyperspy_tutorial">Workshop Repository</a></li>
-                <li><a href="http://hyperspy.org">HyperSpy Homepage</a></li>
-                <li><a href="http://hyperspy.org/hyperspy-doc/current/index.html">HyperSpy User Guide</a></li>
-            
-            
-              <!-- this blank file removes the "Site" global ToC dropdown from the page -->
-              
-            
-            
-            
-            
-            
-              <li class="hidden-sm"></li>
-            
-          </ul>
-
-          
-            <!-- this blank file removes the search box from the page -->
-          
-        </div>
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
     </div>
-  </div>
-
-<div class="container">
-  <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">2020 CCEM Workshop - HyperSpy</a></li>
-<li><a class="reference internal" href="#session-logistics">Session Logistics</a></li>
-<li><a class="reference internal" href="#about-the-instructor">About the instructor</a></li>
-<li><a class="reference internal" href="#agenda">Agenda</a></li>
-<li><a class="reference internal" href="#pre-workshop-instructions">Pre-workshop instructions</a><ul>
-<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#obtaining-the-tutorial-data">Obtaining the tutorial data</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#getting-started">Getting started</a><ul>
-<li><a class="reference internal" href="#starting-hyperspy">Starting HyperSpy</a></li>
-<li><a class="reference internal" href="#opening-the-workshop-notebooks">Opening the workshop notebooks</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#getting-help">Getting Help</a></li>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9 content">
+    <div class="header-center">
+      <a href="#"><div class="brand">2021 M&M Short Course X-15</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
       
-  <div class="toctree-wrapper compound">
+      <div class="sidebar-sticky"><div class="sidebar-scroll"><a class="sidebar-brand centered" href="#">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/hyperspy_mandm21_logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">2021 M&M Short Course X-15</span>
+  
+</a><div class="sidebar-tree">
+    <h5>
+        Helpful links:
+    </h5>
+    <div class="links-container-grid-v">
+        <a class="container-link" href="https://github.com/usnistgov/hyperspy_tutorial"
+            target="_blank">
+            Tutorial files/repository
+        </a>
+        <a class="container-link" href="#" target="_blank">Launch
+            Interactive Binder
+        </a>
+        <a class="container-link" href="http://hyperspy.org" target="_blank">
+            HyperSpy Homepage
+        </a>
+        <a class="container-link" href="http://hyperspy.org/hyperspy-doc/current/user_guide/intro.html"
+            target="_blank">
+            HyperSpy User Guide
+        </a>
+    </div>
+</div></div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="ccem-workshop-hyperspy">
-<h1>2020 CCEM Workshop - HyperSpy<a class="headerlink" href="#ccem-workshop-hyperspy" title="Permalink to this headline">¶</a></h1>
-<div class="text-center">
-    <a  class="downloadbutton"
-        href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2020-04_CCEM_IP_Workshop/hyperspy_tutorial.zip">
-            Click here to download<br/>the workshop data (22.4 MB)
-    </a>
-</div><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p>Thank you for attending  the 2020 CCEM Image Processing workshop on using
-HyperSpy for open source EELS data analysis.
-This interactive workshop session will introduce you to modern techniques of
+<section id="m-m-sunday-short-course-x-15">
+<h1>2021 M&amp;M Sunday Short Course X-15<a class="headerlink" href="#m-m-sunday-short-course-x-15" title="Permalink to this headline">¶</a></h1>
+<section id="data-analysis-in-materials-science">
+<h2>Data Analysis in Materials Science<a class="headerlink" href="#data-analysis-in-materials-science" title="Permalink to this headline">¶</a></h2>
+<p>Thank you for registering for the 2021 Microscopy and Microanalysis short course
+on data analysis in materials science, presented by the developers of HyperSpy.
+This interactive tutorial session will introduce you to modern techniques of
 data analysis for materials science and microscopy data within the scientific
-Python environment, with time for questions and individual help.
+Python environment, with plenty of time for questions and individual help.
 The ultimate goal for the session is that by its end, each attendee feels
 comfortable using HyperSpy for basic imaging and hyperspectral data analysis,
 and knows where to look for further help, if necessary.</p>
-<p>There are a few useful links in the top header of this page. The first
-(<a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial">Workshop Repository</a>)
+<p>There are a few useful links in the left sidebar of this page. The first (<a href="https://github.com/usnistgov/hyperspy_tutorial" target="_blank">Tutorial Repository</a>)
 will take you to the git repository containing the notebooks and data we will
-use during the tutorial. The next two point to the HyperSpy
-<a class="reference external" href="http://hyperspy.org">Homepage</a> and
-<a class="reference external" href="http://hyperspy.org/hyperspy-doc/current/index.html">User Guide</a>,
+use during the tutorial. The next (<a href="#" target="_blank">Launch Binder</a>) will open that
+repository in an interactive “Binder”, which will allow you to run the tutorial
+code in your browser without having to install anything (although we recommend
+you take this opportunity to install HyperSpy on your local system – see below).
+The next two point to the HyperSpy <a href="http://hyperspy.org/" target="_blank">
+    Homepage
+</a> and <a href="http://hyperspy.org/hyperspy-doc/current/user_guide/intro.html" target="_blank">
+    User Guide</a>,
 respectively. The homepage contains general information about the project as
 a whole, while the User Guide is an extensive piece of documentation that explains
 how to use HyperSpy for all sorts of analyses. Feel free to refer
-to these links before and during the workshop session for additional help.</p>
-</div>
-<div class="section" id="session-logistics">
-<h1>Session Logistics<a class="headerlink" href="#session-logistics" title="Permalink to this headline">¶</a></h1>
-<table class="colwidths-auto docutils align-default">
+to these links before and during the tutorial session for additional help.</p>
+<p>The sidebar on the right will help you navigate the content of <em>this</em> page,
+which has been set up to provide you with information about the course and
+some instructions to follow before you attend on Sunday. Please take the time
+to read through the content and follow the instructions in advance of the
+course.</p>
+<section id="session-logistics">
+<h3>Session Logistics<a class="headerlink" href="#session-logistics" title="Permalink to this headline">¶</a></h3>
+<div class="table-wrapper"><table class="custom-table docutils align-default">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 75%"/>
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Date:</strong></p></td>
 <td><div class="line-block">
-<div class="line">Friday May 1st, 2020</div>
+<div class="line">Sunday August 1, 2021</div>
 </div>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Time:</strong></p></td>
-<td><div class="line-block">
-<div class="line">11:10 AM - 12:40 PM EDT (UTC-4h)</div>
-</div>
-</td>
+<td><p>10:30 AM - 5:45 PM EDT (UTC-04:00)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Location:</strong></p></td>
 <td><div class="line-block">
-<div class="line">Online webinar</div>
+<div class="line">Virtual via web conferencing</div>
+<div class="line">(Link will be sent via email to registered participants)</div>
 </div>
 </td>
 </tr>
 </tbody>
-</table>
-</div>
-<div class="section" id="about-the-instructor">
-<h1>About the instructor<a class="headerlink" href="#about-the-instructor" title="Permalink to this headline">¶</a></h1>
-<table class="docutils align-default">
+</table></div>
+</section>
+<section id="about-the-instructors">
+<h3>About the instructors<a class="headerlink" href="#about-the-instructors" title="Permalink to this headline">¶</a></h3>
+<div class="table-wrapper"><table class="instructor-table docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 87%" />
+<col style="width: 13%"/>
+<col style="width: 87%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="_images/josh_taillon.jpg"><img alt="josh" src="_images/josh_taillon.jpg" style="width: 100%;" /></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/hakon_wiik_anes.jpg"><img alt="hakon" src="_images/hakon_wiik_anes.jpg" style="width: 100%;"/></a></p></td>
 <td><div class="line-block">
-<div class="line"><a class="reference external" href="https://www.nist.gov/people/joshua-taillon">Josh Taillon</a>  is a research engineer within the Office
+<div class="line"><a class="reference external" href="https://www.ntnu.edu/employees/hakon.w.anes">Håkon Wiik Ånes</a> (HA) is a PhD Candidate in the Department of
+Materials Science and Engineering at the Norwegian University of
+Science and Technology. He characterizes and models
+recrystallization and texture in aluminum alloys by scanning and
+transmission electron microscopy. Prof. Knut Marthinsen is his
+main supervisor and Prof. Antonius T. J. van Helvoort is his
+co-supervisor. (Contact: <a class="reference external" href="mailto:hakon.w.anes%40ntnu.no">hakon<span>.</span>w<span>.</span>anes<span>@</span>ntnu<span>.</span>no</a>)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/carter_francis.jpg"><img alt="carter" src="_images/carter_francis.jpg" style="width: 100%;"/></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://tem.msae.wisc.edu/group/carter-francis/">Carter Francis</a> (CF) grew up in Prior Lake, Minnesota, a little
+south of the Twin Cities. He received his B.S. from the Iowa
+State University, majoring in Materials Engineering, minoring in
+Math Economics. There he worked on the characterization of both
+oxide and sulfide glasses for use as solid state electrolytes in
+sodium battery systems.  In the summer of 2016, Carter worked as
+a foreign scholar at the Münster Electrochemical Energy
+Technology (MEET) building in Münster Germany. There he worked
+characterizing and producing gel polymer electrolytes with
+ceramic inclusions. Carter is a graduate student at the
+University of Wisconsin-Madison working as a research assistant
+in Prof. Paul Voyles’ group. (Contact: <a class="reference external" href="mailto:csfrancis%40wisc.edu">csfrancis<span>@</span>wisc<span>.</span>edu</a>)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/eric_prestat.jpg"><img alt="eric" src="_images/eric_prestat.jpg" style="width: 100%;"/></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html">Eric Prestat</a> (EP) is a Lecturer in Materials Characterisation at
+the University of Manchester and the SuperSTEM Laboratory. His
+main areas of research focus on the development, implementation
+and application of new TEM methodologies — from specimen
+preparation, experimental workflow to advanced data processing
+and analysis — with the aim to uncover the
+structure-property relationships of materials. He is an open
+source enthusiast, and started to use the HyperSpy
+library as a user during his PhD and made his first code
+contribution during his Post-Doc. He has since increased his
+contribution and commitment to the development of HyperSpy
+and is now a core developer.
+(Contact: <a class="reference external" href="mailto:eric.prestat%40manchester.ac.uk">eric<span>.</span>prestat<span>@</span>manchester<span>.</span>ac<span>.</span>uk</a>)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/josh_taillon.jpg"><img alt="josh" src="_images/josh_taillon.jpg" style="width: 100%;"/></a></p></td>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://www.nist.gov/people/joshua-taillon">Josh Taillon</a> (JT) is a research engineer within the Office
 of Data and Informatics in the Material Measurement
 Laboratory at NIST, and has an extensive
 background in materials science, microscopy, and data analysis
-utilizing machine learning, artificial intelligence, and
+utilizing machine learning, artificial intelligence, and
 state-of-the art signal processing techniques to facilitate
-greater understanding of material systems. He is a
+greater understanding of material systems. He is a (fairly)
 regular <a class="reference external" href="https://github.com/hyperspy/hyperspy/commits?author=jat255">contributor</a> to the upstream HyperSpy project and has
-been a user of the software for over 5 years.
-(Contact: <a class="reference external" href="mailto:joshua&#46;taillon&#37;&#52;&#48;nist&#46;gov">joshua<span>&#46;</span>taillon<span>&#64;</span>nist<span>&#46;</span>gov</a>)</div>
+been a user of the software for over 7 years.
+(Contact: <a class="reference external" href="mailto:joshua.taillon%40nist.gov">joshua<span>.</span>taillon<span>@</span>nist<span>.</span>gov</a>)</div>
 </div>
 </td>
 </tr>
 </tbody>
-</table>
-</div>
-<div class="section" id="agenda">
-<h1>Agenda<a class="headerlink" href="#agenda" title="Permalink to this headline">¶</a></h1>
-<table class="colwidths-given table-hover docutils align-default">
+</table></div>
+</section>
+<section id="agenda">
+<h3>Agenda<a class="headerlink" href="#agenda" title="Permalink to this headline">¶</a></h3>
+<div class="table-wrapper"><table class="colwidths-given left-align-last-col table-hover docutils align-default" id="id1">
+<caption><span class="caption-text">All times given in EDT (UTC-04:00)</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 73%" />
+<col style="width: 21%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 50%"/>
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Leader(s)</p></th>
 <th class="head"><p>Topic</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>11:10 - 11:40</p></td>
-<td><p>HyperSpy Basics</p></td>
+<tr class="row-even"><td><p>09:30 - 10:30</p></td>
+<td><p>Help</p></td>
+<td><p>All</p></td>
+<td><p>Pre-course help for installation problems (1 hour)</p></td>
 </tr>
-<tr class="row-odd"><td><p>11:40 - 12:40</p></td>
-<td><p>EELS Analysis</p></td>
+<tr class="row-odd"><td><p>10:30 - 10:35</p></td>
+<td><p>Talk</p></td>
+<td><p>JT</p></td>
+<td><p>Welcome and Announcements (5 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>10:35 - 11:00</p></td>
+<td><p>Talk</p></td>
+<td><p>JT</p></td>
+<td><p>Introduction to Scientific Python and HyperSpy (25 minutes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>11:00 - 11:30</p></td>
+<td><p>Practical</p></td>
+<td><p>EP</p></td>
+<td><p>HyperSpy Basics (30 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>11:30 - 11:45</p></td>
+<td></td>
+<td></td>
+<td><p><em>Break</em> (15 minutes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>11:45 - 12:30</p></td>
+<td><p>Practical</p></td>
+<td><p>JT</p></td>
+<td><p>Machine Learning (45 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>12:30 - 13:15</p></td>
+<td><p>Practical</p></td>
+<td><p>EP</p></td>
+<td><p>Model Fitting (45 minutes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>13:15 - 13:45</p></td>
+<td></td>
+<td></td>
+<td><p><em>Break</em> (30 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>13:45 - 14:30</p></td>
+<td><p>Practical</p></td>
+<td><p>EP</p></td>
+<td><p>EELS analysis (45 minutes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>14:30 - 15:15</p></td>
+<td><p>Practical</p></td>
+<td><p>JT</p></td>
+<td><p>EDS Analysis (45 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>15:15 - 16:00</p></td>
+<td><p>Practical</p></td>
+<td><p>EP</p></td>
+<td><p>Big Data Analysis (45 minutes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>16:00 - 16:15</p></td>
+<td></td>
+<td></td>
+<td><p><em>Break</em> (15 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>16:15 - 16:45</p></td>
+<td><p>Practical</p></td>
+<td><p>CF</p></td>
+<td><p>4D STEM / Scanning Electron Diffraction (30 minutes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>16:45 - 17:15</p></td>
+<td><p>Practical</p></td>
+<td><p>HA</p></td>
+<td><p>Electron Backscatter Diffraction (EBSD) Analysis (30 minutes)</p></td>
+</tr>
+<tr class="row-even"><td><p>17:15 - 17:45</p></td>
+<td><p>Practical</p></td>
+<td><p>EP/JT</p></td>
+<td><p>Atomic Resolution STEM Analysis (30 minutes)</p></td>
 </tr>
 </tbody>
-</table>
+</table></div>
+</section>
+</section>
+<section id="pre-tutorial-instructions">
+<h2>Pre-tutorial instructions<a class="headerlink" href="#pre-tutorial-instructions" title="Permalink to this headline">¶</a></h2>
+<p>Please review this section in advance of Sunday’s tutorial session, as it
+includes instructions for installing HyperSpy and the Jupyter interactive
+computing environment.</p>
+<div class="seealso admonition">
+<p class="admonition-title">Installation alternative</p>
+<p>While we <em>highly</em> encourage you to follow the instructions below to
+install HyperSpy locally on your personal system, you can run all the
+code that will be covered in the session in your browser via the
+<a href="#" target="_blank">Launch Binder</a> link. The “Binder” is a web-based installation of
+python that you can interact with through a normal web browser,
+without installing anything to your system. Completing the installation
+process is a useful learning experience however, and will be necessary if
+you wish to run your analyses on your own data after this course. There
+will be a one-hour “help session” prior to the official start of the
+short course program during which you are welcome to ask questions/get help
+if you have any issues with the installation procedure.</p>
 </div>
-<div class="section" id="pre-workshop-instructions">
-<h1>Pre-workshop instructions<a class="headerlink" href="#pre-workshop-instructions" title="Permalink to this headline">¶</a></h1>
-<p>Please review this section in advance of Friday’s workshop session if you would
-like to follow along interactively during the demonstration, as it includes
-instructions for installing HyperSpy and the Jupyter interactive computing
-environment.</p>
-<div class="section" id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
-<p>No prior knowledge of Python is required for this workshop but a basic familiarity
-with Python will be helpful. You will need to follow
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<p>For participation in the session, a basic familiarity with Python and command
+line tools will be helpful, but not strictly required. You will need to follow
 the instructions below to install HyperSpy using either the Anaconda Python
 distribution (Windows, Mac, or Linux), or the pre-compiled “bundle” installer
 (only available on Windows).</p>
-</div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="accessing-the-slack-workspace">
+<h3>Accessing the Slack Workspace<a class="headerlink" href="#accessing-the-slack-workspace" title="Permalink to this headline">¶</a></h3>
+<p>During the session, we will be using Slack as a platform for interactive
+communication between the instructors and students, as well as for students
+to help answer each others’ questions. While Slack can be used from a web
+browser, you may wish to install their desktop application in advance for a
+better experience. This can be done by visiting their <a href="https://slack.com/downloads/" target="_blank">
+    Downloads</a> page and
+following the instructions provided.</p>
+<p>Since this website is public, the link to the Slack Workspace will not be
+provided here. It will be sent via email closer to the date of the workshop,
+so please check your email for information on how to join the Slack Workspace
+for the course.</p>
+</section>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p>At its core, HyperSpy is a third-party library that exists as part of the
 greater scientific Python ecosystem (as opposed to a stand-alone application).
-Because of this, installation is slightly more tricky than a normal program,
+Because of this, installation is slightly different than a normal program,
 but is not too difficult once you understand the steps required. The two pieces
 required are a Python distribution (typically pre-installed on Mac and Linux;
 but not included on by default on Windows), and then the HyperSpy libraries
-that operate within that Python environment. Even for systems (like macOS and Linux)
-that have Python pre-installed, we recommend to use a separate Python
-distribution for scientific data analysis installed through Anaconda, so that
-there are no conflicts with the system version.</p>
-<p>Select one of following instructions, depending on:</p>
-<ul class="simple">
-<li><p>If you are <em>not</em> already using an Anaconda Python distribution on your system:</p></li>
-</ul>
-<div class="text-center">
-    <a  class="downloadbutton"
-        href="install_bundle_windows.html">
-            Windows
+that operate within that Python environment.</p>
+<p>There are two possible approaches to getting a working HyperSpy environment. If
+you are brand-new to Python and the command line in general, we recommend using
+the pre-packaged <a class="reference internal" href="install_bundle.html"><span class="doc">“Bundle” Installer</span></a>.</p>
+<p>If you have some experience with Python, or if you expect to have multiple
+versions or environments of Python on your system, we recommend you install
+HyperSpy using <a class="reference internal" href="install_anaconda.html"><span class="doc">Anaconda</span></a>, due to its prevalence in
+the scientific community and the ease of managing multiple Python “environments” on
+one system. It also provides a uniform way of installing packages and managing
+the system regardless of operating system, as well as up-to-date versions of
+Python and library packages (often the “system” installation on Linux or Mac is
+out of date). Anaconda can also be installed and run without administrative
+privileges, meaning it can be used on remote systems easily regardless of
+ownership.</p>
+<p>Click one of the following buttons to view the specific installation
+instructions for each method:</p>
+<div class="links-container-grid">
+<a class="container-link" href="install_bundle.html" style="grid-column: 1 / span 2;">
+            Click here for the "bundle"<br/>installation instructions
     </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  class="downloadbutton"
-        href="install_bundle_mac.html">
-            Mac
+<a class="container-link" href="install_anaconda.html" style="grid-column: 3 / span 2;">
+            Click here for Anaconda Python<br/>installation instructions
     </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  class="downloadbutton"
-        href="install_bundle_linux.html">
-            Linux
-    </a>
-</div><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<ul class="simple">
-<li><p>If you are already using a Miniconda or Anaconda distribution:</p></li>
-</ul>
-<div class="text-center">
-    <a  class="downloadbutton"
-        href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">
-            Installation in an existing <br/> Anaconda distribution
-    </a>
-</div><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<div class="admonition caution">
+</div><div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>It is important that you install HyperSpy using either the “Bundle” installer,
-or in an existing Python distribution (<em>not both!</em>). Installing
+<p>It is important that you install HyperSpy using either the
+<a class="reference internal" href="install_bundle.html"><span class="doc">“Bundle” Installer</span></a>, or through
+<a class="reference internal" href="install_anaconda.html"><span class="doc">Anaconda</span></a> (<em>not both</em>!). Installing
 both can work, but will leave you with multiple Python installations on your
 system, and it will be very confusing to try to solve any issues that arise
 if you are not experienced with Python.</p>
 </div>
-</div>
-<div class="section" id="obtaining-the-tutorial-data">
-<span id="getting-data"></span><h2>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h2>
-<div class="text-center">
-    <a  class="downloadbutton"
-        href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2020-04_CCEM_IP_Workshop/hyperspy_tutorial.zip">
-            Click here to download<br/>the workshop data (22.4 MB)
-    </a>
-</div><div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p>Click the button above to download the files that will be used in the interactive
-workshop. Once downloaded, extract the files into their own folder that is
-easily accessible. We recommend a folder in your user’s home directory named
-<code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\hyperspy_tutorial</span></code> on
-Windows).</p>
+</section>
+<section id="obtaining-the-tutorial-data">
+<span id="getting-data"></span><h3>Obtaining the tutorial data<a class="headerlink" href="#obtaining-the-tutorial-data" title="Permalink to this headline">¶</a></h3>
+<p>Please click
+<a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip">this</a>
+link to download the tutorial notebooks and data as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file
+(or click the <a class="reference external" href="#">big green button</a> at the top of this page). Due to the inclusion
+of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
+enough disk space and bandwidth for the download. Once downloaded,
+extract the files into their own folder that is easily accessible. We recommend
+a folder in your user’s home directory named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>
+(i.e. <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\hyperspy_tutorial</span></code> on Windows).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have limited disk space and/or internet availability, you can download
 a smaller version of the same data
-<a class="reference external" href="https://github.com/ericpre/hyperspy_tutorial/releases/download/2020_ACMM/hyperspy_tutorial_no_big_data.zip">here</a>.
+<a class="reference external" href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip">here</a>.
 This archive is missing three large datasets, and so you will not be able to
 interactively participate in the <em>Big Data</em> and <em>pyXem</em> sessions. The
 remaining files are all the same.</p>
 </div>
-</div>
-</div>
-<div class="section" id="getting-started">
-<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="starting-hyperspy">
-<span id="start-jupyter"></span><h2>Starting HyperSpy<a class="headerlink" href="#starting-hyperspy" title="Permalink to this headline">¶</a></h2>
-<p>HyperSpy is a Python library which can be used in different environments.
-Typically, we use  <a class="reference external" href="https://jupyter.org/">Jupyter</a>, which has three
-different interfaces available:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/">Notebook</a></p></li>
-<li><p><a class="reference external" href="https://qtconsole.readthedocs.io/en/stable/">Qt Console</a></p></li>
-<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a></p></li>
-</ul>
-<p>For this workshop, we’ll be using the Notebook interface.
-If you installed HyperSpy using the bundle, opening a Jupyter environment is very
-simple: you will have a shortcut in
-<a class="reference external" href="https://github.com/hyperspy/start_jupyter_cm">the context menu</a>
-(right click), which will open a Jupyter Notebook instance within this folder.
-Make sure to right click on a folder, rather than an individual file, or the
-shortcut will not appear.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="_images/jupyter_cm_windows.png"><img alt="_images/jupyter_cm_windows.png" src="_images/jupyter_cm_windows.png" style="height: 175px;" /></a>
-<p class="caption"><span class="caption-text">Shortcut to start Jupyter from the current folder
-on Windows.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-</td>
-<td><div class="figure align-default" id="id2">
-<img alt="_images/jupyter_cm_macos.png" src="_images/jupyter_cm_macos.png" />
-<p class="caption"><span class="caption-text">Shortcut to start Jupyter from the current folder
-on macOS.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-</td>
-<td><div class="figure align-default" id="id3">
-<img alt="_images/jupyter_cm_gnome.png" src="_images/jupyter_cm_gnome.png" />
-<p class="caption"><span class="caption-text">Shortcut to start Jupyter from the current folder
-on Linux with a Gnome desktop.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<p>On Windows, you can also use the shortcut in the Start Menu to start Jupyter
-in your user folder.</p>
-<div class="figure align-default" id="id4" style="width: 30%">
-<a class="reference internal image-reference" href="_images/windows_start_menu_notebook_labels.png"><img alt="Starting Jupyter from the Start Menu" src="_images/windows_start_menu_notebook_labels.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Starting the notebook server from the start menu shortcut.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-<p>Then you can import HyperSpy by executing in a notebook cell or in the Qt
-Console:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">qt</span>
-<span class="kn">import</span> <span class="nn">hyperspy.api</span> <span class="k">as</span> <span class="nn">hs</span>
-</pre></div>
-</div>
-<p>It may worth checking that your install is running correctly by following the
-instructions in the the <a class="reference internal" href="install_bundle_windows.html#test-install-label"><span class="std std-ref">Testing the installation</span></a> section.</p>
-</div>
-<div class="section" id="opening-the-workshop-notebooks">
-<h2>Opening the workshop notebooks<a class="headerlink" href="#opening-the-workshop-notebooks" title="Permalink to this headline">¶</a></h2>
-<p>For the workshop, we will use notebooks which can be run using the
-<code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> or the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code>. The simplest is to use the shortcut
-in the context menu as explained above in the <a class="reference internal" href="#start-jupyter"><span class="std std-ref">Starting HyperSpy</span></a> section.</p>
-<p>Alternatively, you can open a terminal (on Windows, start the <cite>Anaconda Prompt</cite>
-program from your Start Menu) and
-navigate to the folder containing the workshop data by using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command.
-For example, if you saved the data into a folder named <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>
-in your user folder, you would change to that folder with a command such as:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/hyperspy_tutorial
+</section>
+<section id="running-the-jupyter-notebooks">
+<h3>Running the Jupyter Notebooks<a class="headerlink" href="#running-the-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<p>To actually open the Jupyter Notebooks containing the tutorials, you will need
+to start a local Jupyter server and connect to it through your browser (don’t
+worry, everything stays local and there’s no security risk to running the
+notebook on <code class="docutils literal notranslate"><span class="pre">localhost</span></code>).</p>
+<p>If you installed using the bundle, this is very simple. Just open the Start Menu
+and search for the “Miniforge Prompt” option:</p>
+<figure class="align-default" id="id2" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_start_menu_notebook.png"><img alt="Starting the Miniforge Prompt from the Start Menu" src="_images/bundle_start_menu_notebook.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Starting the Miniforge Prompt from the Start Menu shortcut installed in the
+bundle</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Once this prompt opens, enter the text <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> and press “Enter”.
+After a short time, your web-browser should open automatically to the notebook
+server that was started. Make sure to leave the Miniforge Prompt window open
+while you work, as closing it will shutdown the notebook server, and you will
+not be able to run any of the code.</p>
+<figure class="align-default" id="id3" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_starting_the_notebook.png"><img alt="Starting the Jupyter Notebook from the Miniforge Prompt" src="_images/bundle_starting_the_notebook.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Starting the Jupyter Notebook from the Miniforge Prompt</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If you installed with Anaconda, open the Anaconda Prompt (Windows) or a regular terminal
+(macOS/Linux). From that prompt, use the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command to change to the
+directory that contains the tutorial notebooks and data that you downloaded
+in the previous section. For example, if you saved the data into a folder named
+<code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> in your user folder, you would change to that folder with
+one of the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For Windows:</span>
+$ <span class="nb">cd</span> %USERPROFILE%<span class="se">\\</span>hyperspy_tutorial
+
+<span class="c1"># For macOS or Linux:</span>
+$ <span class="nb">cd</span> ~/hyperspy_tutorial
 </pre></div>
 </div>
 <p>Once in that folder, start the Jupyter Notebook server with the following
@@ -405,44 +562,53 @@ command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
 </pre></div>
 </div>
-<p>Once you start the notebook “server”, a browser window (or new tab) will
-automatically open to connect to the local server. If it does not automatically
-open, the link to connect to the server will also be displayed in your terminal.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>While we use the term “server”, the Jupyter software runs only on your
-local machine, and cannot (by default) be connected to from any other location.
-Internet connectivity is not required to run the software, even though
-you access it through the web browser.</p>
-</div>
-<p>Make sure to leave the terminal window open in the background, as closing it will
+<figure class="align-default" id="id4" style="width: 70%">
+<a class="reference internal image-reference" href="_images/anaconda_starting_jupyter.png"><img alt="Starting the Jupyter Notebook on Windows" src="_images/anaconda_starting_jupyter.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Starting the Jupyter Notebook from the <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code> folder on
+Windows</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Regardless if you used the bundle or Anaconda, once you start the notebook “server”,
+it will automatically open a browser window (or new tab) to connect to the local server.
+Make sure to leave the terminal window open in the background, as closing it will
 shut down the notebook server. If everything has worked as expected, then you
 will see a representation of the directory structure within <code class="docutils literal notranslate"><span class="pre">hyperspy_tutorial</span></code>
 on the Notebook homepage. If you do not, you can click through the file structure
 displayed on the page to get to the correct folder:</p>
-<div class="figure align-default" id="id5" style="width: 70%">
-<a class="reference internal image-reference" href="_images/notebook_folder_labels.png"><img alt="The notebook server home page" src="_images/notebook_folder_labels.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Click a folder name to browse into that folder, or a notebook name to open
+<figure class="align-default" id="id5" style="width: 70%">
+<a class="reference internal image-reference" href="_images/anaconda_creating_a_notebook.png"><img alt="The notebook server home page" src="_images/anaconda_creating_a_notebook.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Click a folder name to browse into that folder, or a notebook name to open
 that file</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="id6" style="width: 70%">
+<a class="reference internal image-reference" href="_images/opening_getting_started_folder.png"><img alt="Navigating to a folder" src="_images/opening_getting_started_folder.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">(For example) click the “02 HyperSpy basics” link to browse into that folder</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Once inside one of the folders, simply click on any file with the extension
 <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> to open the notebook. The notebook will open in a new tab, and can
 be interacted with as you need:</p>
-<div class="figure align-default" id="id6" style="width: 70%">
-<a class="reference internal image-reference" href="_images/notebook_open_labels.png"><img alt="Opening a notebook" src="_images/notebook_open_labels.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">Opening the “Getting Started” notebook within the “01 HyperSpy basics”
-folder</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="id7" style="width: 70%">
+<a class="reference internal image-reference" href="_images/opening_getting_started.png"><img alt="Opening a notebook" src="_images/opening_getting_started.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Opening the “Getting Started” notebook within the “02 HyperSpy basics”
+folder</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>The original Jupyter “homepage” will stay open in the first tab, and you can
 open as many notebooks as you wish at once (as long as you leave the terminal
 window open in the background).</p>
 <p>Congratulations! You should now be ready for the tutorial. If you ran into any
-trouble, please <a class="reference external" href="mailto:joshua&#46;taillon&#37;&#52;&#48;nist&#46;gov">contact Josh</a> prior to the
-workshop, and he’ll help get you up and running.</p>
-</div>
-</div>
-<div class="section" id="getting-help">
-<h1>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h1>
+trouble, please try to arrive on Sunday morning a bit early, and one of the
+instructors will be happy to help get you up and running.</p>
+</section>
+</section>
+<section id="getting-help">
+<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the links in the header of this page, there are a few additional
 resources that can be used to get help with questions you may have about using
 the software. The <a class="reference external" href="http://hyperspy.org/support.html">support</a> page for the
@@ -454,26 +620,87 @@ project highlights the best avenues for help, but briefly they are:</p>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy/issues">issue/bug tracker</a> on the HyperSpy Github page</p></li>
 <li><p>The <a class="reference external" href="https://github.com/hyperspy/hyperspy-demos/">HyperSpy Demos</a> repository, which contains the foundations of the notebooks presented in this tutorial, together with some additional demos</p></li>
 </ul>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
+<p>Also, we will be having an open “office hours” session for one hour prior to
+the start of Sunday’s course. If you have any problems getting things installed,
+we will use this time for interactive debugging of issues so you can be ready
+for the course. Please do attempt to install and test your installation before
+arriving however, as we will not have time to walk every person through every
+step.</p>
+</section>
+<section id="disclaimer">
+<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this headline">¶</a></h2>
+<p>Any mention of commercial products is for information only; it does not imply recommendation or endorsement by NIST or the U.S. Government.</p>
+<p>NIST-developed software is provided by NIST as a public service. You may use, copy and distribute copies of the software in any medium, provided that you keep intact this entire notice. You may improve, modify and create derivative works of the software or any portion of the software, and you may copy and distribute such modifications or works. Modified works should carry a notice stating that you changed the software and should note the date and nature of any such change. Please explicitly acknowledge the National Institute of Standards and Technology as the source of the software.</p>
+<p>NIST-developed software is expressly provided “AS IS.” NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT OR ARISING BY OPERATION OF LAW, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST NEITHER REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY, RELIABILITY, OR USEFULNESS OF THE SOFTWARE.</p>
+<p>You are solely responsible for determining the appropriateness of using and distributing the software and you assume all risks associated with its use, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and the unavailability or interruption of operation. This software is not intended to be used in any situation where a failure could cause risk of injury or damage to property. The software developed by NIST employees is not subject to copyright protection within the United States.</p>
+</section>
+</section>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="install_bundle.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Installing via the “Bundle”</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          
+        </div>
 
+        <div class="related-information">
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
       
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
       
-    </p>
-    <p>
-    </p>
-  </div>
-</footer>
-  </body>
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">2021 M&amp;M Sunday Short Course X-15</a><ul>
+<li><a class="reference internal" href="#data-analysis-in-materials-science">Data Analysis in Materials Science</a><ul>
+<li><a class="reference internal" href="#session-logistics">Session Logistics</a></li>
+<li><a class="reference internal" href="#about-the-instructors">About the instructors</a></li>
+<li><a class="reference internal" href="#agenda">Agenda</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pre-tutorial-instructions">Pre-tutorial instructions</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#accessing-the-slack-workspace">Accessing the Slack Workspace</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#obtaining-the-tutorial-data">Obtaining the tutorial data</a></li>
+<li><a class="reference internal" href="#running-the-jupyter-notebooks">Running the Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-help">Getting Help</a></li>
+<li><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/main.js"></script>
+    </body>
 </html>

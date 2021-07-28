@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installing via Anaconda" href="install_anaconda.html" /><link rel="prev" title="2021 M&amp;M Sunday Short Course X-15" href="index.html" />
+
+    <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2021.07.05.beta38"/>
+        <title>Installing via the “Bundle” - 2021 M&amp;M Short Course X-15</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom-styles.css" />
+    
+
+
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #008cba;
+  --color-brand-content: #008cba;
+  --font-stack: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-stack--monospace: Courier, monospace;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #008cba;
+  --color-brand-content: #008cba;
+  --font-stack: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-stack--monospace: Courier, monospace;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
+<link rel="stylesheet" href="_static/css/nist-combined.css">
+<script src="_static/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="_static/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+<script type="text/javascript" src="_static/js/jquery.leaveNotice-nist.min.js" defer='defer'></script>
+
+<script>
+$(document).ready(function(){
+  // Mark external (non-nist.gov) A tags with class "external"
+  //If the adress start with https and ends with nist.gov
+  var re_nist = new RegExp('^https?:\\/\\/.*nist\\.gov(\\/|$)');
+  var re_nist_github = new RegExp('^https?:\\/\\/.*usnistgov.*(\\/|$)');
+  var re_drive = new RegExp('^https?:\\/\\/.*drive.google.com.*(\\/|$)');
+  //Regex to find address that start with https
+  var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+  $("a").each(function(){
+    var url=$(this).attr('href');
+    console.log(url)
+    if(re_drive.test(url) || re_nist_github.test(url) || re_nist.test(url) || !re_absolute_address.test(url)){
+        console.log(url + ' local')
+      $(this).addClass('local');
+    }else{
+      //This a href appears to be external, so tag it
+        console.log(url + ' external')
+      $(this).addClass('nist-external');
+    }
+  });
+  // Add leaveNotice to external A elements
+  $('a.nist-external').leaveNotice();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+
+</head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     We look forward to seeing you on Sunday, August 1 for the short course! 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">2021 M&M Short Course X-15</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><div class="sidebar-scroll"><a class="sidebar-brand centered" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/hyperspy_mandm21_logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">2021 M&M Short Course X-15</span>
+  
+</a><div class="sidebar-tree">
+    <h5>
+        Helpful links:
+    </h5>
+    <div class="links-container-grid-v">
+        <a class="container-link" href="https://github.com/usnistgov/hyperspy_tutorial"
+            target="_blank">
+            Tutorial files/repository
+        </a>
+        <a class="container-link" href="#" target="_blank">Launch
+            Interactive Binder
+        </a>
+        <a class="container-link" href="http://hyperspy.org" target="_blank">
+            HyperSpy Homepage
+        </a>
+        <a class="container-link" href="http://hyperspy.org/hyperspy-doc/current/user_guide/intro.html"
+            target="_blank">
+            HyperSpy User Guide
+        </a>
+    </div>
+</div></div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <section id="installing-via-the-bundle">
+<span id="bundle-label"></span><h1>Installing via the “Bundle”<a class="headerlink" href="#installing-via-the-bundle" title="Permalink to this headline">¶</a></h1>
+<p>If you are brand new to Python, the easiest way to install HyperSpy is using
+the “standalone” bundle package. This simple to install program provides a
+customized Python installation that has the HyperSpy libraries pre-installed.
+It is compatible with Windows, MacOS, or Linux, and is the recommended way
+to install if you are not familiar with managing Python environments.
+Instructions can be found on the main page at the HyperSpy Bundle Github repository
+(<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">here</a>), and a detailed walk
+through of the process (for Windows) is provided below.</p>
+<section id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
+<p>First, navigate to the repository home page
+(<a class="reference external" href="https://github.com/hyperspy/hyperspy-bundle">https://github.com/hyperspy/hyperspy-bundle</a>), and click on the large green
+button slightly down the page:</p>
+<figure class="align-default" id="id1" style="width: 70%">
+<a class="reference external image-reference" href="https://github.com/hyperspy/hyperspy-bundle"><img alt="Link to Windows download for standalone HyperSpy bundle" src="_images/bundle_install_button.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Clicking the big green button on the main repository page will bring you to
+the “Releases” page that contains a link to the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> installation file</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>On the releases page, click on the appropriate installer for your system. There
+are a few options, but we recommend either the one labeled “Intel” or
+“AMD” depending on what type of processor your computer has, since those
+versions are optimized for each type of processor. These bundles are based
+off of the “Anaconda” Python distribution:</p>
+<figure class="align-default" id="id2" style="width: 70%">
+<a class="reference external image-reference" href="https://github.com/hyperspy/hyperspy-bundle/releases"><img alt="Links HyperSpy bundle downloads" src="_images/bundle_release_download.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Select one of either Intel or AMD depending on what type of processor is in
+your computer. If you use Linux or Mac, select the appropriate file for your
+system (although we only show a Windows installation here).</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>After the download finishes, run the <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file, accepting the default options.
+Doing so will install HyperSpy into the folder you choose under a subfolder named
+<code class="docutils literal notranslate"><span class="pre">hyperspy-bundle</span></code>. Depending on your system, the installation may take quite some
+time (especially on the “Setting up the package cache…” and
+“Setting up the base environment…” steps), but you should get a progress
+window that looks like:</p>
+<figure class="align-default" id="id3" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_during_installation.png"><img alt="Bundle installation progress" src="_images/bundle_during_installation.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">A screenshot during the bundle installation process</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Once the installation eventually finishes, click the <em>Next</em> button, and then
+<em>Finish</em> to exit the installer.</p>
+<p>And that’s it! You should now have a few new applications in your
+Start Menu, including the “Miniforge Prompt” and “HyperSpyUI” (we won’t be
+using the UI in this session, but you may play around with it if you’re
+interested). You can either continue following the next section to test your
+installation is working correctly, or continue to the
+<a class="reference internal" href="index.html#getting-data"><span class="std std-ref">Obtaining the tutorial data</span></a> section on the main page.</p>
+</section>
+<section id="testing-the-installation">
+<h2>Testing the installation<a class="headerlink" href="#testing-the-installation" title="Permalink to this headline">¶</a></h2>
+<p>If you would like to test that your installation is working properly, you can
+run a small test example by opening the “Qt Console”. This is an interactive
+Python interpreter that allows you to type in Python statements directly. You
+can start the Qt Console from within the “Miniforge Prompt”, which you will
+find in the Start Menu:</p>
+<figure class="align-default" id="id4" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_test_qtconsole.png"><img alt="Launching the interactive Miniforge prompt console" src="_images/bundle_test_qtconsole.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Launching the interactive Miniforge Prompt from the Start Menu</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Once the Miniforge prompt opens, type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">qtconsole</span></code> and press “Enter”
+to launch the QT Console:</p>
+<figure class="align-default" id="id5" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_launching_qtconsole.png"><img alt="Launching the QT Console from the Miniforge prompt" src="_images/bundle_launching_qtconsole.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Launching the QT console from the Miniforge prompt</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The Qt Console is an interactive Python interpreter that allows you to enter
+Python statements directly and immediately see their output. Once the console
+has opened and you see a prompt that says <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>, copy the following code
+snippet at the location of the blinking cursor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">qt</span>
+<span class="kn">import</span> <span class="nn">hyperspy.api</span> <span class="k">as</span> <span class="nn">hs</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">hs</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">artificial_data</span><span class="o">.</span><span class="n">get_core_loss_eels_signal</span><span class="p">(</span><span class="n">add_powerlaw</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">remove_background</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Very briefly, this code is loading the interactive plotting libraries, loading
+HyperSpy, creating an example EELS signal from some artificial data, and then
+telling the interpreter you want to interactively remove the Power Law
+background. Press <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> within the console to run the lines of code
+you pasted in (it may take a few moments to run if this is the first time
+you’ve used HyperSpy on your machine):</p>
+<figure class="align-default" id="id6" style="width: 70%">
+<a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Eventually, you should see a spectrum window and a small tool window for
+removing the background open (they may be stacked on top of each other;
+drag them out of the way, if so). If you click and drag on part of the spectrum
+display, HyperSpy will fit a Power Law to the signal within that region,
+and also show you a preview of the background-subtracted signal:</p>
+<figure class="align-default" id="id7" style="width: 90%">
+<a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;"/></a>
+<figcaption>
+<p><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
+in red). The fitted background is shown in blue, and a preview of the
+background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Clicking “OK” in the <em>Background removal tool</em> window will perform the
+background subtraction, and replace the window with one showing the resulting
+signal:</p>
+<figure class="align-default" style="width: 50%">
+<a class="reference internal image-reference" href="_images/bundle_test_bgremoval_sig.png"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval_sig.png" style="width: 100%;"/></a>
+</figure>
+<p>Assuming all of this worked, congratulations! You have a working HyperSpy
+installation and you have run your first bit of open-source HyperSpy-based
+materials science data analysis! Click the button below to return to the main
+tutorial homepage:</p>
+<div class="links-container-grid">
+<a class="container-link" href="index.html#obtaining-the-tutorial-data" style="grid-column: 2 / span 2;">
+            Click here to return<br/>to the main page
+    </a>
+</div><div class="line-block">
+<div class="line"><br/></div>
+<div class="line"><br/></div>
+<div class="line"><br/></div>
+</div>
+</section>
+</section>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="install_anaconda.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Installing via Anaconda</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Installing via the “Bundle”</a><ul>
+<li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#testing-the-installation">Testing the installation</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/main.js"></script>
+    </body>
+</html>
