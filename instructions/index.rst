@@ -154,12 +154,12 @@ About the instructors
 .. |hakon_link| replace:: `Håkon Wiik Ånes <https://www.ntnu.edu/employees/hakon.w.anes>`__
 .. |josh| image:: _static/josh_taillon.jpg
    :width: 100%
-.. |kate| image:: _static/kate_macarthur.jpg
-   :width: 100%
-.. |magnus| image:: _static/magnus_nord.png
-   :width: 100%
-.. |duncan| image:: _static/duncan_johnstone.jpg
-   :width: 100%
+.. .. |kate| image:: _static/kate_macarthur.jpg
+..    :width: 100%
+.. .. |magnus| image:: _static/magnus_nord.png
+..    :width: 100%
+.. .. |duncan| image:: _static/duncan_johnstone.jpg
+..    :width: 100%
 .. |eric| image:: _static/eric_prestat.jpg
    :width: 100%
 .. |carter| image:: _static/carter_francis.jpg
