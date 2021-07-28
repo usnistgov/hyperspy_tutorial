@@ -63,7 +63,7 @@ course.
 
 .. |launch_binder| raw:: html
 
-    <a href="#" target="_blank">Launch Binder</a>
+    <a href="https://mybinder.org/v2/gh/usnistgov/hyperspy_tutorial/2021-08-01_MandM_short_course" target="_blank">Launch Binder</a>
 
 .. |hs_homepage| raw:: html
 
