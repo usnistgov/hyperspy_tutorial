@@ -98,7 +98,7 @@ About the instructors
     +----------+---------------------------------------------------------------------+
     | |hakon|  | | |hakon_link| (HA) is a PhD Candidate in the Department of         |
     |          |   Materials Science and Engineering at the Norwegian University of  |
-    |          |   Science and Technology. He characterizes and models               |
+    |          |   Science and Technology. He characterizes                          |
     |          |   recrystallization and texture in aluminum alloys by scanning and  |
     |          |   transmission electron microscopy. Prof. Knut Marthinsen is his    |
     |          |   main supervisor and Prof. Antonius T. J. van Helvoort is his      |
