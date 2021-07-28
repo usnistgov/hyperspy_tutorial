@@ -9,3 +9,5 @@ the session.
 For additional information, please visit the
 [website](https://pages.nist.gov/hyperspy_tutorial) set up for the
 session.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/usnistgov/hyperspy_tutorial/2021-08-01_MandM_short_course)
