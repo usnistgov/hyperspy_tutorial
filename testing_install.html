@@ -2,7 +2,8 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
 
     <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2021.07.28.beta40"/>
         <title>&lt;no title&gt; - 2021 M&amp;M Short Course X-15</title>
@@ -202,6 +203,12 @@ $(document).ready(function(){
             target="_blank">
             HyperSpy User Guide
         </a>
+        <a class="container-link" href="install_bundle.html">
+            Install Instructions (bundle)
+        </a>
+        <a class="container-link" href="install_anaconda.html">
+            Install Instructions (Anaconda)
+        </a>
     </div>
 </div></div>
       </div>
@@ -239,27 +246,31 @@ telling the interpreter you want to interactively remove the Power Law
 background. Press <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> within the console to run the lines of code
 you pasted in (it may take a few moments to run if this is the first time
 you’ve used HyperSpy on your machine):</p>
-<div class="figure align-default" id="id1" style="width: 70%">
+<figure class="align-default" id="id1" style="width: 70%">
 <a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Eventually, you should see a spectrum window and a small tool window for
 removing the background open (they may be stacked on top of each other;
 drag them out of the way, if so). If you click and drag on part of the spectrum
 display, HyperSpy will fit a Power Law to the signal within that region,
 and also show you a preview of the background-subtracted signal:</p>
-<div class="figure align-default" id="id2" style="width: 90%">
+<figure class="align-default" id="id2" style="width: 90%">
 <a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
+<figcaption>
+<p><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
 in red). The fitted background is shown in blue, and a preview of the
 background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 <p>Clicking “OK” in the <em>Background removal tool</em> window will perform the
 background subtraction, and replace the window with one showing the resulting
 signal:</p>
-<div class="figure align-default" style="width: 50%">
+<figure class="align-default" style="width: 50%">
 <a class="reference internal image-reference" href="_images/bundle_test_bgremoval_sig.png"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval_sig.png" style="width: 100%;"/></a>
-</div>
+</figure>
 <p>Assuming all of this worked, congratulations! You have a working HyperSpy
 installation and you have run your first bit of open-source HyperSpy-based
 materials science data analysis! Click the button below to return to the main

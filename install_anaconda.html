@@ -2,7 +2,8 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="2019 M&amp;M Sunday Short Course X-15:" href="coming_soon.html" /><link rel="prev" title="Installing via the “Bundle”" href="install_bundle.html" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="2019 M&amp;M Sunday Short Course X-15:" href="coming_soon.html" /><link rel="prev" title="Installing via the “Bundle”" href="install_bundle.html" />
 
     <link rel="shortcut icon" href="_static/tutorial_favicon.ico"/><meta name="generator" content="sphinx-4.1.2, furo 2021.07.28.beta40"/>
         <title>Installing via Anaconda - 2021 M&amp;M Short Course X-15</title>
@@ -202,6 +203,12 @@ $(document).ready(function(){
             target="_blank">
             HyperSpy User Guide
         </a>
+        <a class="container-link" href="install_bundle.html">
+            Install Instructions (bundle)
+        </a>
+        <a class="container-link" href="install_anaconda.html">
+            Install Instructions (Anaconda)
+        </a>
     </div>
 </div></div>
       </div>
@@ -223,7 +230,7 @@ $(document).ready(function(){
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <div class="section" id="installing-via-anaconda">
+        <section id="installing-via-anaconda">
 <h1>Installing via Anaconda<a class="headerlink" href="#installing-via-anaconda" title="Permalink to this headline">¶</a></h1>
 <p>Installing HyperSpy with Anaconda is slightly more involved, but provides more
 flexibility if you plan to do more development with Python, or need to run many
@@ -233,21 +240,23 @@ take a fair amount of time (approximately 10 to 15 minutes, depending on the
 speed of your system), so it is highly recommended to do this before you
 arrive at the tutorial session (and when you have access to a decent internet
 connection).</p>
-<div class="section" id="download">
+<section id="download">
 <h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
 <p>The installation process for Anaconda varies a bit depending on your operating
 system. Instructions for Windows are detailed here. MacOS will be somewhat similar,
 while if you run Linux, you will need to use the command line installer (an
 exercise left to the reader). From the <a class="reference external" href="https://www.anaconda.com/products/individual#Downloads">Anaconda Python</a> link, click the
 right download for your operating system:</p>
-<div class="figure align-default" id="id1" style="width: 70%">
+<figure class="align-default" id="id1" style="width: 70%">
 <a class="reference external image-reference" href="https://www.anaconda.com/products/individual#Downloads"><img alt="Link to Windows download for Anaconda" src="_images/anaconda_download_link.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">Make sure to select the 64-bit – It’s a rather large download, so a decent
+<figcaption>
+<p><span class="caption-text">Make sure to select the 64-bit – It’s a rather large download, so a decent
 connection is recommended. Also make sure to choose Windows, macOS, or Linux
 depending on your system</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="installing-anaconda">
+</figcaption>
+</figure>
+</section>
+<section id="installing-anaconda">
 <h2>Installing Anaconda<a class="headerlink" href="#installing-anaconda" title="Permalink to this headline">¶</a></h2>
 <p>Detailed instructions for
 <a class="reference external" href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a>,
@@ -258,33 +267,39 @@ the Anaconda website. Specific instructions for Windows are reproduced below.</p
 straightforward. For the installation location, we <em>highly</em> recommend an easily
 accessed path that does not require administrative rights, such as the folder
 <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> within your user directory:</p>
-<div class="figure align-default" id="id2" style="width: 50%">
+<figure class="align-default" id="id2" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_installation_path.png"><img alt="Anaconda installation path" src="_images/anaconda_installation_path.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">This path can be whatever you want (where you have write access), but
+<figcaption>
+<p><span class="caption-text">This path can be whatever you want (where you have write access), but
 a subfolder in the user directory is usually a convenient location - the
 default option is also fine</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 <p>The next screen will present you with options about adding Anaconda to the
 system <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable, and whether or not you want this installation to
 be registered as the “default” Python installation on your system (via a
 key saved to the registry on Windows). We recommend the default options (as
 shown below), but if you have other Python installations on your system, you may
 want to uncheck the “Register as default” option:</p>
-<div class="figure align-default" id="id3" style="width: 50%">
+<figure class="align-default" id="id3" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_PATH_options.png"><img alt="Installation options" src="_images/anaconda_PATH_options.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Specifying configuration settings for the Anaconda installation on Windows</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Click the “Install” button at this point, and go to get a coffee or tea (or go
 for a walk), as the installation process takes some time depending on your disk
 speed.</p>
-<div class="figure align-default" id="id4" style="width: 50%">
+<figure class="align-default" id="id4" style="width: 50%">
 <a class="reference internal image-reference" href="_images/anaconda_install_complete.png"><img alt="Installation complete" src="_images/anaconda_install_complete.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">The “Installation complete” screen after installing Anaconda on Windows</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Once the installation completes, click the “Next” button to continue and then
 “Finish” to exit the installer.</p>
-</div>
-<div class="section" id="usage">
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>After Anaconda is installed, we suggest taking a look at the
 “<a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a>” guide from its documentation to familiarize yourself with
@@ -298,8 +313,8 @@ environment. A common setup is to have one environment for each project or
 application you are working with. For this tutorial however, we will install
 HyperSpy into the <code class="docutils literal notranslate"><span class="pre">base</span></code> (the default) environment (for ease of use) using
 the command line.</p>
-</div>
-<div class="section" id="installing-hyperspy-with-anaconda">
+</section>
+<section id="installing-hyperspy-with-anaconda">
 <h2>Installing HyperSpy with Anaconda<a class="headerlink" href="#installing-hyperspy-with-anaconda" title="Permalink to this headline">¶</a></h2>
 <p>Like for Anaconda, detailed installation instructions for HyperSpy are
 available directly from its <a class="reference external" href="http://hyperspy.org/hyperspy-doc/current/user_guide/install.html#quick-instructions-to-install-hyperspy-using-anaconda-linux-macos-windows">documentation</a>.
@@ -317,10 +332,12 @@ Anaconda prompt and the macOS/Linux terminal, so only use the commands
 specific to your operating system.</p>
 </div>
 <p>From the Start Menu (on Windows), open the <em>Anaconda Prompt</em>:</p>
-<div class="figure align-default" id="id5" style="width: 30%">
+<figure class="align-default" id="id5" style="width: 30%">
 <a class="reference internal image-reference" href="_images/anaconda_post_install.png"><img alt="Windows programs installed by Anaconda" src="_images/anaconda_post_install.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Windows programs installed by Anaconda</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>On Mac or Linux, open a terminal as normal. If during installation you told
 the installer to “initialize” Anaconda3, all the <code class="docutils literal notranslate"><span class="pre">conda</span></code> commands should
 be immediately available. If not, you will have to run the following, replacing
@@ -339,8 +356,8 @@ dependencies:</p>
 <p>After Anaconda calculates the dependencies it will need to install, it will ask
 for confirmation to continue. Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to accept the changes, and wait
 for the requested libraries to be installed.</p>
-</div>
-<div class="section" id="testing-the-installation">
+</section>
+<section id="testing-the-installation">
 <h2>Testing the installation<a class="headerlink" href="#testing-the-installation" title="Permalink to this headline">¶</a></h2>
 <p>Once the install is completed, if you would like to test that your installation
 is working properly, you can run a small test example by opening the
@@ -365,27 +382,31 @@ telling the interpreter you want to interactively remove the Power Law
 background. Press <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> within the console to run the lines of code
 you pasted in (it may take a few moments to run if this is the first time
 you’ve used HyperSpy on your machine):</p>
-<div class="figure align-default" id="id6" style="width: 70%">
+<figure class="align-default" id="id6" style="width: 70%">
 <a class="reference internal image-reference" href="_images/bundle_test_qtconsole_code.png"><img alt="Entering the example code into the Qt Console" src="_images/bundle_test_qtconsole_code.png" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Entering the example code into the Qt Console</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Eventually, you should see a spectrum window and a small tool window for
 removing the background open (they may be stacked on top of each other;
 drag them out of the way, if so). If you click and drag on part of the spectrum
 display, HyperSpy will fit a Power Law to the signal within that region,
 and also show you a preview of the background-subtracted signal:</p>
-<div class="figure align-default" id="id7" style="width: 90%">
+<figure class="align-default" id="id7" style="width: 90%">
 <a class="reference internal image-reference" href="_images/bundle_test_bgremoval.gif"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval.gif" style="width: 100%;"/></a>
-<p class="caption"><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
+<figcaption>
+<p><span class="caption-text">By clicking and dragging on the spectrum display, a region is created (shown
 in red). The fitted background is shown in blue, and a preview of the
 background-subtracted signal is displayed in green.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 <p>Clicking “OK” in the <em>Background removal tool</em> window will perform the
 background subtraction, and replace the window with one showing the resulting
 signal:</p>
-<div class="figure align-default" style="width: 50%">
+<figure class="align-default" style="width: 50%">
 <a class="reference internal image-reference" href="_images/bundle_test_bgremoval_sig.png"><img alt="Removing the background from a test signal" src="_images/bundle_test_bgremoval_sig.png" style="width: 100%;"/></a>
-</div>
+</figure>
 <p>Assuming all of this worked, congratulations! You have a working HyperSpy
 installation and you have run your first bit of open-source HyperSpy-based
 materials science data analysis! Click the button below to return to the main
@@ -399,8 +420,8 @@ tutorial homepage:</p>
 <div class="line"><br/></div>
 <div class="line"><br/></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
       </article>
       <footer>
