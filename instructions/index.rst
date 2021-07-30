@@ -129,7 +129,7 @@ About the instructors
     |          |   contribution during his Post-Doc. He has since increased his      |
     |          |   contribution and commitment to the development of HyperSpy        |
     |          |   and is now a core developer.                                      |
-    |          |   (Contact: eric.prestat@manchester.ac.uk)                          |
+    |          |   (Contact: eprestat@superstem.org)                                 |
     +----------+---------------------------------------------------------------------+
     | |josh|   | | |josh_link| (JT) is a research engineer within the Office         |
     |          |   of Data and Informatics in the Material Measurement               |
@@ -184,13 +184,13 @@ Agenda
     +-------------------+------------+-----------+----------------------------------------------------------------+
     | 10:35 - 11:00     | Talk       | JT        | Introduction to Scientific Python and HyperSpy (25 minutes)    |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:00 - 11:30     | Practical  | EP        | HyperSpy Basics (30 minutes)                                   |
+    | 11:00 - 11:45     | Practical  | EP        | HyperSpy Basics (45 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:30 - 11:45     |            |           | *Break* (15 minutes)                                           |
+    | 11:45 - 12:00     |            |           | *Break* (15 minutes)                                           |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:45 - 12:30     | Practical  | JT        | Machine Learning (45 minutes)                                  |
+    | 12:00 - 12:45     | Practical  | JT        | Machine Learning (45 minutes)                                  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 12:30 - 13:15     | Practical  | EP        | Model Fitting (45 minutes)                                     |
+    | 12:45 - 13:15     | Practical  | EP        | Curve Fitting (30 minutes)                                     |
     +-------------------+------------+-----------+----------------------------------------------------------------+
     | 13:15 - 13:45     |            |           | *Break* (30 minutes)                                           |
     +-------------------+------------+-----------+----------------------------------------------------------------+
@@ -238,8 +238,7 @@ Prerequisites
 For participation in the session, a basic familiarity with Python and command
 line tools will be helpful, but not strictly required. You will need to follow
 the instructions below to install HyperSpy using either the Anaconda Python
-distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer
-(only available on Windows).
+distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer.
 
 Accessing the Slack Workspace
 -----------------------------
@@ -322,20 +321,10 @@ Obtaining the tutorial data
 Please click
 `this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
 link to download the tutorial notebooks and data as a ``.zip`` file
-(or click the `big green button <#>`_ at the top of this page). Due to the inclusion
-of some larger files, it is nearly 2.0 GB in size, so please ensure that you have
-enough disk space and bandwidth for the download. Once downloaded,
+(or click the `big green button <#>`_ at the top of this page). Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
 a folder in your user's home directory named ``hyperspy_tutorial``
 (i.e. ``C:\Users\<username>\hyperspy_tutorial`` on Windows).
-
-.. note::
-   If you have limited disk space and/or internet availability, you can download
-   a smaller version of the same data
-   `here <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial_no_big_data.zip>`_.
-   This archive is missing three large datasets, and so you will not be able to
-   interactively participate in the *Big Data* and *pyXem* sessions. The
-   remaining files are all the same.
 
 
 Running the Jupyter Notebooks
