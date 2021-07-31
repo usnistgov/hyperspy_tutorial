@@ -30,6 +30,15 @@
 Data Analysis in Materials Science
 ----------------------------------
 
+.. raw:: html
+
+    <div style="text-align: center;">
+        <a  class="downloadbutton"
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2021-08-01_MandM_short_course/hyperspy_tutorial.zip">
+                Click here to download<br/>the tutorial data (130 MB)
+        </a>
+    </div>
+
 Thank you for registering for the 2021 Microscopy and Microanalysis short course
 on data analysis in materials science, presented by the developers of HyperSpy.
 This interactive tutorial session will introduce you to modern techniques of
@@ -316,10 +325,10 @@ instructions for each method:
 Obtaining the tutorial data
 ---------------------------
 
-.. `this <https://github.com/usnistgov/hyperspy_tutorial/archive/2019-MandM.zip>`_
+.. `this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2021-08-01_MandM_short_course/hyperspy_tutorial.zip>`_
 
 Please click
-`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2019_MandM_X15/hyperspy_tutorial.zip>`_
+`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2021-08-01_MandM_short_course/hyperspy_tutorial.zip>`_
 link to download the tutorial notebooks and data as a ``.zip`` file
 (or click the `big green button <#>`_ at the top of this page). Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
