@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "instructions"
+version = "0.1.0"
+description = ""
+packages = [
+    { include = "build_helper" }
+]
+authors = ["Joshua Taillon <joshua.taillon@nist.gov>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Sphinx = "^5.0.2"
+furo = "^2022.6.21"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+build = "build_helper.build:build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
