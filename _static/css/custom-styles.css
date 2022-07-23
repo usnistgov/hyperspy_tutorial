@@ -115,7 +115,7 @@ a.container-link:hover, a.container-link:focus {
 }
 
 .instructor-table {
-    font-size: smaller;
+    font-size: medium;
 }
 
 table.instructor-table tr td:nth-child(2) {
@@ -162,4 +162,14 @@ table.instructor-table tr td:nth-child(2) {
 a.downloadbutton:hover, a.downloadbutton:focus {
     color: white;
     text-decoration: none;
+}
+
+/* 2022-07-19 theme fixes */
+
+footer {
+    margin-top: 0;
+}
+
+.sidebar-scroll {
+    overflow-x: hidden;
 }

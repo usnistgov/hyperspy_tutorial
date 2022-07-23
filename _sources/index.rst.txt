@@ -10,21 +10,11 @@
     ``nist-pages`` branch to build the public site at
     https://pages.nist.gov/hyperspy_tutorial
 
-    Make sure to use sphinx-bootstrap-theme 0.6.5 (0.7.1 has a problem with
-    sidebar styling)
 
-:tocdepth: 4
 
-.. toctree::
-   :hidden:
-
-   install_bundle
-   install_anaconda
-   coming_soon
-
-=================================
-2021 M&M Sunday Short Course X-15
-=================================
+==========================
+2022 M&M Short Course X-16
+==========================
 
 ----------------------------------
 Data Analysis in Materials Science
@@ -34,12 +24,12 @@ Data Analysis in Materials Science
 
     <div style="text-align: center;">
         <a  class="downloadbutton"
-            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2021-08-01_MandM_short_course/hyperspy_tutorial.zip">
+            href="https://github.com/usnistgov/hyperspy_tutorial/releases/download/2022-07-31_MandM_short_course/hyperspy_tutorial.zip">
                 Click here to download<br/>the tutorial data (130 MB)
         </a>
     </div>
 
-Thank you for registering for the 2021 Microscopy and Microanalysis short course
+Thank you for registering for the 2022 Microscopy and Microanalysis short course
 on data analysis in materials science, presented by the developers of HyperSpy.
 This interactive tutorial session will introduce you to modern techniques of
 data analysis for materials science and microscopy data within the scientific
@@ -60,8 +50,9 @@ a whole, while the User Guide is an extensive piece of documentation that explai
 how to use HyperSpy for all sorts of analyses. Feel free to refer
 to these links before and during the tutorial session for additional help.
 
-The sidebar on the right will help you navigate the content of *this* page, 
-which has been set up to provide you with information about the course and 
+The sidebar on the right (click the small icon at the top of the page with lines and 
+an arrow to the left if you do not see the sidebar) will help you navigate the content 
+of *this* page, which has been set up to provide you with information about the course and 
 some instructions to follow before you attend on Sunday. Please take the time
 to read through the content and follow the instructions in advance of the 
 course.
@@ -72,7 +63,7 @@ course.
 
 .. |launch_binder| raw:: html
 
-    <a href="https://mybinder.org/v2/gh/usnistgov/hyperspy_tutorial/2021-08-01_MandM_short_course" target="_blank">Launch Binder</a>
+    <a href="https://mybinder.org/v2/gh/usnistgov/hyperspy_tutorial/2022-07-31_MandM_short_course" target="_blank">Launch Binder</a>
 
 .. |hs_homepage| raw:: html
 
@@ -91,27 +82,29 @@ Session Logistics
 .. cssclass:: custom-table
 
     +--------------------+------------------------------------------------------------+
-    | **Date:**          | | Sunday August 1, 2021                                    |
+    | **Date:**          | | Sunday July 31, 2022                                     |
     +--------------------+------------------------------------------------------------+
-    | **Time:**          | 10:30 AM - 5:45 PM EDT (UTC-04:00)                         |
+    | **Time:**          | 08:30 AM - 5:00 PM PDT (UTC-07:00)                         |
     +--------------------+------------------------------------------------------------+
-    | **Location:**      | | Virtual via web conferencing                             |
-    |                    | | (Link will be sent via email to registered participants) |
+    | **Location:**      | | Oregon Convention Center                                 |
+    |                    | | (Specific room will be updated closer to the event date) |
     +--------------------+------------------------------------------------------------+
 
 About the instructors
 ---------------------
 
-.. cssclass:: instructor-table
+..  cssclass:: instructor-table
+..  table:: Instructors listed in alphabetical order
+    :widths: 20 70
 
     +----------+---------------------------------------------------------------------+
-    | |hakon|  | | |hakon_link| (HA) is a PhD Candidate in the Department of         |
-    |          |   Materials Science and Engineering at the Norwegian University of  |
-    |          |   Science and Technology. He characterizes                          |
-    |          |   recrystallization and texture in aluminum alloys by scanning and  |
-    |          |   transmission electron microscopy. Prof. Knut Marthinsen is his    |
-    |          |   main supervisor and Prof. Antonius T. J. van Helvoort is his      |
-    |          |   co-supervisor. (Contact: hakon.w.anes@ntnu.no)                    |
+    | |jordi|  | | |jordi_link| (JFO) is a PhD Candidate at the NanoDTC working with |
+    |          |   Sam Stranks and Cate Ducati as supervisors. He studied his `BSc`  |
+    |          |   undergraduate in Maastricht University (the Netherlands) and his  |
+    |          |   `MRes` master in Nanoscience and Nanotechnology in Cambridge. He  |
+    |          |   is a regular user of HyperSpy, `pyxem`, and LumiSpy, and will be  |
+    |          |   helping the primary instructors out throughout the course.        |
+    |          |   (Contact: jf631@cam.ac.uk)                                        |
     +----------+---------------------------------------------------------------------+
     | |carter| | | |carter_link| (CF) grew up in Prior Lake, Minnesota, a little     |
     |          |   south of the Twin Cities. He received his B.S. from the Iowa      |
@@ -124,21 +117,7 @@ About the instructors
     |          |   characterizing and producing gel polymer electrolytes with        |
     |          |   ceramic inclusions. Carter is a graduate student at the           |
     |          |   University of Wisconsin-Madison working as a research assistant   |
-    |          |   in Prof. Paul Voyles’ group. (Contact: csfrancis@wisc.edu)        |
-    +----------+---------------------------------------------------------------------+
-    | |eric|   | | |eric_link| (EP) is a Lecturer in Materials Characterisation at   |
-    |          |   the University of Manchester and the SuperSTEM Laboratory. His    |
-    |          |   main areas of research focus on the development, implementation   |
-    |          |   and application of new TEM methodologies --- from specimen        |
-    |          |   preparation, experimental workflow to advanced data processing    |
-    |          |   and analysis --- with the aim to uncover the                      |
-    |          |   structure-property relationships of materials. He is an open      |
-    |          |   source enthusiast, and started to use the HyperSpy                |
-    |          |   library as a user during his PhD and made his first code          |
-    |          |   contribution during his Post-Doc. He has since increased his      |
-    |          |   contribution and commitment to the development of HyperSpy        |
-    |          |   and is now a core developer.                                      |
-    |          |   (Contact: eprestat@superstem.org)                                 |
+    |          |   in Prof. Paul Voyles' group. (Contact: csfrancis@wisc.edu)        |
     +----------+---------------------------------------------------------------------+
     | |josh|   | | |josh_link| (JT) is a research engineer within the Office         |
     |          |   of Data and Informatics in the Material Measurement               |
@@ -148,10 +127,40 @@ About the instructors
     |          |   state-of-the art signal processing techniques to facilitate       |
     |          |   greater understanding of material systems. He is a (fairly)       |
     |          |   regular |contributor| to the upstream HyperSpy project and has    |
-    |          |   been a user of the software for over 7 years.                     |
+    |          |   been a user of the software for over 8 years.                     |
     |          |   (Contact: joshua.taillon@nist.gov)                                |
     +----------+---------------------------------------------------------------------+
 
+.. +----------+---------------------------------------------------------------------+
+    .. | |jordi|  | | |jordi_link| (JF) is a PhD Candidate at the NanoDTC working with  |
+    .. |          |   Sam Stranks and Cate Ducati as supervisors. He studied his `BSc`  |
+    .. |          |   undergraduate in Maastricht University (the Netherlands) and his  |
+    .. |          |   `MRes` master in Nanoscience and Nanotechnology in Cambridge. He  |
+    .. |          |   is a regular user of HyperSpy, `pyxem`, and LumiSpy.              |
+    .. |          |   (Contact: jf631@cam.ac.uk)                                        |
+    .. +----------+---------------------------------------------------------------------+
+    .. | |hakon|  | | |hakon_link| (HA) is a PhD Candidate in the Department of         |
+    .. |          |   Materials Science and Engineering at the Norwegian University of  |
+    .. |          |   Science and Technology. He characterizes                          |
+    .. |          |   recrystallization and texture in aluminum alloys by scanning and  |
+    .. |          |   transmission electron microscopy. Prof. Knut Marthinsen is his    |
+    .. |          |   main supervisor and Prof. Antonius T. J. van Helvoort is his      |
+    .. |          |   co-supervisor. (Contact: hakon.w.anes@ntnu.no)                    |
+    .. +----------+---------------------------------------------------------------------+
+    .. | |eric|   | | |eric_link| (EP) is a Lecturer in Materials Characterisation at   |
+    .. |          |   the University of Manchester and the SuperSTEM Laboratory. His    |
+    .. |          |   main areas of research focus on the development, implementation   |
+    .. |          |   and application of new TEM methodologies --- from specimen        |
+    .. |          |   preparation, experimental workflow to advanced data processing    |
+    .. |          |   and analysis --- with the aim to uncover the                      |
+    .. |          |   structure-property relationships of materials. He is an open      |
+    .. |          |   source enthusiast, and started to use the HyperSpy                |
+    .. |          |   library as a user during his PhD and made his first code          |
+    .. |          |   contribution during his Post-Doc. He has since increased his      |
+    .. |          |   contribution and commitment to the development of HyperSpy        |
+    .. |          |   and is now a core developer.                                      |
+    .. |          |   (Contact: eprestat@superstem.org)                                 |
+    .. +----------+---------------------------------------------------------------------+
 
 .. |contributor| replace:: `contributor <https://github.com/hyperspy/hyperspy/commits?author=jat255>`__
 .. |josh_link| replace:: `Josh Taillon <https://www.nist.gov/people/joshua-taillon>`__
@@ -161,6 +170,15 @@ About the instructors
 .. |eric_link| replace:: `Eric Prestat <https://www.research.manchester.ac.uk/portal/en/researchers/eric-prestat(d6091419-ddb8-4164-9048-21fae9bb9074).html>`__
 .. |carter_link| replace:: `Carter Francis <https://tem.msae.wisc.edu/group/carter-francis/>`__
 .. |hakon_link| replace:: `Håkon Wiik Ånes <https://www.ntnu.edu/employees/hakon.w.anes>`__
+.. |jordi_link| replace:: `Jordi Ferrer Orri <https://www.oe.phy.cam.ac.uk/directory/jordi-ferrer-orri>`__
+
+.. |kikuchipy| replace:: ``kikuchipy``
+.. _kikuchipy: https://kikuchipy.org/en/stable/index.html
+.. |pyxem| replace:: ``pyxem``
+.. _pyxem: https://pyxem.readthedocs.io/en/latest/#
+.. |atomap| replace:: ``atomap``
+.. _atomap: https://atomap.org/index.html
+
 .. |josh| image:: _static/josh_taillon.jpg
    :width: 100%
 .. .. |kate| image:: _static/kate_macarthur.jpg
@@ -169,11 +187,13 @@ About the instructors
 ..    :width: 100%
 .. .. |duncan| image:: _static/duncan_johnstone.jpg
 ..    :width: 100%
-.. |eric| image:: _static/eric_prestat.jpg
-   :width: 100%
+.. .. |eric| image:: _static/eric_prestat.jpg
+..    :width: 100%
 .. |carter| image:: _static/carter_francis.jpg
    :width: 100%
-.. |hakon| image:: _static/hakon_wiik_anes.jpg
+.. .. |hakon| image:: _static/hakon_wiik_anes.jpg
+..    :width: 100%
+.. |jordi| image:: _static/jordi_ferrer_orri.jpg
    :width: 100%
 
 Agenda
@@ -181,41 +201,46 @@ Agenda
 
 ..  rst-class:: left-align-last-col
 ..  cssclass:: table-hover
-..  table:: All times given in EDT (UTC-04:00)
+..  table:: All times given in PDT (UTC-07:00)
     :widths: 30 20 20 70
 
     +-------------------+------------+-----------+----------------------------------------------------------------+
     | Time              | Format     | Leader(s) | Topic                                                          |
     +===================+============+===========+================================================================+
-    | 09:30 - 10:30     | Help       | All       | Pre-course help for installation problems (1 hour)             |
+    | 08:30 - 09:00     | Help       | All       | | Pre-course help for installation problems (30 minutes)       |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 10:30 - 10:35     | Talk       | JT        | Welcome and Announcements (5 minutes)                          |
+    | 09:00 - 09:05     | Talk       | JT        | | Welcome and Announcements (5 minutes)                        |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 10:35 - 11:00     | Talk       | JT        | Introduction to Scientific Python and HyperSpy (25 minutes)    |
+    | 09:05 - 09:30     | Talk       | JT        | | Introduction to Scientific Python and HyperSpy (25 minutes)  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:00 - 11:45     | Practical  | EP        | HyperSpy Basics (45 minutes)                                   |
+    | 09:30 - 10:15     | Practical  | JT        | | HyperSpy Basics (45 minutes)                                 |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:45 - 12:00     |            |           | *Break* (15 minutes)                                           |
+    | 10:15 - 10:30     |            |           | | *Coffee Break* (15 minutes)                                  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 12:00 - 12:45     | Practical  | JT        | Machine Learning (45 minutes)                                  |
+    | 10:30 - 11:15     | Practical  | JT        | | Machine Learning (45 minutes)                                |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 12:45 - 13:15     | Practical  | EP        | Curve Fitting (30 minutes)                                     |
+    | 11:15 - 11:45     | Practical  | CF        | | Curve Fitting (30 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 13:15 - 13:45     |            |           | *Break* (30 minutes)                                           |
+    | 11:45 - 12:45     |            |           | | *Lunch Break* (60 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 13:45 - 14:30     | Practical  | EP        | EELS analysis (45 minutes)                                     |
+    | 12:45 - 13:30     | Practical  | JT        | | EELS analysis (45 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 14:30 - 15:15     | Practical  | JT        | EDS Analysis (45 minutes)                                      |
+    | 13:30 - 14:15     | Practical  | JT        | | EDS Analysis (45 minutes)                                    |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 15:15 - 16:00     | Practical  | EP        | Big Data Analysis (45 minutes)                                 |
+    | 14:15 - 14:30     |            |           | | *Coffee Break* (15 minutes)                                  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 16:00 - 16:15     |            |           | *Break* (15 minutes)                                           |
+    | 14:30 - 15:15     | Practical  | CF        | | Big Data Analysis (45 minutes)                               |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 16:15 - 16:45     | Practical  | CF        | 4D STEM / Scanning Electron Diffraction (30 minutes)           |
+    | 15:15 - 15:45     | Practical  | JT        | | Electron Backscatter Diffraction (EBSD) Analysis             |
+    |                   |            |           |   using |kikuchipy|_ (30 minutes)                              |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 16:45 - 17:15     | Practical  | HA        | Electron Backscatter Diffraction (EBSD) Analysis (30 minutes)  |
+    | 15:45 - 16:15     | Practical  | CF        | | 4D STEM / Scanning Electron Diffraction                      |
+    |                   |            |           |   using |pyxem|_ (30 minutes)                                  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 17:15 - 17:45     | Practical  | EP/JT     | Atomic Resolution STEM Analysis (30 minutes)                   |
+    | 16:15 - 16:45     | Practical  | JT        | | Atomic Resolution STEM Analysis                              |
+    |                   |            |           |   using |atomap|_ (30 minutes)                                 |
+    +-------------------+------------+-----------+----------------------------------------------------------------+
+    | 16:45 - 17:00     | Practical  | JT/CF     | | Wrap up and time for open questions (15 minutes)             |
     +-------------------+------------+-----------+----------------------------------------------------------------+
 
 -------------------------
@@ -232,7 +257,10 @@ computing environment.
     While we *highly* encourage you to follow the instructions below to 
     install HyperSpy locally on your personal system, you can run all the
     code that will be covered in the session in your browser via the 
-    |launch_binder| link. The "Binder" is a web-based installation of 
+    |launch_binder| link (*Note, we cannot guarantee the wireless 
+    connection at the conference center will be sufficient to use this
+    method so again, we recommend a local installation*). The "Binder" 
+    is a web-based installation of 
     python that you can interact with through a normal web browser,
     without installing anything to your system. Completing the installation
     process is a useful learning experience however, and will be necessary if
@@ -249,25 +277,25 @@ line tools will be helpful, but not strictly required. You will need to follow
 the instructions below to install HyperSpy using either the Anaconda Python
 distribution (Windows, Mac, or Linux), or the pre-compiled "bundle" installer.
 
-Accessing the Slack Workspace
------------------------------
+.. Accessing the Slack Workspace
+.. -----------------------------
 
-During the session, we will be using Slack as a platform for interactive
-communication between the instructors and students, as well as for students
-to help answer each others' questions. While Slack can be used from a web 
-browser, you may wish to install their desktop application in advance for a 
-better experience. This can be done by visiting their |slack_download| page and 
-following the instructions provided.
+.. During the session, we will be using Slack as a platform for interactive
+.. communication between the instructors and students, as well as for students
+.. to help answer each others' questions. While Slack can be used from a web 
+.. browser, you may wish to install their desktop application in advance for a 
+.. better experience. This can be done by visiting their |slack_download| page and 
+.. following the instructions provided.
 
-.. |slack_download| raw:: html
+.. .. |slack_download| raw:: html
 
-    <a href="https://slack.com/downloads/" target="_blank">
-        Downloads</a>
+..     <a href="https://slack.com/downloads/" target="_blank">
+..         Downloads</a>
 
-Since this website is public, the link to the Slack Workspace will not be 
-provided here. It will be sent via email closer to the date of the workshop,
-so please check your email for information on how to join the Slack Workspace
-for the course.
+.. Since this website is public, the link to the Slack Workspace will not be 
+.. provided here. It will be sent via email closer to the date of the workshop,
+.. so please check your email for information on how to join the Slack Workspace
+.. for the course.
 
 Installation
 ------------
@@ -296,7 +324,8 @@ privileges, meaning it can be used on remote systems easily regardless of
 ownership.
 
 Click one of the following buttons to view the specific installation
-instructions for each method:
+instructions for each method, then return to this page when you have 
+completed the installation:
 
 .. raw:: html
 
@@ -325,10 +354,10 @@ instructions for each method:
 Obtaining the tutorial data
 ---------------------------
 
-.. `this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2021-08-01_MandM_short_course/hyperspy_tutorial.zip>`_
+.. `this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2022-07-31_MandM_short_course/hyperspy_tutorial.zip>`_
 
 Please click
-`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2021-08-01_MandM_short_course/hyperspy_tutorial.zip>`_
+`this <https://github.com/usnistgov/hyperspy_tutorial/releases/download/2022-07-31_MandM_short_course/hyperspy_tutorial.zip>`_
 link to download the tutorial notebooks and data as a ``.zip`` file
 (or click the `big green button <#>`_ at the top of this page). Once downloaded,
 extract the files into their own folder that is easily accessible. We recommend
@@ -345,28 +374,28 @@ worry, everything stays local and there's no security risk to running the
 notebook on ``localhost``).
 
 If you installed using the bundle, this is very simple. Just open the Start Menu
-and search for the "Miniforge Prompt" option:
+and search for the "Hyperspy-bundle Prompt" option:
 
 .. figure:: _static/bundle_start_menu_notebook.png
    :width: 100 %
-   :alt: Starting the Miniforge Prompt from the Start Menu
+   :alt: Starting the Hyperspy-bundle Prompt from the Start Menu
    :figwidth: 50%
 
-   Starting the Miniforge Prompt from the Start Menu shortcut installed in the
+   Starting the Hyperspy-bundle Prompt from the Start Menu shortcut installed in the
    bundle
 
 Once this prompt opens, enter the text ``jupyter notebook`` and press "Enter".
 After a short time, your web-browser should open automatically to the notebook
-server that was started. Make sure to leave the Miniforge Prompt window open
+server that was started. Make sure to leave the Hyperspy-bundle Prompt window open
 while you work, as closing it will shutdown the notebook server, and you will
 not be able to run any of the code.
 
 .. figure:: _static/bundle_starting_the_notebook.png
    :width: 100 %
-   :alt: Starting the Jupyter Notebook from the Miniforge Prompt
+   :alt: Starting the Jupyter Notebook from the Hyperspy-bundle Prompt
    :figwidth: 50%
 
-   Starting the Jupyter Notebook from the Miniforge Prompt
+   Starting the Jupyter Notebook from the Hyperspy-bundle Prompt
 
 If you installed with Anaconda, open the Anaconda Prompt (Windows) or a regular terminal
 (macOS/Linux). From that prompt, use the ``cd`` command to change to the

@@ -148,11 +148,20 @@ dependencies:
 
 ..  code-block:: bash
 
-    $ conda install -c conda-forge hyperspy hyperspyui
+    $ conda install -c conda-forge hyperspy hyperspyui kikuchipy atomap pyxem
 
-After Anaconda calculates the dependencies it will need to install, it will ask
-for confirmation to continue. Press ``Enter`` to accept the changes, and wait
-for the requested libraries to be installed.
+After Anaconda calculates the dependencies (this may take quite a while,
+please be patient) it will need to install, it will ask for confirmation to continue. 
+Press ``Enter`` to accept the changes, and wait for the requested libraries to be
+installed.
+
+..  admonition:: Extension packages
+
+    The "extension" libraries ``kikuchipy``, ``pyxem``, and ``atomap`` will be 
+    installed using the command above. These are not absolutely necessary to install
+    if you wish to just use HyperSpy on its own, but since these libraries will
+    be covered in the short course, you will need to have them installed if you 
+    wish to follow along interactively.
 
 Testing the installation
 ^^^^^^^^^^^^^^^^^^^^^^^^
