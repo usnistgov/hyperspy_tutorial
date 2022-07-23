@@ -102,7 +102,8 @@ About the instructors
     |          |   Sam Stranks and Cate Ducati as supervisors. He studied his `BSc`  |
     |          |   undergraduate in Maastricht University (the Netherlands) and his  |
     |          |   `MRes` master in Nanoscience and Nanotechnology in Cambridge. He  |
-    |          |   is a regular user of HyperSpy, `pyxem`, and LumiSpy.              |
+    |          |   is a regular user of HyperSpy, `pyxem`, and LumiSpy, and will be  |
+    |          |   helping the primary instructors out throughout the course.        |
     |          |   (Contact: jf631@cam.ac.uk)                                        |
     +----------+---------------------------------------------------------------------+
     | |carter| | | |carter_link| (CF) grew up in Prior Lake, Minnesota, a little     |
@@ -206,29 +207,29 @@ Agenda
     +-------------------+------------+-----------+----------------------------------------------------------------+
     | Time              | Format     | Leader(s) | Topic                                                          |
     +===================+============+===========+================================================================+
-    | 08:30 - 09:00     | Help       | All       | Pre-course help for installation problems (30 minutes)         |
+    | 08:30 - 09:00     | Help       | All       | | Pre-course help for installation problems (30 minutes)       |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 09:00 - 09:05     | Talk       | JT        | Welcome and Announcements (5 minutes)                          |
+    | 09:00 - 09:05     | Talk       | JT        | | Welcome and Announcements (5 minutes)                        |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 09:05 - 09:30     | Talk       | JT        | Introduction to Scientific Python and HyperSpy (25 minutes)    |
+    | 09:05 - 09:30     | Talk       | JT        | | Introduction to Scientific Python and HyperSpy (25 minutes)  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 09:30 - 10:15     | Practical  | JT        | HyperSpy Basics (45 minutes)                                   |
+    | 09:30 - 10:15     | Practical  | JT        | | HyperSpy Basics (45 minutes)                                 |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 10:15 - 10:30     |            |           | *Coffee Break* (15 minutes)                                    |
+    | 10:15 - 10:30     |            |           | | *Coffee Break* (15 minutes)                                  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 10:30 - 11:15     | Practical  | CF        | Machine Learning (45 minutes)                                  |
+    | 10:30 - 11:15     | Practical  | JT        | | Machine Learning (45 minutes)                                |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:15 - 11:45     | Practical  | CF        | Curve Fitting (30 minutes)                                     |
+    | 11:15 - 11:45     | Practical  | CF        | | Curve Fitting (30 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 11:45 - 12:45     |            |           | *Lunch Break* (60 minutes)                                     |
+    | 11:45 - 12:45     |            |           | | *Lunch Break* (60 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 12:45 - 13:30     | Practical  | JT        | EELS analysis (45 minutes)                                     |
+    | 12:45 - 13:30     | Practical  | JT        | | EELS analysis (45 minutes)                                   |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 13:30 - 14:15     | Practical  | JT        | EDS Analysis (45 minutes)                                      |
+    | 13:30 - 14:15     | Practical  | JT        | | EDS Analysis (45 minutes)                                    |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 14:15 - 14:30     |            |           | *Coffee Break* (15 minutes)                                    |
+    | 14:15 - 14:30     |            |           | | *Coffee Break* (15 minutes)                                  |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 14:30 - 15:15     | Practical  | CF        | Big Data Analysis (45 minutes)                                 |
+    | 14:30 - 15:15     | Practical  | CF        | | Big Data Analysis (45 minutes)                               |
     +-------------------+------------+-----------+----------------------------------------------------------------+
     | 15:15 - 15:45     | Practical  | JT        | | Electron Backscatter Diffraction (EBSD) Analysis             |
     |                   |            |           |   using |kikuchipy|_ (30 minutes)                              |
@@ -239,7 +240,7 @@ Agenda
     | 16:15 - 16:45     | Practical  | JT        | | Atomic Resolution STEM Analysis                              |
     |                   |            |           |   using |atomap|_ (30 minutes)                                 |
     +-------------------+------------+-----------+----------------------------------------------------------------+
-    | 16:45 - 17:00     | Practical  | JT/CF     | Wrap up and time for open questions (15 minutes)               |
+    | 16:45 - 17:00     | Practical  | JT/CF     | | Wrap up and time for open questions (15 minutes)             |
     +-------------------+------------+-----------+----------------------------------------------------------------+
 
 -------------------------
@@ -373,28 +374,28 @@ worry, everything stays local and there's no security risk to running the
 notebook on ``localhost``).
 
 If you installed using the bundle, this is very simple. Just open the Start Menu
-and search for the "Miniforge Prompt" option:
+and search for the "Hyperspy-bundle Prompt" option:
 
 .. figure:: _static/bundle_start_menu_notebook.png
    :width: 100 %
-   :alt: Starting the Miniforge Prompt from the Start Menu
+   :alt: Starting the Hyperspy-bundle Prompt from the Start Menu
    :figwidth: 50%
 
-   Starting the Miniforge Prompt from the Start Menu shortcut installed in the
+   Starting the Hyperspy-bundle Prompt from the Start Menu shortcut installed in the
    bundle
 
 Once this prompt opens, enter the text ``jupyter notebook`` and press "Enter".
 After a short time, your web-browser should open automatically to the notebook
-server that was started. Make sure to leave the Miniforge Prompt window open
+server that was started. Make sure to leave the Hyperspy-bundle Prompt window open
 while you work, as closing it will shutdown the notebook server, and you will
 not be able to run any of the code.
 
 .. figure:: _static/bundle_starting_the_notebook.png
    :width: 100 %
-   :alt: Starting the Jupyter Notebook from the Miniforge Prompt
+   :alt: Starting the Jupyter Notebook from the Hyperspy-bundle Prompt
    :figwidth: 50%
 
-   Starting the Jupyter Notebook from the Miniforge Prompt
+   Starting the Jupyter Notebook from the Hyperspy-bundle Prompt
 
 If you installed with Anaconda, open the Anaconda Prompt (Windows) or a regular terminal
 (macOS/Linux). From that prompt, use the ``cd`` command to change to the
