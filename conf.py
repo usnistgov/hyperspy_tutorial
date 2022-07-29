@@ -70,7 +70,7 @@ html_css_files = [
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
 html_theme_options = {
-    "announcement": 'We look forward to seeing you on Sunday, July 31 for the short course!',
+    "announcement": 'We look forward to seeing you on Sunday, July 31 in Room B114 for the short course!',
     "light_css_variables": {
         "color-brand-primary": "#008cba",
         "color-brand-content": "#008cba",

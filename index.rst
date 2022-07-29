@@ -86,8 +86,8 @@ Session Logistics
     +--------------------+------------------------------------------------------------+
     | **Time:**          | 08:30 AM - 5:00 PM PDT (UTC-07:00)                         |
     +--------------------+------------------------------------------------------------+
-    | **Location:**      | | Oregon Convention Center                                 |
-    |                    | | (Specific room will be updated closer to the event date) |
+    | **Location:**      | | Room B114                                                | 
+    |                    | | Oregon Convention Center                                 |
     +--------------------+------------------------------------------------------------+
 
 About the instructors
